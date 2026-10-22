@@ -1,0 +1,96 @@
+{
+  "schema_version": 2,
+  "receipt_id": "7ce10f12fee3d0d14a5f86bb8e3b4cb4e63feaa6bf37b372af9067f6d74b794e",
+  "phase": "plan",
+  "context_hash": "016b7eec2ad6ca882f3eb25d93a3def3538acf1562daf3d44b4d1b07ca3c7029",
+  "snapshot_hash": "ba5100337dc5361bab13bb0f6c6f317ccff93ab9c611c3996e8bac97df54a543",
+  "catalog_hash": "03f730e22892c287a594f49e6f473bd8af3fe52407084ee273bf8d5801e136f8",
+  "policy_hash": "2dac95563038fc4caf05728c96cafeb48f9fd038a1e33174354a56059a29ae99",
+  "pool_hash": "d6e2f0479110a5a6e1757812945139ae46828f8aa4c1388085d426f5b654d69e",
+  "registry_hash": "e65b6983a0dc10f0d5af77d298feab798debeb60a396d6b2ec183605a99395fe",
+  "selected": {
+    "candidate": {
+      "id": "primary",
+      "model": "fixture-best",
+      "effort": "medium",
+      "agent": null,
+      "skills": [],
+      "tools": [],
+      "sandbox": "read_only",
+      "verification": "required",
+      "required_capabilities": [],
+      "required_mutations": [],
+      "estimated_cost_microusd": 100,
+      "estimated_tokens": 100,
+      "estimated_elapsed_ms": 100,
+      "relevance_micros": 0
+    },
+    "score": {
+      "quality_micros": 90000000,
+      "relevance_micros": 0,
+      "cost_penalty_micros": 100,
+      "latency_penalty_micros": 100,
+      "utility_micros": 89999800
+    },
+    "assets": [
+      {
+        "kind": "model",
+        "id": "fixture-best",
+        "content_sha256": "66f6b84f8709e8e7dc5c6194ff97896072db8e17e25e1727af313488dcee0542",
+        "authority": "policy_catalog"
+      }
+    ],
+    "reasons": [
+      "advertised candidate and exact model/effort are available in the validated snapshot and catalog",
+      "all required capabilities and permissions are explicitly supported",
+      "every asset passed authoritative trust, compatibility and sandbox checks",
+      "declared resource estimates fit task and effective policy limits; no runtime cost is asserted",
+      "utility records catalog quality, retrieval relevance, declared cost and latency contributions"
+    ]
+  },
+  "alternatives": [
+    {
+      "candidate": {
+        "id": "secondary",
+        "model": "fixture-second",
+        "effort": "medium",
+        "agent": null,
+        "skills": [],
+        "tools": [],
+        "sandbox": "read_only",
+        "verification": "required",
+        "required_capabilities": [],
+        "required_mutations": [],
+        "estimated_cost_microusd": 100,
+        "estimated_tokens": 100,
+        "estimated_elapsed_ms": 100,
+        "relevance_micros": 0
+      },
+      "score": {
+        "quality_micros": 70000000,
+        "relevance_micros": 0,
+        "cost_penalty_micros": 100,
+        "latency_penalty_micros": 100,
+        "utility_micros": 69999800
+      },
+      "assets": [
+        {
+          "kind": "model",
+          "id": "fixture-second",
+          "content_sha256": "564ca06e15b7a5c86929124d7d246f848af24e7fd70aa348c5690d2c3a436986",
+          "authority": "policy_catalog"
+        }
+      ],
+      "reasons": [
+        "advertised candidate and exact model/effort are available in the validated snapshot and catalog",
+        "all required capabilities and permissions are explicitly supported",
+        "every asset passed authoritative trust, compatibility and sandbox checks",
+        "declared resource estimates fit task and effective policy limits; no runtime cost is asserted",
+        "utility records catalog quality, retrieval relevance, declared cost and latency contributions"
+      ]
+    }
+  ],
+  "exclusions": [],
+  "abstention": null,
+  "unavailable": []
+}

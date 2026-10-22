@@ -1,0 +1,7 @@
+{
+  "aliases": [
+    { "kind": "model", "alias": "short", "target": "fixture-model-v1" },
+    { "kind": "model", "alias": "short", "target": "fixture-model-v1" }
+  ],
+  "registry": { "schema_version": 1, "version": "fixture-v1", "assets": [] }
+}

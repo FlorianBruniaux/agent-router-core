@@ -1,0 +1,107 @@
+{
+  "schema_version": 2,
+  "task": {
+    "objective": "Inspect the Rust contract",
+    "kind": "explore",
+    "deliverables": [
+      "contract report"
+    ],
+    "constraints": [],
+    "scope": [
+      "src"
+    ],
+    "risk": "low",
+    "sensitivity": "public",
+    "budget": {
+      "max_cost_microusd": 10000,
+      "max_elapsed_ms": 1000,
+      "max_tokens": 1000
+    },
+    "allowed_mutations": [
+      "workspace_write",
+      "network",
+      "execute_skills",
+      "integrate"
+    ],
+    "dependencies": [],
+    "acceptance": [
+      "cite an enforcing symbol"
+    ],
+    "required_capabilities": []
+  },
+  "phase": "plan",
+  "restrictions": {
+    "schema_version": 1,
+    "sources": [
+      "synthetic-fixture-authority"
+    ],
+    "allowed_models": null,
+    "allowed_capabilities": [
+      "tools",
+      "subagents",
+      "vision",
+      "network",
+      "workspace_write"
+    ],
+    "allowed_mutations": [
+      "workspace_write",
+      "network",
+      "execute_skills",
+      "integrate"
+    ],
+    "max_cost_microusd": 10000,
+    "max_tokens": 1000,
+    "max_concurrency": 2,
+    "preferred_model": null,
+    "policy_hash": "7f27300321e74e4c81dd5886a6164b0dc24c7d8477a2f9722ebcf111de235e62"
+  },
+  "permissions": {
+    "model_inference": "supported",
+    "workspace_read": "supported",
+    "workspace_write": "supported",
+    "network": "supported",
+    "execute_skills": "supported",
+    "delegate": "supported",
+    "integrate": "supported"
+  },
+  "registry": {
+    "schema_version": 1,
+    "version": "synthetic-empty-v1",
+    "assets": []
+  },
+  "candidates": [
+    {
+      "id": "primary",
+      "model": "fixture-best",
+      "effort": "medium",
+      "agent": null,
+      "skills": [],
+      "tools": [],
+      "sandbox": "read_only",
+      "verification": "required",
+      "required_capabilities": [],
+      "required_mutations": [],
+      "estimated_cost_microusd": 100,
+      "estimated_tokens": 100,
+      "estimated_elapsed_ms": 100,
+      "relevance_micros": 0
+    },
+    {
+      "id": "secondary",
+      "model": "fixture-second",
+      "effort": "medium",
+      "agent": null,
+      "skills": [],
+      "tools": [],
+      "sandbox": "read_only",
+      "verification": "required",
+      "required_capabilities": [],
+      "required_mutations": [],
+      "estimated_cost_microusd": 100,
+      "estimated_tokens": 100,
+      "estimated_elapsed_ms": 100,
+      "relevance_micros": 0
+    }
+  ],
+  "previous_model": null
+}

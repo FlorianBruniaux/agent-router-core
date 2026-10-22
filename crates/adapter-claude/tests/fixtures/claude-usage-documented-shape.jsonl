@@ -1,0 +1,3 @@
+{"type":"system","subtype":"init","claude_code_version":"2.1.283","model":"claude-test-model","permissionMode":"plan","tools":["Read"],"per_turn_effort_active":true}
+{"type":"assistant","message":{"type":"message","role":"assistant","model":"claude-test-model","content":[{"type":"text","text":"secret-assistant-text"}]}}
+{"type":"result","subtype":"success","is_error":false,"result":"secret-provider-output","total_cost_usd":0.5,"usage":{"input_tokens":1000,"output_tokens":200,"cache_creation_input_tokens":30,"cache_read_input_tokens":4000},"modelUsage":{"claude-test-model":{"inputTokens":9999,"outputTokens":9999}}}

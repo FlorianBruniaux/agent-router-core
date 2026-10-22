@@ -1,0 +1,27 @@
+{
+  "task": {
+    "objective": "Review a security-sensitive authentication change",
+    "kind": "security",
+    "risk": "high",
+    "required_capabilities": ["tools", "subagents"],
+    "acceptance": ["fresh verification meets or exceeds execution quality"]
+  },
+  "host": {
+    "id": "codex-security-host",
+    "harness": "codex",
+    "supported_models": ["gpt-5.6-luna", "gpt-5.6-sol", "gpt-5.6-terra"],
+    "supported_efforts": {
+      "gpt-5.6-luna": ["low", "medium", "high"],
+      "gpt-5.6-sol": ["high", "xhigh", "max"],
+      "gpt-5.6-terra": ["medium", "high", "xhigh"]
+    },
+    "capabilities": ["tools", "subagents"]
+  },
+  "skill_candidates": [
+    {
+      "skill": "security-guardian",
+      "source": "ai-agents-bm25-v1",
+      "score_micros": 970000
+    }
+  ]
+}

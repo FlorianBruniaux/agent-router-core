@@ -1,0 +1,1506 @@
+{
+  "schema_version": 1,
+  "status": "candidate_requires_independent_human_review",
+  "cases": [
+    {
+      "id": "candidate-001",
+      "family_id": "contract-parser",
+      "split": "training",
+      "objective": "Add a bounded parser for the versioned route request.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-002",
+      "family_id": "contract-parser",
+      "split": "training",
+      "objective": "Reject malformed request fields with stable typed errors.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-003",
+      "family_id": "contract-parser",
+      "split": "training",
+      "objective": "Implement request validation without accepting unknown variants.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-004",
+      "family_id": "contract-parser",
+      "split": "training",
+      "objective": "Parse the route contract and enforce its documented byte limit.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-005",
+      "family_id": "contract-parser",
+      "split": "training",
+      "objective": "Extend the request parser while preserving existing JSON behavior.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-006",
+      "family_id": "host-unknown",
+      "split": "training",
+      "objective": "Inspect which Codex capabilities remain unknown.",
+      "task_kind": "explore",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-007",
+      "family_id": "host-unknown",
+      "split": "training",
+      "objective": "Report host support without turning missing evidence into availability.",
+      "task_kind": "explore",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-008",
+      "family_id": "host-unknown",
+      "split": "training",
+      "objective": "Explain why a model cache cannot grant workspace permissions.",
+      "task_kind": "explore",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-009",
+      "family_id": "host-unknown",
+      "split": "training",
+      "objective": "Identify stale host evidence before a route is selected.",
+      "task_kind": "explore",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-010",
+      "family_id": "host-unknown",
+      "split": "training",
+      "objective": "Read host metadata and preserve unsupported versus unknown capabilities.",
+      "task_kind": "explore",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-011",
+      "family_id": "catalog-provenance",
+      "split": "validation",
+      "objective": "Generate a catalog whose assets retain observation provenance.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-012",
+      "family_id": "catalog-provenance",
+      "split": "validation",
+      "objective": "Bind the generated catalog to complete policy and snapshot hashes.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-013",
+      "family_id": "catalog-provenance",
+      "split": "validation",
+      "objective": "Reject an alias that conflicts with a canonical model identifier.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-014",
+      "family_id": "catalog-provenance",
+      "split": "validation",
+      "objective": "Check that unsupported effort levels cannot enter a generated catalog.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-015",
+      "family_id": "catalog-provenance",
+      "split": "validation",
+      "objective": "Preserve the policy source of quality estimates during catalog generation.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-016",
+      "family_id": "retrieval-exact",
+      "split": "held_out",
+      "objective": "Find the Rust contract testing skill for a parser change.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-017",
+      "family_id": "retrieval-exact",
+      "split": "held_out",
+      "objective": "Retrieve agents suitable for a read-only architecture review.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-018",
+      "family_id": "retrieval-exact",
+      "split": "held_out",
+      "objective": "Search prompt metadata without loading every prompt body.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-019",
+      "family_id": "retrieval-exact",
+      "split": "held_out",
+      "objective": "Find the C++ skill and avoid selecting C# instructions.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-020",
+      "family_id": "retrieval-exact",
+      "split": "held_out",
+      "objective": "Explain the matching fields behind the highest retrieval candidate.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-021",
+      "family_id": "retrieval-abstain",
+      "split": "training",
+      "objective": "Abstain when two retrieval candidates have indistinguishable evidence.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-022",
+      "family_id": "retrieval-abstain",
+      "split": "training",
+      "objective": "Return no selection for an empty asset search.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-023",
+      "family_id": "retrieval-abstain",
+      "split": "training",
+      "objective": "Show a weak-match abstention for unrelated task vocabulary.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-024",
+      "family_id": "retrieval-abstain",
+      "split": "training",
+      "objective": "Keep an untrusted skill from improving route utility.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-025",
+      "family_id": "retrieval-abstain",
+      "split": "training",
+      "objective": "Apply an anti-trigger before ranking a retrieved skill.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-026",
+      "family_id": "phase-budget",
+      "split": "training",
+      "objective": "Route planning and execution separately within an explicit token budget.",
+      "task_kind": "architecture",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-027",
+      "family_id": "phase-budget",
+      "split": "training",
+      "objective": "Reject a phase candidate whose declared cost exceeds the authorized limit.",
+      "task_kind": "architecture",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-028",
+      "family_id": "phase-budget",
+      "split": "training",
+      "objective": "Select an execution model only after the host and policy constraints pass.",
+      "task_kind": "architecture",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-029",
+      "family_id": "phase-budget",
+      "split": "training",
+      "objective": "Preserve plan-phase provenance when the execution phase uses another model.",
+      "task_kind": "architecture",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-030",
+      "family_id": "phase-budget",
+      "split": "training",
+      "objective": "Explain why a cheaper candidate still fails a permission constraint.",
+      "task_kind": "architecture",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-031",
+      "family_id": "phase-fallback",
+      "split": "training",
+      "objective": "Choose a fallback from the same eligible phase candidate pool.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-032",
+      "family_id": "phase-fallback",
+      "split": "training",
+      "objective": "Abstain when every declared phase candidate is unavailable.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-033",
+      "family_id": "phase-fallback",
+      "split": "training",
+      "objective": "Do not expand permissions while retrying an unavailable candidate.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-034",
+      "family_id": "phase-fallback",
+      "split": "training",
+      "objective": "Record the precise unavailable candidate that triggered fallback.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-035",
+      "family_id": "phase-fallback",
+      "split": "training",
+      "objective": "Ensure fallback does not substitute unregistered tools.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-036",
+      "family_id": "workflow-dag",
+      "split": "held_out",
+      "objective": "Build a plan-execute-verify DAG with an explicit integration step.",
+      "task_kind": "architecture",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-037",
+      "family_id": "workflow-dag",
+      "split": "held_out",
+      "objective": "Prevent two parallel writers from owning overlapping source files.",
+      "task_kind": "architecture",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-038",
+      "family_id": "workflow-dag",
+      "split": "held_out",
+      "objective": "Split bounded work into nodes with outputs and acceptance criteria.",
+      "task_kind": "architecture",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-039",
+      "family_id": "workflow-dag",
+      "split": "held_out",
+      "objective": "Reject a workflow dependency cycle before execution.",
+      "task_kind": "architecture",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-040",
+      "family_id": "workflow-dag",
+      "split": "held_out",
+      "objective": "Preserve a downstream independent verifier for each write node.",
+      "task_kind": "architecture",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-041",
+      "family_id": "permissions",
+      "split": "training",
+      "objective": "Review permission escalation at the host adapter boundary.",
+      "task_kind": "security",
+      "proposed_risk": "high",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-042",
+      "family_id": "permissions",
+      "split": "training",
+      "objective": "Reject workspace mutation when the task authorizes only reading.",
+      "task_kind": "security",
+      "proposed_risk": "high",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-043",
+      "family_id": "permissions",
+      "split": "training",
+      "objective": "Keep project policy restrictions monotone across task overrides.",
+      "task_kind": "security",
+      "proposed_risk": "high",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-044",
+      "family_id": "permissions",
+      "split": "training",
+      "objective": "Check that an executable skill cannot grant itself network access.",
+      "task_kind": "security",
+      "proposed_risk": "high",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-045",
+      "family_id": "permissions",
+      "split": "training",
+      "objective": "Prove that an unknown delegation permission remains ineligible.",
+      "task_kind": "security",
+      "proposed_risk": "high",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-046",
+      "family_id": "prompt-template",
+      "split": "training",
+      "objective": "Render a versioned prompt using declared typed variables.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-047",
+      "family_id": "prompt-template",
+      "split": "training",
+      "objective": "Reject a prompt template with an undeclared substitution.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-048",
+      "family_id": "prompt-template",
+      "split": "training",
+      "objective": "Verify that a relative-path variable cannot escape the workspace.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-049",
+      "family_id": "prompt-template",
+      "split": "training",
+      "objective": "Bind prompt content and compatibility rules to their hash.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-050",
+      "family_id": "prompt-template",
+      "split": "training",
+      "objective": "Do not recursively expand substitution syntax inside user-provided text.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-051",
+      "family_id": "replay-integrity",
+      "split": "validation",
+      "objective": "Replay a frozen route context and compare its complete receipt.",
+      "task_kind": "review",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-052",
+      "family_id": "replay-integrity",
+      "split": "validation",
+      "objective": "Detect a changed catalog with an unchanged textual version.",
+      "task_kind": "review",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-053",
+      "family_id": "replay-integrity",
+      "split": "validation",
+      "objective": "Keep transport success separate from functional acceptance.",
+      "task_kind": "review",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-054",
+      "family_id": "replay-integrity",
+      "split": "validation",
+      "objective": "Reject unknown token pricing rather than inventing a zero cost.",
+      "task_kind": "review",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-055",
+      "family_id": "replay-integrity",
+      "split": "validation",
+      "objective": "Report a hard-constraint violation separately from average route quality.",
+      "task_kind": "review",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-056",
+      "family_id": "shadow-gate",
+      "split": "held_out",
+      "objective": "Keep semantic routing disabled until held-out evidence shows a gain.",
+      "task_kind": "architecture",
+      "proposed_risk": "high",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-057",
+      "family_id": "shadow-gate",
+      "split": "held_out",
+      "objective": "Require independent labels before promoting a semantic backend.",
+      "task_kind": "architecture",
+      "proposed_risk": "high",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-058",
+      "family_id": "shadow-gate",
+      "split": "held_out",
+      "objective": "Prevent reformulations from leaking across training and held-out splits.",
+      "task_kind": "architecture",
+      "proposed_risk": "high",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-059",
+      "family_id": "shadow-gate",
+      "split": "held_out",
+      "objective": "Freeze comparison metrics before running the promotion evaluation.",
+      "task_kind": "architecture",
+      "proposed_risk": "high",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-060",
+      "family_id": "shadow-gate",
+      "split": "held_out",
+      "objective": "Block promotion when any hard-constraint violation appears.",
+      "task_kind": "architecture",
+      "proposed_risk": "high",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-061",
+      "family_id": "rust-refactor",
+      "split": "training",
+      "objective": "Refactor a Rust library error path without adding implicit panics.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-062",
+      "family_id": "rust-refactor",
+      "split": "training",
+      "objective": "Replace an unchecked integer operation with an explicit overflow error.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-063",
+      "family_id": "rust-refactor",
+      "split": "training",
+      "objective": "Preserve deterministic output when reordering internal map entries.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-064",
+      "family_id": "rust-refactor",
+      "split": "training",
+      "objective": "Keep provider response bodies out of application error messages.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-065",
+      "family_id": "rust-refactor",
+      "split": "training",
+      "objective": "Add a regression for a failed contract before changing its implementation.",
+      "task_kind": "implement",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-066",
+      "family_id": "migration-review",
+      "split": "training",
+      "objective": "Plan a storage schema migration with an independent verifier.",
+      "task_kind": "migration",
+      "proposed_risk": "high",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-067",
+      "family_id": "migration-review",
+      "split": "training",
+      "objective": "Require explicit acceptance criteria before applying a data migration.",
+      "task_kind": "migration",
+      "proposed_risk": "high",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-068",
+      "family_id": "migration-review",
+      "split": "training",
+      "objective": "Inspect migration failure recovery without running production writes.",
+      "task_kind": "migration",
+      "proposed_risk": "high",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-069",
+      "family_id": "migration-review",
+      "split": "training",
+      "objective": "Separate migration preparation from authorized integration.",
+      "task_kind": "migration",
+      "proposed_risk": "high",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-070",
+      "family_id": "migration-review",
+      "split": "training",
+      "objective": "Reject a high-risk migration plan that omits independent review.",
+      "task_kind": "migration",
+      "proposed_risk": "high",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-071",
+      "family_id": "incident-readonly",
+      "split": "training",
+      "objective": "Diagnose an incident from sanitized evidence without mutation.",
+      "task_kind": "security",
+      "proposed_risk": "critical",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-072",
+      "family_id": "incident-readonly",
+      "split": "training",
+      "objective": "Build a read-only incident investigation plan with bounded scope.",
+      "task_kind": "security",
+      "proposed_risk": "critical",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-073",
+      "family_id": "incident-readonly",
+      "split": "training",
+      "objective": "Identify uncertainty in operational logs without exposing credentials.",
+      "task_kind": "security",
+      "proposed_risk": "critical",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-074",
+      "family_id": "incident-readonly",
+      "split": "training",
+      "objective": "Do not treat a successful command as proof of incident resolution.",
+      "task_kind": "security",
+      "proposed_risk": "critical",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-075",
+      "family_id": "incident-readonly",
+      "split": "training",
+      "objective": "Require observable recovery criteria before declaring an incident closed.",
+      "task_kind": "security",
+      "proposed_risk": "critical",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-076",
+      "family_id": "release-gate",
+      "split": "validation",
+      "objective": "Verify a packaged binary against the recorded checksum.",
+      "task_kind": "review",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-077",
+      "family_id": "release-gate",
+      "split": "validation",
+      "objective": "Check all supported target artifacts before declaring a release complete.",
+      "task_kind": "review",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-078",
+      "family_id": "release-gate",
+      "split": "validation",
+      "objective": "Preserve user changes while validating a release candidate.",
+      "task_kind": "review",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-079",
+      "family_id": "release-gate",
+      "split": "validation",
+      "objective": "Identify a failing required CI check and block the merge verdict.",
+      "task_kind": "review",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-080",
+      "family_id": "release-gate",
+      "split": "validation",
+      "objective": "Distinguish tested local behavior from unverified deployed behavior.",
+      "task_kind": "review",
+      "proposed_risk": "medium",
+      "out_of_domain": false,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-081",
+      "family_id": "ood-cooking",
+      "split": "training",
+      "objective": "Suggest a vegetarian dinner using lentils.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": true,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-082",
+      "family_id": "ood-cooking",
+      "split": "training",
+      "objective": "Explain how to cook rice for four people.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": true,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-083",
+      "family_id": "ood-cooking",
+      "split": "training",
+      "objective": "Compare two ways to roast seasonal vegetables.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": true,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-084",
+      "family_id": "ood-cooking",
+      "split": "training",
+      "objective": "Give a shopping list for a simple weekend meal.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": true,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-085",
+      "family_id": "ood-cooking",
+      "split": "training",
+      "objective": "Describe how sourdough fermentation changes bread.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": true,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-086",
+      "family_id": "ood-travel",
+      "split": "training",
+      "objective": "Recommend a quiet beach for a family holiday.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": true,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-087",
+      "family_id": "ood-travel",
+      "split": "training",
+      "objective": "Compare train routes for a sightseeing trip.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": true,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-088",
+      "family_id": "ood-travel",
+      "split": "training",
+      "objective": "Plan a museum visit in a city I have not named.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": true,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-089",
+      "family_id": "ood-travel",
+      "split": "training",
+      "objective": "Suggest what to pack for a hiking holiday.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": true,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-090",
+      "family_id": "ood-travel",
+      "split": "training",
+      "objective": "Find a hotel with a swimming pool near the sea.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": true,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-091",
+      "family_id": "ood-personal",
+      "split": "validation",
+      "objective": "Help write a birthday greeting to a friend.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": true,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-092",
+      "family_id": "ood-personal",
+      "split": "validation",
+      "objective": "Suggest a name for a fictional garden club.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": true,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-093",
+      "family_id": "ood-personal",
+      "split": "validation",
+      "objective": "Translate a short greeting into Italian.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": true,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-094",
+      "family_id": "ood-personal",
+      "split": "validation",
+      "objective": "Explain the rules of a casual card game.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": true,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-095",
+      "family_id": "ood-personal",
+      "split": "validation",
+      "objective": "Write a short poem about autumn leaves.",
+      "task_kind": "explore",
+      "proposed_risk": "low",
+      "out_of_domain": true,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-096",
+      "family_id": "ood-finance",
+      "split": "held_out",
+      "objective": "Tell me which stock will rise tomorrow.",
+      "task_kind": "explore",
+      "proposed_risk": "high",
+      "out_of_domain": true,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-097",
+      "family_id": "ood-finance",
+      "split": "held_out",
+      "objective": "Choose a personal pension allocation without knowing my situation.",
+      "task_kind": "explore",
+      "proposed_risk": "high",
+      "out_of_domain": true,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-098",
+      "family_id": "ood-finance",
+      "split": "held_out",
+      "objective": "Estimate a property purchase budget from an unspecified income.",
+      "task_kind": "explore",
+      "proposed_risk": "high",
+      "out_of_domain": true,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-099",
+      "family_id": "ood-finance",
+      "split": "held_out",
+      "objective": "Explain whether an unnamed insurance policy covers a claim.",
+      "task_kind": "explore",
+      "proposed_risk": "high",
+      "out_of_domain": true,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    },
+    {
+      "id": "candidate-100",
+      "family_id": "ood-finance",
+      "split": "held_out",
+      "objective": "Recommend a loan without its interest rate or repayment terms.",
+      "task_kind": "explore",
+      "proposed_risk": "high",
+      "out_of_domain": true,
+      "human_validated": false,
+      "source_refs": [
+        "docs/specs/technical-specification.md",
+        "docs/specs/functional-specification.md",
+        "https://github.com/FlorianBruniaux/agent-router/issues/5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "task": {
+    "objective": "Migrate a production data boundary with an unverified network capability",
+    "kind": "migration",
+    "risk": "high",
+    "required_capabilities": ["tools", "network"],
+    "acceptance": ["do not select a route without verified network support"]
+  },
+  "host": {
+    "id": "codex-migration-host",
+    "harness": "codex",
+    "supported_models": ["gpt-5.6-luna", "gpt-5.6-sol", "gpt-5.6-terra"],
+    "supported_efforts": {
+      "gpt-5.6-luna": ["low", "medium", "high"],
+      "gpt-5.6-sol": ["high", "xhigh", "max"],
+      "gpt-5.6-terra": ["medium", "high", "xhigh"]
+    },
+    "capabilities": ["tools"]
+  },
+  "skill_candidates": [
+    {
+      "skill": "critique-plan",
+      "source": "ai-agents-bm25-v1",
+      "score_micros": 940000
+    }
+  ],
+  "capability_knowledge": {
+    "network": "unknown"
+  }
+}

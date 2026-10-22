@@ -1,0 +1,65 @@
+[package]
+name = "agent-router-cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "agent-router"
+path = "src/main.rs"
+
+[features]
+default = ["codex", "claude"]
+codex = ["dep:adapter-codex"]
+claude = ["dep:adapter-claude"]
+opencode = ["dep:adapter-opencode"]
+copilot = ["dep:adapter-copilot"]
+local-sidecar = ["router-decision/local-sidecar"]
+local-api = ["dep:router-local-api"]
+semantic-retrieval = ["router-retrieval/semantic-ranking"]
+
+[dependencies]
+router-adapter-api = { path = "../router-adapter-api" }
+adapter-codex = { path = "../adapter-codex", optional = true }
+adapter-claude = { path = "../adapter-claude", optional = true }
+adapter-opencode = { path = "../adapter-opencode", optional = true }
+adapter-copilot = { path = "../adapter-copilot", optional = true }
+router-decision = { path = "../router-decision" }
+router-eval = { path = "../router-eval" }
+router-doctor = { path = "../router-doctor" }
+router-feedback = { path = "../router-feedback" }
+router-retrieval = { path = "../router-retrieval" }
+router-runtime = { path = "../router-runtime" }
+router-prepare = { path = "../router-prepare" }
+router-asset-contracts = { path = "../router-asset-contracts" }
+router-coordinator = { path = "../router-coordinator" }
+router-backend-policy = { path = "../router-backend-policy" }
+router-backend-store = { path = "../router-backend-store" }
+router-execution-decision = { path = "../router-execution-decision" }
+router-local-api = { path = "../router-local-api", optional = true }
+tokio = { version = "=1.45.1", features = ["rt-multi-thread", "time", "signal"] }
+clap.workspace = true
+clap_complete.workspace = true
+router-catalog = { path = "../router-catalog" }
+router-policy = { path = "../router-policy" }
+router-types = { path = "../router-types" }
+router-workflow = { path = "../router-workflow" }
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+hmac.workspace = true
+toml = { version = "=0.8.23", default-features = false, features = ["parse"] }
+yaml-rust2 = { version = "=0.13.0", default-features = false }
+
+[dev-dependencies]
+ed25519-dalek = "=2.2.0"
+hex.workspace = true
+assert_cmd.workspace = true
+predicates.workspace = true
+tempfile.workspace = true
+rusqlite = { version = "=0.39.0", features = ["bundled", "fallible_uint"] }
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2"
+rustix = { version = "=1.1.4", features = ["process"] }

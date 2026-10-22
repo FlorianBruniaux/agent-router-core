@@ -1,0 +1,23 @@
+{
+  "task": {
+    "objective": "Implement a change requiring unavailable host tools",
+    "kind": "implement",
+    "risk": "medium",
+    "required_capabilities": ["tools"],
+    "acceptance": ["record the missing host capability"]
+  },
+  "host": {
+    "id": "missing-tools-host",
+    "harness": "codex",
+    "supported_models": ["gpt-5.6-sol", "gpt-5.6-terra"],
+    "supported_efforts": {
+      "gpt-5.6-sol": ["high", "xhigh", "max"],
+      "gpt-5.6-terra": ["medium", "high", "xhigh"]
+    },
+    "capabilities": []
+  },
+  "skill_candidates": [],
+  "capability_knowledge": {
+    "tools": "unsupported"
+  }
+}

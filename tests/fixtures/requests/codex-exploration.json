@@ -1,0 +1,20 @@
+{
+  "task": {
+    "objective": "Explore a bounded codebase question before implementation",
+    "kind": "explore",
+    "risk": "low",
+    "required_capabilities": ["tools"],
+    "acceptance": ["return evidence for the proposed implementation"]
+  },
+  "host": {
+    "id": "codex-exploration-host",
+    "harness": "codex",
+    "supported_models": ["gpt-5.6-luna", "gpt-5.6-sol"],
+    "supported_efforts": {
+      "gpt-5.6-luna": ["low", "medium", "high"],
+      "gpt-5.6-sol": ["high", "xhigh", "max"]
+    },
+    "capabilities": ["tools"]
+  },
+  "skill_candidates": []
+}

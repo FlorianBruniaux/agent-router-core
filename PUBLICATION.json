@@ -1,0 +1,29 @@
+{
+  "export_content_sha256": "cb5574c49cff22ad494cfa431d2d1ee5de4eea5091ebb5ba7ecff401e3dde42d",
+  "export_inventory_sha256": "50f1a1b6b5feb6861cb86e1bc5eb66edae5a7f7915b7b8f99497a2c1eb2798b0",
+  "exported_file_count": 892,
+  "exported_files_modified": [],
+  "kind": "experimental-core-source-snapshot",
+  "license": "FSL-1.1-ALv2",
+  "publication_authorization": "Explicit repository owner approval for this public destination and existing FSL license.",
+  "publication_files": [
+    {
+      "path": ".gitignore",
+      "sha256": "8d76a45c0747e4468572daefeca108876d5ffdcfa7542214e0c7c3518efa03f7"
+    },
+    {
+      "path": ".gitleaks.toml",
+      "sha256": "6df6bb42d32d1bd1365bf2b37bca8bd865395d85da1eecce8eb6894579b4e139"
+    },
+    {
+      "path": "GETTING_STARTED.md",
+      "sha256": "89d83620a5329ae6e2c1243e0fdb8dc0dc5bba5a2b3415aaf27ac9143c008d38"
+    }
+  ],
+  "repository": "https://github.com/FlorianBruniaux/agent-router-core",
+  "schema_version": 1,
+  "scope": "Core sources only; no private repository history, signed binary release or automatic host integration.",
+  "source_archive_sha256": "2b5ae86ecf81ca28e7a6ce2879b2f918f30cd1568b91888939dab8a7dfff634c",
+  "source_commit": "295d1d1e2ee8eb932e6ae4b277e5de43f96a62fd",
+  "upstream_distribution_evidence": "DISTRIBUTION.json describes the verified export. PUBLICATION.json describes the publication additions. Neither grants native execution authority."
+}

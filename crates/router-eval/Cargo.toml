@@ -1,0 +1,20 @@
+[package]
+name = "router-eval"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+hex.workspace = true
+router-adapter-api = { path = "../router-adapter-api" }
+router-catalog = { path = "../router-catalog" }
+router-policy = { path = "../router-policy" }
+router-types = { path = "../router-types" }
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+router-workflow = { path = "../router-workflow" }

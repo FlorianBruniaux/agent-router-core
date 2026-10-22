@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "host": {
+    "id": "synthetic-host",
+    "harness": "codex",
+    "supported_models": [
+      "fixture-best",
+      "fixture-second"
+    ],
+    "supported_efforts": {
+      "fixture-best": [
+        "medium",
+        "high"
+      ],
+      "fixture-second": [
+        "medium",
+        "high"
+      ]
+    },
+    "capabilities": [
+      "tools",
+      "subagents",
+      "vision",
+      "network",
+      "workspace_write"
+    ]
+  },
+  "capabilities": {
+    "tools": {
+      "support": "supported",
+      "source_ids": [
+        "synthetic-runtime"
+      ]
+    },
+    "subagents": {
+      "support": "supported",
+      "source_ids": [
+        "synthetic-runtime"
+      ]
+    },
+    "vision": {
+      "support": "supported",
+      "source_ids": [
+        "synthetic-runtime"
+      ]
+    },
+    "network": {
+      "support": "supported",
+      "source_ids": [
+        "synthetic-runtime"
+      ]
+    },
+    "workspace_write": {
+      "support": "supported",
+      "source_ids": [
+        "synthetic-runtime"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "synthetic-runtime",
+      "kind": "host_runtime",
+      "observed_version": "fixture-v1",
+      "observed_at_unix_seconds": 100,
+      "content_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  ],
+  "observed_at_unix_seconds": 100,
+  "snapshot_hash": "ba5100337dc5361bab13bb0f6c6f317ccff93ab9c611c3996e8bac97df54a543"
+}

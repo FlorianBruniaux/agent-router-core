@@ -1,0 +1,183 @@
+{
+  "schema_version": "1",
+  "decision_id": "10ced74ca293e346792899b283d9206cc71e78e36e2a248581702c15d47265ca",
+  "catalog_version": "codex-core-v1",
+  "policy_version": "stable-v1",
+  "decision": {
+    "selected": {
+      "plan": {
+        "preset": "plan-execute-verify",
+        "stages": [
+          {
+            "kind": "plan",
+            "model": "gpt-5.6-sol",
+            "effort": "high",
+            "skills": [
+              "tdd"
+            ]
+          },
+          {
+            "kind": "execute",
+            "model": "gpt-5.6-terra",
+            "effort": "medium",
+            "skills": [
+              "tdd"
+            ]
+          },
+          {
+            "kind": "verify",
+            "model": "gpt-5.6-terra",
+            "effort": "high",
+            "skills": [
+              "tdd"
+            ]
+          }
+        ],
+        "utility_micros": 165500
+      },
+      "alternatives": [
+        {
+          "preset": "plan-execute-verify",
+          "stages": [
+            {
+              "kind": "plan",
+              "model": "gpt-5.6-sol",
+              "effort": "high",
+              "skills": [
+                "tdd"
+              ]
+            },
+            {
+              "kind": "execute",
+              "model": "gpt-5.6-luna",
+              "effort": "medium",
+              "skills": [
+                "tdd"
+              ]
+            },
+            {
+              "kind": "verify",
+              "model": "gpt-5.6-terra",
+              "effort": "high",
+              "skills": [
+                "tdd"
+              ]
+            }
+          ],
+          "utility_micros": 118000
+        },
+        {
+          "preset": "plan-execute-verify",
+          "stages": [
+            {
+              "kind": "plan",
+              "model": "gpt-5.6-sol",
+              "effort": "high",
+              "skills": [
+                "tdd"
+              ]
+            },
+            {
+              "kind": "execute",
+              "model": "gpt-5.6-sol",
+              "effort": "high",
+              "skills": [
+                "tdd"
+              ]
+            },
+            {
+              "kind": "verify",
+              "model": "gpt-5.6-sol",
+              "effort": "high",
+              "skills": [
+                "tdd"
+              ]
+            }
+          ],
+          "utility_micros": 50500
+        }
+      ],
+      "exclusions": [
+        {
+          "stage": "plan",
+          "model": "gpt-5.6-luna",
+          "code": "host.effort.unsupported",
+          "evidence": "host 'codex-local' does not support effort 'max' for model 'gpt-5.6-luna'"
+        },
+        {
+          "stage": "plan",
+          "model": "gpt-5.6-luna",
+          "code": "host.effort.unsupported",
+          "evidence": "host 'codex-local' does not support effort 'ultra' for model 'gpt-5.6-luna'"
+        },
+        {
+          "stage": "plan",
+          "model": "gpt-5.6-luna",
+          "code": "host.effort.unsupported",
+          "evidence": "host 'codex-local' does not support effort 'xhigh' for model 'gpt-5.6-luna'"
+        },
+        {
+          "stage": "plan",
+          "model": "gpt-5.6-luna",
+          "code": "model.stage.unsupported",
+          "evidence": "model 'gpt-5.6-luna' cannot serve stage 'plan'"
+        },
+        {
+          "stage": "plan",
+          "model": "gpt-5.6-terra",
+          "code": "host.effort.unsupported",
+          "evidence": "host 'codex-local' does not support effort 'low' for model 'gpt-5.6-terra'"
+        },
+        {
+          "stage": "plan",
+          "model": "gpt-5.6-terra",
+          "code": "host.effort.unsupported",
+          "evidence": "host 'codex-local' does not support effort 'max' for model 'gpt-5.6-terra'"
+        },
+        {
+          "stage": "plan",
+          "model": "gpt-5.6-terra",
+          "code": "host.effort.unsupported",
+          "evidence": "host 'codex-local' does not support effort 'ultra' for model 'gpt-5.6-terra'"
+        },
+        {
+          "stage": "plan",
+          "model": "gpt-5.6-terra",
+          "code": "model.stage.unsupported",
+          "evidence": "model 'gpt-5.6-terra' cannot serve stage 'plan'"
+        },
+        {
+          "stage": "execute",
+          "model": "gpt-5.6-sol",
+          "code": "host.effort.unsupported",
+          "evidence": "host 'codex-local' does not support effort 'medium' for model 'gpt-5.6-sol'"
+        },
+        {
+          "stage": "verify",
+          "model": "gpt-5.6-luna",
+          "code": "host.effort.unsupported",
+          "evidence": "host 'codex-local' does not support effort 'max' for model 'gpt-5.6-luna'"
+        },
+        {
+          "stage": "verify",
+          "model": "gpt-5.6-luna",
+          "code": "host.effort.unsupported",
+          "evidence": "host 'codex-local' does not support effort 'ultra' for model 'gpt-5.6-luna'"
+        },
+        {
+          "stage": "verify",
+          "model": "gpt-5.6-luna",
+          "code": "host.effort.unsupported",
+          "evidence": "host 'codex-local' does not support effort 'xhigh' for model 'gpt-5.6-luna'"
+        },
+        {
+          "stage": "verify",
+          "model": "gpt-5.6-luna",
+          "code": "model.stage.unsupported",
+          "evidence": "model 'gpt-5.6-luna' cannot serve stage 'verify'"
+        }
+      ],
+      "missing_evidence": []
+    }
+  }
+}

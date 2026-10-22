@@ -1,0 +1,25 @@
+[package]
+name = "router-retrieval"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[features]
+default = []
+# Accept a caller-provided, bounded semantic ranking. No provider/network code.
+semantic-ranking = []
+
+[dependencies]
+router-types = { path = "../router-types" }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+sha2.workspace = true
+hex.workspace = true
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2"
+
+[dev-dependencies]
+tempfile.workspace = true

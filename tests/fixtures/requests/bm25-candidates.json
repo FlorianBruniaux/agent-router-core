@@ -1,0 +1,11 @@
+{
+  "schema_version": "1",
+  "source": "ai-agents-bm25-v1",
+  "candidates": [
+    {
+      "skill": "tdd",
+      "score_micros": 910000,
+      "path": "/not-loaded/skills/tdd/SKILL.md"
+    }
+  ]
+}

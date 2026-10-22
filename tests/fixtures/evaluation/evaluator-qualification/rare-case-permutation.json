@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "cohort": [
+    {
+      "instance_id": "task-a",
+      "intention": "implementation",
+      "source_sha256": "41cf6794ba4200b839c53531555f0f3998df4cbb01a4d5cb0b94e3ca5e23947d",
+      "input_sha256": "c96c6d5be8d08a12e7b5cdc1b207fa6b2430974c86803d8891675e76fd992c20",
+      "criteria_sha256": "262d517bffd06484e2341b4a379c7f4fa4be9284a9a82631c03420953d60bd67",
+      "required_case_ids": [
+        "rare",
+        "common"
+      ],
+      "candidate_authors": [
+        "author"
+      ]
+    }
+  ],
+  "cohort_sha256": "8e69f287678a71c180d8db899b6a677cff87af2449978e08646b95458c2cde87",
+  "permitted_differences": [
+    "revision",
+    "output",
+    "cost"
+  ],
+  "qualifications": [
+    {
+      "evaluator": {
+        "evaluator_id": "checks",
+        "version": "v1",
+        "executable_sha256": "a29c2123a01df1d0febb9d308a20d8a2fe3d40a91ca8b1294f59f08f9773ebea",
+        "configuration_sha256": "b7d64a9221007dfd5390f7df6cd5b8f3ea4f82faa1237141e35ebf161f5511a1"
+      },
+      "corpus_sha256": "74bf7e07a77fc65b46da1f75cb91bf426c39e29077618ece73826ed47a938047",
+      "applicable_criteria_sha256": [
+        "262d517bffd06484e2341b4a379c7f4fa4be9284a9a82631c03420953d60bd67"
+      ],
+      "max_duration_ms": 1000,
+      "max_output_bytes": 4096,
+      "witnesses": [
+        {
+          "case_id": "correct_output",
+          "output_sha256": "47fa8508fa7de410e2a192ab59b01c95bde2cfd695fc19bcdf8318dfe5cc6cf8",
+          "kind": "correct_output",
+          "observed": "passed",
+          "reviewer_id": "fixture-reviewer",
+          "oracle_evidence_sha256": "dbbbad8f5a25de919708cae4cee2da479bf74826db58e48c985b7f74efcd4179"
+        },
+        {
+          "case_id": "known_defect",
+          "output_sha256": "712f465012276d57f8628241374ca19a7ef2f62eaf8dbdaf7fcafa6b7dcc8425",
+          "kind": "known_defect",
+          "observed": "failed",
+          "reviewer_id": "fixture-reviewer",
+          "oracle_evidence_sha256": "8893b7c33cc92d5cca86fc1069c8f11c8cb81a9238e3f4b4c63033625cece7e6"
+        },
+        {
+          "case_id": "infrastructure_failure",
+          "output_sha256": "415acc63d04b124e100266a6251c5b6ae40206dc0894cf0a7cc5bc02c70a3a40",
+          "kind": "infrastructure_failure",
+          "observed": "unknown",
+          "reviewer_id": "fixture-reviewer",
+          "oracle_evidence_sha256": "e9c7f8b764cbe42dccb572632264ad1580cbb2cd8f93e5fc75b4e2d2e0ef8279"
+        }
+      ],
+      "tuning_output_sha256": []
+    }
+  ],
+  "verdicts": [
+    {
+      "verdict_id": "reference",
+      "instance_id": "task-a",
+      "task_contract_sha256": "bf118a8703c7dd06f1ab2c4c2fa77c28a50cd077b0dae760fdbf80ce451ccdc5",
+      "cohort_sha256": "8e69f287678a71c180d8db899b6a677cff87af2449978e08646b95458c2cde87",
+      "evaluator": {
+        "evaluator_id": "checks",
+        "version": "v1",
+        "executable_sha256": "a29c2123a01df1d0febb9d308a20d8a2fe3d40a91ca8b1294f59f08f9773ebea",
+        "configuration_sha256": "b7d64a9221007dfd5390f7df6cd5b8f3ea4f82faa1237141e35ebf161f5511a1"
+      },
+      "revision_sha256": "2f1ca5db5193d98535ff6437494be799d05c429c66251bdfd6a5071bf146d442",
+      "output_sha256": "0d9d214aedff9c3312ddf8999c4fab15530112ddacfa405cb12ed254be22564a",
+      "cases": [
+        {
+          "case_id": "rare",
+          "outcome": "passed",
+          "execution": "completed"
+        },
+        {
+          "case_id": "common",
+          "outcome": "failed",
+          "execution": "completed"
+        }
+      ],
+      "reevaluates": null
+    },
+    {
+      "verdict_id": "candidate",
+      "instance_id": "task-a",
+      "task_contract_sha256": "bf118a8703c7dd06f1ab2c4c2fa77c28a50cd077b0dae760fdbf80ce451ccdc5",
+      "cohort_sha256": "8e69f287678a71c180d8db899b6a677cff87af2449978e08646b95458c2cde87",
+      "evaluator": {
+        "evaluator_id": "checks",
+        "version": "v1",
+        "executable_sha256": "a29c2123a01df1d0febb9d308a20d8a2fe3d40a91ca8b1294f59f08f9773ebea",
+        "configuration_sha256": "b7d64a9221007dfd5390f7df6cd5b8f3ea4f82faa1237141e35ebf161f5511a1"
+      },
+      "revision_sha256": "fc999dee782ae59381b386aa3b0a8e7d3b807d12a25994a1b791269b7cb6ebbe",
+      "output_sha256": "9ce19bdd6787f09193f46fce002c1d6ea0593d3e599490c0ae36ad8159839793",
+      "cases": [
+        {
+          "case_id": "rare",
+          "outcome": "failed",
+          "execution": "completed"
+        },
+        {
+          "case_id": "common",
+          "outcome": "passed",
+          "execution": "completed"
+        }
+      ],
+      "reevaluates": null
+    }
+  ],
+  "comparisons": [
+    {
+      "instance_id": "task-a",
+      "reference_verdict_id": "reference",
+      "candidate_verdict_id": "candidate",
+      "reference_cost_microusd": 100,
+      "candidate_cost_microusd": 1
+    }
+  ]
+}

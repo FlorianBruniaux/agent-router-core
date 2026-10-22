@@ -1,0 +1,15 @@
+diff --git a/lib.rs b/lib.rs
+index 6b7d7fc..4ea23eb 100644
+--- a/lib.rs
++++ b/lib.rs
+@@ -1,6 +1,6 @@
+ pub fn score(quality: i64, costs: &[u64], latencies: &[u64], skills: &[u64]) -> Result<i64, &'static str> {
+-    let cost: u64 = costs.iter().map(|x| x / 4).sum();
+-    let latency: u64 = latencies.iter().map(|x| x / 10).sum();
+-    let skill: u64 = skills.iter().map(|x| x / 20).sum();
+-    Ok(quality - cost as i64 - latency as i64 + skill as i64)
++    if [costs.len(), latencies.len(), skills.len()].iter().any(|n| *n > 64) { return Err("work_limit"); }
++    let sum = |values: &[u64]| values.iter().map(|v| i128::from(*v)).sum::<i128>();
++    let value = i128::from(quality) - sum(costs) / 4 - sum(latencies) / 10 + sum(skills) / 20;
++    i64::try_from(value).map_err(|_| "score_out_of_range")
+ }

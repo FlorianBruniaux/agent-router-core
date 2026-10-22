@@ -1,0 +1,14 @@
+[package]
+name = "router-workflow"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+router-adapter-api = { path = "../router-adapter-api" }
+router-types = { path = "../router-types" }
+serde_json.workspace = true
+thiserror.workspace = true
+sha2.workspace = true
+hex.workspace = true

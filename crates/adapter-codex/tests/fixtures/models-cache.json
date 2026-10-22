@@ -1,0 +1,17 @@
+{
+  "fetched_at": "2026-01-01T00:00:00.000000Z",
+  "client_version": "0.1.0",
+  "etag": "synthetic-fixture",
+  "models": [
+    {
+      "slug": "fixture-model-v1",
+      "supported_reasoning_levels": [
+        { "effort": "medium", "description": "Fixture medium" },
+        { "effort": "high", "description": "Fixture high" }
+      ],
+      "supports_search_tool": true,
+      "experimental_supported_tools": ["example_tool"],
+      "input_modalities": ["text", "image"]
+    }
+  ]
+}

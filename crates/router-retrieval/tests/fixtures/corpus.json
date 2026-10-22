@@ -1,0 +1,22 @@
+{
+  "provenance": "synthetic engineering fixtures; human validation NOT_DONE",
+  "assets": [
+    {"id":"rust-tests","kind":"skill","trust":"builtin","description":"regression fixtures assertions","triggers":["regression parser"]},
+    {"id":"review-a","kind":"skill","trust":"trusted_local","description":"ownership lifetime audit"},
+    {"id":"review-b","kind":"skill","trust":"trusted_local","description":"ownership lifetime audit"},
+    {"id":"release","kind":"prompt","trust":"verified_third_party","description":"release announcement changelog","anti_triggers":["production deploy"]},
+    {"id":"explorer","kind":"agent","trust":"builtin","description":"repository symbol mapping"},
+    {"id":"compiler","kind":"tool","trust":"builtin","description":"cargo compilation checks"}
+  ],
+  "cases": [
+    {"label":"positive skill","query":"regression parser","kind":"skill","selected":"rust-tests","abstention":null},
+    {"label":"positive prompt","query":"announcement","kind":"prompt","selected":"release","abstention":null},
+    {"label":"positive agent","query":"symbol mapping","kind":"agent","selected":"explorer","abstention":null},
+    {"label":"positive tool","query":"cargo compilation","kind":"tool","selected":"compiler","abstention":null},
+    {"label":"negative anti-trigger","query":"release production deploy","kind":"prompt","selected":null,"abstention":"no_matches"},
+    {"label":"ambiguous skills","query":"ownership lifetime","kind":"skill","selected":null,"abstention":"ambiguous"},
+    {"label":"empty results","query":"astronomy cosmology","kind":null,"selected":null,"abstention":"no_matches"},
+    {"label":"empty query","query":"   ","kind":null,"selected":null,"abstention":"empty_query"},
+    {"label":"weak coverage","query":"regression astronomy orbit planet ocean wind bridge motion","kind":"skill","selected":null,"abstention":"weak_match"}
+  ]
+}

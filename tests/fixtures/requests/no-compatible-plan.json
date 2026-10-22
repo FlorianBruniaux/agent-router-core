@@ -1,0 +1,20 @@
+{
+  "task": {
+    "objective": "Implement without an available planning model",
+    "kind": "implement",
+    "risk": "medium",
+    "required_capabilities": ["tools"],
+    "acceptance": ["never return a partial route"]
+  },
+  "host": {
+    "id": "execute-only-host",
+    "harness": "codex",
+    "supported_models": ["gpt-5.6-luna", "gpt-5.6-terra"],
+    "supported_efforts": {
+      "gpt-5.6-luna": ["low", "medium", "high"],
+      "gpt-5.6-terra": ["medium", "high", "xhigh"]
+    },
+    "capabilities": ["tools"]
+  },
+  "skill_candidates": []
+}

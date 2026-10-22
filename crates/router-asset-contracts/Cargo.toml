@@ -1,0 +1,16 @@
+[package]
+name = "router-asset-contracts"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+router-types = { path = "../router-types" }
+router-catalog = { path = "../router-catalog" }
+router-adapter-api = { path = "../router-adapter-api" }
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+hex.workspace = true
+thiserror.workspace = true

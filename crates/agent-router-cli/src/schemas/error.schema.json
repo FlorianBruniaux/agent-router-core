@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agent-router:schema:error:1",
+  "title": "error line",
+  "description": "One line on stderr with `--json` when a command fails: the stable dotted error code only, never an input value. The exit status comes from the code (see docs/cli-output.md).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "error"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "error": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

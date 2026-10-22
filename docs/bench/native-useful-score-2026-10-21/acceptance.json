@@ -1,0 +1,61 @@
+{
+  "packet_sha256": "61ae696298f7e9e44891a46600d28fcb0e66423408a08ea95d490e917be64484",
+  "frozen_campaign_acceptance_sha256": "072e26ddcfb71bfd284cbced9acdd3dc3c04ae72960d48f6676f7bc339224563",
+  "source_sha256": "13518cf6578d789587a93e2fd904c937e16e7d38f5f02dddf5527915b4063871",
+  "candidate_sha256": "10b6d5b17fb59a200f52a97876ec2f112e186886dae4ed4e352e2e0950eb7896",
+  "artifact_sha256": "9371af9ffc9f7a79e3bbd24d6787505fdf2353f21587b272005faf950440bb9c",
+  "schema_version": 1,
+  "verdict": "pass_public_score_fixture",
+  "runtime_report_sha256": "2094aff9767b90726fd98d718b959d29fe9c6025be1271e1835f40e2a1e88e43",
+  "required_cases_sha256": "ce5483d9244f2c4d2c84d59802cd17abdcbdee034b5caf7b07a27cdf2f3d186d",
+  "verifier_sha256": "ff1b93561258b42967c9a99ea76d74ca69e2b89d08bdca7931f7f19121e88d73",
+  "source_tree": "82ed1452363126d1a03091286791b66e0b757cb1",
+  "result_tree": "075ee9fd801052ee57fef3cae6f5fc6b6e80de3a",
+  "git_mode": "100644",
+  "outcomes": {
+    "source": {
+      "exit_code": 101,
+      "cases": {
+        "cancellation_before_range_check": "FAILED",
+        "cost_limit": "FAILED",
+        "empty": "ok",
+        "exact_work_boundary": "ok",
+        "extrema_identity": "ok",
+        "latency_limit": "FAILED",
+        "negative_overflow": "FAILED",
+        "negative_quality": "ok",
+        "positive_overflow": "FAILED",
+        "skill_limit": "FAILED",
+        "sum_before_division": "FAILED",
+        "wide_sums": "FAILED"
+      },
+      "stdout_sha256": "8038be3e5b504bdfb937bf4b01c9801382af8c44bff9bad24acdb387246e8ef7"
+    },
+    "candidate": {
+      "exit_code": 0,
+      "cases": {
+        "cancellation_before_range_check": "ok",
+        "cost_limit": "ok",
+        "empty": "ok",
+        "exact_work_boundary": "ok",
+        "extrema_identity": "ok",
+        "latency_limit": "ok",
+        "negative_overflow": "ok",
+        "negative_quality": "ok",
+        "positive_overflow": "ok",
+        "skill_limit": "ok",
+        "sum_before_division": "ok",
+        "wide_sums": "ok"
+      },
+      "stdout_sha256": "b704e858d05aa975f2a3d72afa22e30d21db50b9620707957451abe36dbfc899"
+    }
+  },
+  "memory_bytes": 8589934592,
+  "swap_bytes": 0,
+  "human_acceptance": null,
+  "independent_author_review": false,
+  "frozen_hidden_oracle_executed": false,
+  "source_publication": false,
+  "runtime_verdict_modified": false,
+  "model_calls_started": 0
+}

@@ -1,0 +1,214 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agent-router:schema:route-decision:1",
+  "title": "route decision",
+  "description": "Output of `agent-router route --json`: a decision envelope, either `selected` or `no_route` (exit 3). Its `schema_version` is the string \"1\".",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "decision_id",
+    "catalog_version",
+    "policy_version",
+    "decision"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1"
+    },
+    "decision_id": {
+      "$ref": "#/$defs/hash"
+    },
+    "host_snapshot_hash": {
+      "$ref": "#/$defs/hash"
+    },
+    "catalog_version": {
+      "type": "string"
+    },
+    "policy_version": {
+      "type": "string"
+    },
+    "decision": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "selected"
+          ],
+          "properties": {
+            "selected": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "plan",
+                "alternatives",
+                "exclusions",
+                "missing_evidence"
+              ],
+              "properties": {
+                "plan": {
+                  "$ref": "#/$defs/plan"
+                },
+                "alternatives": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/plan"
+                  }
+                },
+                "exclusions": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/exclusion"
+                  }
+                },
+                "missing_evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "no_route"
+          ],
+          "properties": {
+            "no_route": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "exclusions",
+                "missing_evidence"
+              ],
+              "properties": {
+                "exclusions": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/exclusion"
+                  }
+                },
+                "missing_evidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "$defs": {
+    "hash": {
+      "type": "string",
+      "minLength": 64,
+      "maxLength": 64
+    },
+    "stage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "model",
+        "effort",
+        "skills"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "plan",
+            "execute",
+            "verify"
+          ]
+        },
+        "model": {
+          "type": "string",
+          "minLength": 1
+        },
+        "effort": {
+          "enum": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max",
+            "ultra"
+          ]
+        },
+        "skills": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "verification_independence": {
+          "enum": [
+            "fresh_instance"
+          ]
+        }
+      }
+    },
+    "plan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "preset",
+        "stages",
+        "utility_micros"
+      ],
+      "properties": {
+        "preset": {
+          "type": "string"
+        },
+        "stages": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/stage"
+          }
+        },
+        "utility_micros": {
+          "type": "integer"
+        }
+      }
+    },
+    "exclusion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stage",
+        "model",
+        "code",
+        "evidence"
+      ],
+      "properties": {
+        "stage": {
+          "enum": [
+            "plan",
+            "execute",
+            "verify"
+          ]
+        },
+        "model": {
+          "type": "string",
+          "minLength": 1
+        },
+        "code": {
+          "type": "string"
+        },
+        "evidence": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

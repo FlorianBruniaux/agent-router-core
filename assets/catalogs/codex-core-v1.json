@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "version": "codex-core-v1",
+  "models": [
+    {
+      "id": "gpt-5.6-sol",
+      "stages": ["plan", "execute", "verify"],
+      "efforts": ["high", "xhigh", "max"],
+      "capabilities": ["tools", "subagents"],
+      "quality_micros": 950000,
+      "cost_micros": 900000,
+      "latency_micros": 900000,
+      "source": "builtin-policy-prior"
+    },
+    {
+      "id": "gpt-5.6-terra",
+      "stages": ["execute", "verify"],
+      "efforts": ["medium", "high", "xhigh"],
+      "capabilities": ["tools", "subagents"],
+      "quality_micros": 820000,
+      "cost_micros": 550000,
+      "latency_micros": 550000,
+      "source": "builtin-policy-prior"
+    },
+    {
+      "id": "gpt-5.6-luna",
+      "stages": ["execute"],
+      "efforts": ["low", "medium", "high"],
+      "capabilities": ["tools"],
+      "quality_micros": 650000,
+      "cost_micros": 200000,
+      "latency_micros": 200000,
+      "source": "builtin-policy-prior"
+    }
+  ],
+  "skills": [
+    {
+      "id": "tdd",
+      "description": "Guides a red-green-refactor implementation cycle.",
+      "task_kinds": ["implement"],
+      "required_capabilities": ["tools"],
+      "trust": "builtin"
+    },
+    {
+      "id": "critique-plan",
+      "description": "Challenges implementation plans for omissions and unsafe assumptions.",
+      "task_kinds": ["architecture", "migration", "security"],
+      "required_capabilities": [],
+      "trust": "builtin"
+    },
+    {
+      "id": "security-guardian",
+      "description": "Reviews changes for security boundaries and unsafe behavior.",
+      "task_kinds": ["security", "review"],
+      "required_capabilities": ["tools"],
+      "trust": "builtin"
+    }
+  ]
+}

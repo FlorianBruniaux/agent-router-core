@@ -1,0 +1,28 @@
+[package]
+name = "router-prepare"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+router-catalog = { path = "../router-catalog" }
+router-catalog-store = { path = "../router-catalog-store" }
+router-execution-decision = { path = "../router-execution-decision" }
+router-types = { path = "../router-types" }
+router-policy = { path = "../router-policy" }
+router-workflow = { path = "../router-workflow" }
+router-retrieval = { path = "../router-retrieval" }
+router-adapter-api = { path = "../router-adapter-api" }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+hex.workspace = true
+router-asset-contracts = { path = "../router-asset-contracts" }
+tempfile.workspace = true
+router-backend-policy = { path = "../router-backend-policy" }
+router-decision = { path = "../router-decision" }
+router-eval = { path = "../router-eval" }
+ed25519-dalek = "=2.2.0"

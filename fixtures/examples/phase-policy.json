@@ -1,0 +1,11 @@
+{
+  "schema_version": 2,
+  "version": "phase-v2",
+  "quality_weight": 100,
+  "relevance_weight": 10,
+  "cost_weight": 1,
+  "latency_weight": 1,
+  "minimum_utility_micros": 0,
+  "ambiguity_margin_micros": 0,
+  "max_alternatives": 3
+}

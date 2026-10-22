@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "version": "invalid-alias",
+  "models": [
+    {
+      "id": "sol",
+      "stages": ["plan"],
+      "efforts": ["high"],
+      "capabilities": ["tools"],
+      "quality_micros": 950000,
+      "cost_micros": 900000,
+      "latency_micros": 900000,
+      "source": "builtin-policy-prior"
+    }
+  ],
+  "skills": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "version": "synthetic-phase-v1",
+  "models": [
+    {
+      "id": "fixture-best",
+      "stages": [
+        "plan",
+        "execute",
+        "verify"
+      ],
+      "efforts": [
+        "medium",
+        "high"
+      ],
+      "capabilities": [
+        "tools",
+        "subagents",
+        "vision",
+        "network",
+        "workspace_write"
+      ],
+      "quality_micros": 900000,
+      "cost_micros": 100,
+      "latency_micros": 100,
+      "source": "synthetic engineering fixture; no provider observation"
+    },
+    {
+      "id": "fixture-second",
+      "stages": [
+        "plan",
+        "execute",
+        "verify"
+      ],
+      "efforts": [
+        "medium",
+        "high"
+      ],
+      "capabilities": [
+        "tools",
+        "subagents",
+        "vision",
+        "network",
+        "workspace_write"
+      ],
+      "quality_micros": 700000,
+      "cost_micros": 100,
+      "latency_micros": 100,
+      "source": "synthetic engineering fixture; no provider observation"
+    }
+  ],
+  "skills": []
+}

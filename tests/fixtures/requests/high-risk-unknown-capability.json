@@ -1,0 +1,22 @@
+{
+  "task": {
+    "objective": "Apply a high-risk migration requiring unverified workspace writes",
+    "kind": "migration",
+    "risk": "critical",
+    "required_capabilities": ["workspace_write"],
+    "acceptance": ["fail closed while workspace write support is unknown"]
+  },
+  "host": {
+    "id": "high-risk-unknown-host",
+    "harness": "codex",
+    "supported_models": ["gpt-5.6-sol"],
+    "supported_efforts": {
+      "gpt-5.6-sol": ["high", "xhigh", "max"]
+    },
+    "capabilities": []
+  },
+  "skill_candidates": [],
+  "capability_knowledge": {
+    "workspace_write": "unknown"
+  }
+}

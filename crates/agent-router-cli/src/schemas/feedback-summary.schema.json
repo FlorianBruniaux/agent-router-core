@@ -1,0 +1,910 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agent-router:schema:feedback-summary:4",
+  "title": "feedback summary",
+  "description": "Summary v4 adds explicit v2 cache and reasoning pricing qualification. Historical versions and hashes remain unchanged on legacy paths.",
+  "$defs": {
+    "u64": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "hash": {
+      "type": "string",
+      "minLength": 64,
+      "maxLength": 64
+    },
+    "percentiles": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "samples",
+        "missing",
+        "p50",
+        "p90"
+      ],
+      "properties": {
+        "samples": {
+          "$ref": "#/$defs/u64"
+        },
+        "missing": {
+          "$ref": "#/$defs/u64"
+        },
+        "p50": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "p90": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "description": "Nearest-rank percentiles over known values; a null percentile means no known value, never zero."
+    },
+    "accepted_rate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "accepted",
+        "rejected",
+        "point_micros",
+        "lower_micros",
+        "upper_micros",
+        "level_micros",
+        "prior"
+      ],
+      "properties": {
+        "accepted": {
+          "$ref": "#/$defs/u64"
+        },
+        "rejected": {
+          "$ref": "#/$defs/u64"
+        },
+        "point_micros": {
+          "$ref": "#/$defs/u64"
+        },
+        "lower_micros": {
+          "$ref": "#/$defs/u64"
+        },
+        "upper_micros": {
+          "$ref": "#/$defs/u64"
+        },
+        "level_micros": {
+          "$ref": "#/$defs/u64"
+        },
+        "prior": {
+          "const": "jeffreys"
+        }
+      },
+      "description": "Accepted over decided runs in micros, with a Jeffreys interval; unknown runs are excluded."
+    },
+    "cost": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "priced_runs",
+        "cost_unknown",
+        "runs_with_cache_writes_priced_as_input",
+        "total_microusd",
+        "per_accepted_microusd",
+        "reason"
+      ],
+      "properties": {
+        "priced_runs": {
+          "$ref": "#/$defs/u64"
+        },
+        "cost_unknown": {
+          "$ref": "#/$defs/u64"
+        },
+        "runs_with_cache_writes_priced_as_input": {
+          "$ref": "#/$defs/u64"
+        },
+        "total_microusd": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "per_accepted_microusd": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "description": "Computed cost in micro-dollars. A null figure is unknown and comes with a reason."
+    },
+    "human_counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "passed",
+        "failed",
+        "unknown"
+      ],
+      "properties": {
+        "passed": {
+          "$ref": "#/$defs/u64"
+        },
+        "failed": {
+          "$ref": "#/$defs/u64"
+        },
+        "unknown": {
+          "$ref": "#/$defs/u64"
+        }
+      }
+    },
+    "pricing": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "version",
+            "source",
+            "observed_at_unix_seconds"
+          ],
+          "properties": {
+            "version": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "observed_at_unix_seconds": {
+              "$ref": "#/$defs/u64"
+            }
+          }
+        }
+      ]
+    },
+    "attempt_cost": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "priced_runs",
+        "cost_unknown",
+        "runs_with_cache_writes_priced_as_input",
+        "total_microusd",
+        "per_accepted_microusd",
+        "reason",
+        "known_subtotal_microusd",
+        "expected_attempts",
+        "observed_attempts",
+        "priced_attempts",
+        "missing_attempts",
+        "conflicting_attempts",
+        "scope_unknown_runs"
+      ],
+      "properties": {
+        "priced_runs": {
+          "$ref": "#/$defs/u64"
+        },
+        "cost_unknown": {
+          "$ref": "#/$defs/u64"
+        },
+        "runs_with_cache_writes_priced_as_input": {
+          "$ref": "#/$defs/u64"
+        },
+        "total_microusd": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "per_accepted_microusd": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "known_subtotal_microusd": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "expected_attempts": {
+          "$ref": "#/$defs/u64"
+        },
+        "observed_attempts": {
+          "$ref": "#/$defs/u64"
+        },
+        "priced_attempts": {
+          "$ref": "#/$defs/u64"
+        },
+        "missing_attempts": {
+          "$ref": "#/$defs/u64"
+        },
+        "conflicting_attempts": {
+          "$ref": "#/$defs/u64"
+        },
+        "scope_unknown_runs": {
+          "$ref": "#/$defs/u64"
+        }
+      },
+      "description": "Attempt costs: known subtotal retains priced usage; total and per-accepted cost require complete attempt coverage. UNKNOWN is null."
+    },
+    "task_occurrence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "occurrence_sha256",
+        "run_keys_sha256",
+        "escalations",
+        "status",
+        "expected_attempts",
+        "feedback_attempts",
+        "missing_feedback_attempts",
+        "priced_attempts",
+        "known_subtotal_microusd",
+        "total_microusd"
+      ],
+      "properties": {
+        "occurrence_sha256": {
+          "$ref": "#/$defs/hash"
+        },
+        "run_keys_sha256": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/hash"
+          }
+        },
+        "escalations": {
+          "$ref": "#/$defs/u64"
+        },
+        "status": {
+          "enum": [
+            "accepted",
+            "failed",
+            "abandoned",
+            "unknown"
+          ]
+        },
+        "expected_attempts": {
+          "$ref": "#/$defs/u64"
+        },
+        "feedback_attempts": {
+          "$ref": "#/$defs/u64"
+        },
+        "missing_feedback_attempts": {
+          "$ref": "#/$defs/u64"
+        },
+        "priced_attempts": {
+          "$ref": "#/$defs/u64"
+        },
+        "known_subtotal_microusd": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "total_microusd": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        }
+      }
+    },
+    "task_measurement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "source",
+        "journal_sha256",
+        "occurrences",
+        "expected_attempts",
+        "feedback_attempts",
+        "missing_feedback_attempts",
+        "priced_attempts",
+        "accepted_occurrences",
+        "unmatched_feedback_runs",
+        "known_subtotal_microusd",
+        "total_microusd",
+        "per_accepted_microusd",
+        "interpretation"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "source": {
+          "const": "runtime_journal"
+        },
+        "journal_sha256": {
+          "$ref": "#/$defs/hash"
+        },
+        "occurrences": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/task_occurrence"
+          }
+        },
+        "expected_attempts": {
+          "$ref": "#/$defs/u64"
+        },
+        "feedback_attempts": {
+          "$ref": "#/$defs/u64"
+        },
+        "missing_feedback_attempts": {
+          "$ref": "#/$defs/u64"
+        },
+        "priced_attempts": {
+          "$ref": "#/$defs/u64"
+        },
+        "accepted_occurrences": {
+          "$ref": "#/$defs/u64"
+        },
+        "unmatched_feedback_runs": {
+          "$ref": "#/$defs/u64"
+        },
+        "known_subtotal_microusd": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "total_microusd": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "per_accepted_microusd": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "interpretation": {
+          "type": "string"
+        }
+      }
+    },
+    "qualified_pricing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "source",
+        "observed_at_unix_seconds",
+        "contract_version"
+      ],
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "observed_at_unix_seconds": {
+          "$ref": "#/$defs/u64"
+        },
+        "contract_version": {
+          "const": 2
+        }
+      }
+    }
+  },
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "generated_at_unix_seconds",
+        "event_set_hash",
+        "fact_set_hash",
+        "report_content_hash",
+        "pricing",
+        "runs",
+        "accepted",
+        "rejected",
+        "unknown",
+        "human",
+        "accepted_rate",
+        "cost",
+        "time_to_acceptance_seconds",
+        "unknown_counts",
+        "attribution",
+        "attribution_note",
+        "content_hash"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "generated_at_unix_seconds": {
+          "$ref": "#/$defs/u64"
+        },
+        "event_set_hash": {
+          "$ref": "#/$defs/hash"
+        },
+        "fact_set_hash": {
+          "$ref": "#/$defs/hash"
+        },
+        "report_content_hash": {
+          "$ref": "#/$defs/hash"
+        },
+        "pricing": {
+          "$ref": "#/$defs/pricing"
+        },
+        "runs": {
+          "$ref": "#/$defs/u64"
+        },
+        "accepted": {
+          "$ref": "#/$defs/u64"
+        },
+        "rejected": {
+          "$ref": "#/$defs/u64"
+        },
+        "unknown": {
+          "$ref": "#/$defs/u64"
+        },
+        "human": {
+          "$ref": "#/$defs/human_counts"
+        },
+        "accepted_rate": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/accepted_rate"
+            }
+          ]
+        },
+        "cost": {
+          "$ref": "#/$defs/cost"
+        },
+        "time_to_acceptance_seconds": {
+          "$ref": "#/$defs/percentiles"
+        },
+        "unknown_counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "verdict",
+            "unlinked",
+            "cost",
+            "time_to_acceptance",
+            "integration",
+            "orphan_facts",
+            "superseded_events"
+          ],
+          "properties": {
+            "verdict": {
+              "$ref": "#/$defs/u64"
+            },
+            "unlinked": {
+              "$ref": "#/$defs/u64"
+            },
+            "cost": {
+              "$ref": "#/$defs/u64"
+            },
+            "time_to_acceptance": {
+              "$ref": "#/$defs/u64"
+            },
+            "integration": {
+              "$ref": "#/$defs/u64"
+            },
+            "orphan_facts": {
+              "$ref": "#/$defs/u64"
+            },
+            "superseded_events": {
+              "$ref": "#/$defs/u64"
+            }
+          }
+        },
+        "attribution": {
+          "const": "not_established"
+        },
+        "attribution_note": {
+          "type": "string"
+        },
+        "content_hash": {
+          "$ref": "#/$defs/hash"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "generated_at_unix_seconds",
+        "event_set_hash",
+        "fact_set_hash",
+        "report_content_hash",
+        "pricing",
+        "runs",
+        "accepted",
+        "rejected",
+        "unknown",
+        "human",
+        "accepted_rate",
+        "cost",
+        "time_to_acceptance_seconds",
+        "unknown_counts",
+        "attribution",
+        "attribution_note",
+        "content_hash"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 2
+        },
+        "generated_at_unix_seconds": {
+          "$ref": "#/$defs/u64"
+        },
+        "event_set_hash": {
+          "$ref": "#/$defs/hash"
+        },
+        "fact_set_hash": {
+          "$ref": "#/$defs/hash"
+        },
+        "report_content_hash": {
+          "$ref": "#/$defs/hash"
+        },
+        "pricing": {
+          "$ref": "#/$defs/pricing"
+        },
+        "runs": {
+          "$ref": "#/$defs/u64"
+        },
+        "accepted": {
+          "$ref": "#/$defs/u64"
+        },
+        "rejected": {
+          "$ref": "#/$defs/u64"
+        },
+        "unknown": {
+          "$ref": "#/$defs/u64"
+        },
+        "human": {
+          "$ref": "#/$defs/human_counts"
+        },
+        "accepted_rate": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/accepted_rate"
+            }
+          ]
+        },
+        "cost": {
+          "$ref": "#/$defs/attempt_cost"
+        },
+        "time_to_acceptance_seconds": {
+          "$ref": "#/$defs/percentiles"
+        },
+        "unknown_counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "verdict",
+            "unlinked",
+            "cost",
+            "time_to_acceptance",
+            "integration",
+            "orphan_facts",
+            "superseded_events"
+          ],
+          "properties": {
+            "verdict": {
+              "$ref": "#/$defs/u64"
+            },
+            "unlinked": {
+              "$ref": "#/$defs/u64"
+            },
+            "cost": {
+              "$ref": "#/$defs/u64"
+            },
+            "time_to_acceptance": {
+              "$ref": "#/$defs/u64"
+            },
+            "integration": {
+              "$ref": "#/$defs/u64"
+            },
+            "orphan_facts": {
+              "$ref": "#/$defs/u64"
+            },
+            "superseded_events": {
+              "$ref": "#/$defs/u64"
+            }
+          }
+        },
+        "attribution": {
+          "const": "not_established"
+        },
+        "attribution_note": {
+          "type": "string"
+        },
+        "content_hash": {
+          "$ref": "#/$defs/hash"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "generated_at_unix_seconds",
+        "event_set_hash",
+        "fact_set_hash",
+        "report_content_hash",
+        "pricing",
+        "runs",
+        "accepted",
+        "rejected",
+        "unknown",
+        "human",
+        "accepted_rate",
+        "cost",
+        "time_to_acceptance_seconds",
+        "unknown_counts",
+        "attribution",
+        "attribution_note",
+        "content_hash",
+        "task_measurement"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 3
+        },
+        "generated_at_unix_seconds": {
+          "$ref": "#/$defs/u64"
+        },
+        "event_set_hash": {
+          "$ref": "#/$defs/hash"
+        },
+        "fact_set_hash": {
+          "$ref": "#/$defs/hash"
+        },
+        "report_content_hash": {
+          "$ref": "#/$defs/hash"
+        },
+        "pricing": {
+          "$ref": "#/$defs/pricing"
+        },
+        "runs": {
+          "$ref": "#/$defs/u64"
+        },
+        "accepted": {
+          "$ref": "#/$defs/u64"
+        },
+        "rejected": {
+          "$ref": "#/$defs/u64"
+        },
+        "unknown": {
+          "$ref": "#/$defs/u64"
+        },
+        "human": {
+          "$ref": "#/$defs/human_counts"
+        },
+        "accepted_rate": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/accepted_rate"
+            }
+          ]
+        },
+        "cost": {
+          "$ref": "#/$defs/attempt_cost"
+        },
+        "time_to_acceptance_seconds": {
+          "$ref": "#/$defs/percentiles"
+        },
+        "unknown_counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "verdict",
+            "unlinked",
+            "cost",
+            "time_to_acceptance",
+            "integration",
+            "orphan_facts",
+            "superseded_events"
+          ],
+          "properties": {
+            "verdict": {
+              "$ref": "#/$defs/u64"
+            },
+            "unlinked": {
+              "$ref": "#/$defs/u64"
+            },
+            "cost": {
+              "$ref": "#/$defs/u64"
+            },
+            "time_to_acceptance": {
+              "$ref": "#/$defs/u64"
+            },
+            "integration": {
+              "$ref": "#/$defs/u64"
+            },
+            "orphan_facts": {
+              "$ref": "#/$defs/u64"
+            },
+            "superseded_events": {
+              "$ref": "#/$defs/u64"
+            }
+          }
+        },
+        "attribution": {
+          "const": "not_established"
+        },
+        "attribution_note": {
+          "type": "string"
+        },
+        "content_hash": {
+          "$ref": "#/$defs/hash"
+        },
+        "task_measurement": {
+          "$ref": "#/$defs/task_measurement"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "generated_at_unix_seconds",
+        "event_set_hash",
+        "fact_set_hash",
+        "report_content_hash",
+        "pricing",
+        "runs",
+        "accepted",
+        "rejected",
+        "unknown",
+        "human",
+        "accepted_rate",
+        "cost",
+        "time_to_acceptance_seconds",
+        "unknown_counts",
+        "attribution",
+        "attribution_note",
+        "content_hash"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 4
+        },
+        "generated_at_unix_seconds": {
+          "$ref": "#/$defs/u64"
+        },
+        "event_set_hash": {
+          "$ref": "#/$defs/hash"
+        },
+        "fact_set_hash": {
+          "$ref": "#/$defs/hash"
+        },
+        "report_content_hash": {
+          "$ref": "#/$defs/hash"
+        },
+        "pricing": {
+          "$ref": "#/$defs/qualified_pricing"
+        },
+        "runs": {
+          "$ref": "#/$defs/u64"
+        },
+        "accepted": {
+          "$ref": "#/$defs/u64"
+        },
+        "rejected": {
+          "$ref": "#/$defs/u64"
+        },
+        "unknown": {
+          "$ref": "#/$defs/u64"
+        },
+        "human": {
+          "$ref": "#/$defs/human_counts"
+        },
+        "accepted_rate": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/accepted_rate"
+            }
+          ]
+        },
+        "cost": {
+          "$ref": "#/$defs/attempt_cost"
+        },
+        "time_to_acceptance_seconds": {
+          "$ref": "#/$defs/percentiles"
+        },
+        "unknown_counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "verdict",
+            "unlinked",
+            "cost",
+            "time_to_acceptance",
+            "integration",
+            "orphan_facts",
+            "superseded_events"
+          ],
+          "properties": {
+            "verdict": {
+              "$ref": "#/$defs/u64"
+            },
+            "unlinked": {
+              "$ref": "#/$defs/u64"
+            },
+            "cost": {
+              "$ref": "#/$defs/u64"
+            },
+            "time_to_acceptance": {
+              "$ref": "#/$defs/u64"
+            },
+            "integration": {
+              "$ref": "#/$defs/u64"
+            },
+            "orphan_facts": {
+              "$ref": "#/$defs/u64"
+            },
+            "superseded_events": {
+              "$ref": "#/$defs/u64"
+            }
+          }
+        },
+        "attribution": {
+          "const": "not_established"
+        },
+        "attribution_note": {
+          "type": "string"
+        },
+        "content_hash": {
+          "$ref": "#/$defs/hash"
+        },
+        "task_measurement": {
+          "$ref": "#/$defs/task_measurement"
+        }
+      }
+    }
+  ]
+}

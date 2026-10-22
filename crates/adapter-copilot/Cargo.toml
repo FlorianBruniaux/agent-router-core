@@ -1,0 +1,15 @@
+[package]
+name = "adapter-copilot"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+router-adapter-api = { path = "../router-adapter-api" }
+router-types = { path = "../router-types" }
+serde.workspace = true
+serde_json.workspace = true
+
+[dev-dependencies]
+adapter-opencode = { path = "../adapter-opencode" }

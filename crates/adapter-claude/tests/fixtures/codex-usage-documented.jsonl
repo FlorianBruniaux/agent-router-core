@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"synthetic-usage-fixture"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"type":"agent_message","text":"secret-assistant-text"}}
+{"type":"turn.completed","usage":{"input_tokens":24763,"cached_input_tokens":24448,"output_tokens":122,"reasoning_output_tokens":0}}

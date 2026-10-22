@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "kind": "agent-router-adapter-descriptor",
+  "host": "codex",
+  "crate": "adapter-codex",
+  "contract": "HarnessAdapter",
+  "observed_client_version": "0.153.4",
+  "entry_point": "adapter_codex::CodexAdapter",
+  "modes": ["dry_run", "shadow", "execute"],
+  "target": "external_worker",
+  "activation": "none",
+  "native_plugin_manifest": false,
+  "requires": ["validated-phase-receipt", "bound-authorization", "supervised-sandbox"]
+}

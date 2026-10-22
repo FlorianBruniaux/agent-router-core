@@ -1,0 +1,792 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:agent-router:schema:run-observation:3",
+  "title": "run-observation",
+  "description": "Output of agent-router observe --json: a bounded, redacted projection of one coherent runtime-store read. Persisted states and cleanup are not native transport, process-liveness or objective evidence. Hashes do not establish journal authenticity or export consent. This schema checks shape, not digest validity against content, event ordering or store coherence. Version 1 remains the default. Opt-in version 2 adds bounded durable attempt facts; native evidence and aggregate unknowns remain unknown. Opt-in version 3 adds qualified local supervisor capture intervals; native and aggregate duration stay unknown.",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/v1"
+    },
+    {
+      "$ref": "#/$defs/v2"
+    },
+    {
+      "$ref": "#/$defs/v3"
+    }
+  ],
+  "$defs": {
+    "digest": {
+      "type": "string",
+      "minLength": 64,
+      "maxLength": 64,
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "planned",
+        "awaiting_approval",
+        "queued",
+        "preparing",
+        "running",
+        "succeeded_transport",
+        "verifying",
+        "verified",
+        "failed",
+        "verification_failed",
+        "timed_out",
+        "cancelled",
+        "blocked"
+      ]
+    },
+    "unknown": {
+      "const": "unknown"
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "run_key_sha256",
+        "definition_sha256",
+        "receipt_id_sha256",
+        "plan_id_sha256",
+        "node_id_sha256"
+      ],
+      "properties": {
+        "run_key_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "definition_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "receipt_id_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "plan_id_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "node_id_sha256": {
+          "$ref": "#/$defs/digest"
+        }
+      }
+    },
+    "horizon": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Horizon of the complete verified global journal, including other runs. The reader admits at most 100000 contiguous journal rows. The optional hash remains nullable as in the serialized contract.",
+      "required": [
+        "sequence",
+        "event_sha256"
+      ],
+      "properties": {
+        "sequence": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100000
+        },
+        "event_sha256": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/digest"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "known": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "attempts",
+        "failure",
+        "cleanup",
+        "events"
+      ],
+      "properties": {
+        "state": {
+          "$ref": "#/$defs/state"
+        },
+        "attempts": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "failure": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            null,
+            "authentication",
+            "rate_limit",
+            "timeout",
+            "crash",
+            "network",
+            "policy",
+            "verification",
+            "interrupted",
+            "output_limit",
+            "spawn",
+            "unclassified"
+          ]
+        },
+        "cleanup": {
+          "type": "string",
+          "enum": [
+            "unknown",
+            "not_started",
+            "group_terminated",
+            "namespace_terminated"
+          ]
+        },
+        "events": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4096,
+          "items": {
+            "$ref": "#/$defs/event"
+          }
+        }
+      }
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sequence",
+        "state",
+        "event_sha256"
+      ],
+      "properties": {
+        "sequence": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100000
+        },
+        "state": {
+          "$ref": "#/$defs/state"
+        },
+        "event_sha256": {
+          "$ref": "#/$defs/digest"
+        }
+      }
+    },
+    "unknowns": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "requested_model",
+        "requested_effort",
+        "observed_model",
+        "observed_effort",
+        "transport",
+        "validation",
+        "objective",
+        "duration",
+        "journal_authenticity",
+        "process_liveness"
+      ],
+      "properties": {
+        "requested_model": {
+          "$ref": "#/$defs/unknown"
+        },
+        "requested_effort": {
+          "$ref": "#/$defs/unknown"
+        },
+        "observed_model": {
+          "$ref": "#/$defs/unknown"
+        },
+        "observed_effort": {
+          "$ref": "#/$defs/unknown"
+        },
+        "transport": {
+          "$ref": "#/$defs/unknown"
+        },
+        "validation": {
+          "$ref": "#/$defs/unknown"
+        },
+        "objective": {
+          "$ref": "#/$defs/unknown"
+        },
+        "duration": {
+          "$ref": "#/$defs/unknown"
+        },
+        "journal_authenticity": {
+          "$ref": "#/$defs/unknown"
+        },
+        "process_liveness": {
+          "$ref": "#/$defs/unknown"
+        }
+      }
+    },
+    "completeness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "journal",
+        "external_observations",
+        "detail"
+      ],
+      "properties": {
+        "journal": {
+          "const": "complete"
+        },
+        "external_observations": {
+          "$ref": "#/$defs/unknown"
+        },
+        "detail": {
+          "const": "redacted"
+        }
+      }
+    },
+    "v1": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "snapshot_sha256",
+        "identity",
+        "horizon",
+        "known",
+        "unknown",
+        "completeness"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "snapshot_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "identity": {
+          "$ref": "#/$defs/identity"
+        },
+        "horizon": {
+          "$ref": "#/$defs/horizon"
+        },
+        "known": {
+          "$ref": "#/$defs/known"
+        },
+        "unknown": {
+          "$ref": "#/$defs/unknowns"
+        },
+        "completeness": {
+          "$ref": "#/$defs/completeness"
+        }
+      }
+    },
+    "v2": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "snapshot_sha256",
+        "identity",
+        "horizon",
+        "known",
+        "unknown",
+        "completeness",
+        "attempts"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 2
+        },
+        "snapshot_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "identity": {
+          "$ref": "#/$defs/identity"
+        },
+        "horizon": {
+          "$ref": "#/$defs/horizon"
+        },
+        "known": {
+          "$ref": "#/$defs/known"
+        },
+        "unknown": {
+          "$ref": "#/$defs/unknowns"
+        },
+        "completeness": {
+          "$ref": "#/$defs/completeness"
+        },
+        "attempts": {
+          "type": "array",
+          "maxItems": 5,
+          "items": {
+            "$ref": "#/$defs/attempt"
+          }
+        }
+      }
+    },
+    "requested": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "model",
+        "effort"
+      ],
+      "properties": {
+        "model": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256,
+          "pattern": "^[A-Za-z0-9_.:/-]+$(?![\\s\\S])"
+        },
+        "effort": {
+          "enum": [
+            "none",
+            "minimal",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max",
+            "ultra"
+          ]
+        }
+      }
+    },
+    "transport": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "termination",
+        "exit_code"
+      ],
+      "properties": {
+        "termination": {
+          "enum": [
+            "exited",
+            "timed_out",
+            "cancelled",
+            "killed",
+            "spawn_failed"
+          ]
+        },
+        "exit_code": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": -2147483648,
+          "maximum": 2147483647
+        }
+      }
+    },
+    "native": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "observed_model",
+        "observed_effort",
+        "thread_id",
+        "turn_id",
+        "usage",
+        "notification_delivery",
+        "lost_notifications",
+        "duration",
+        "validation",
+        "objective"
+      ],
+      "properties": {
+        "observed_model": {
+          "$ref": "#/$defs/unknown"
+        },
+        "observed_effort": {
+          "$ref": "#/$defs/unknown"
+        },
+        "thread_id": {
+          "$ref": "#/$defs/unknown"
+        },
+        "turn_id": {
+          "$ref": "#/$defs/unknown"
+        },
+        "usage": {
+          "$ref": "#/$defs/unknown"
+        },
+        "notification_delivery": {
+          "$ref": "#/$defs/unknown"
+        },
+        "lost_notifications": {
+          "$ref": "#/$defs/unknown"
+        },
+        "duration": {
+          "$ref": "#/$defs/unknown"
+        },
+        "validation": {
+          "$ref": "#/$defs/unknown"
+        },
+        "objective": {
+          "$ref": "#/$defs/unknown"
+        }
+      }
+    },
+    "missing_sources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "started_event_sha256",
+        "attempt_evidence_sha256",
+        "finished_event_sha256",
+        "transition_event_sha256",
+        "output_incomplete_event_sha256",
+        "protocol_event_sha256"
+      ],
+      "properties": {
+        "started_event_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "attempt_evidence_sha256": {
+          "type": "null"
+        },
+        "finished_event_sha256": {
+          "type": "null"
+        },
+        "transition_event_sha256": {
+          "type": "null"
+        },
+        "output_incomplete_event_sha256": {
+          "type": "null"
+        },
+        "protocol_event_sha256": {
+          "type": "null"
+        }
+      }
+    },
+    "durable_sources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "started_event_sha256",
+        "attempt_evidence_sha256",
+        "finished_event_sha256",
+        "transition_event_sha256",
+        "output_incomplete_event_sha256",
+        "protocol_event_sha256"
+      ],
+      "properties": {
+        "started_event_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "attempt_evidence_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "finished_event_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "transition_event_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "output_incomplete_event_sha256": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/digest"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "protocol_event_sha256": {
+          "type": "null"
+        }
+      }
+    },
+    "missing_attempt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ordinal",
+        "attempt_key_sha256",
+        "evidence",
+        "requested",
+        "transport",
+        "sources",
+        "capture",
+        "protocol",
+        "native"
+      ],
+      "properties": {
+        "ordinal": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "attempt_key_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "evidence": {
+          "const": "unknown"
+        },
+        "requested": {
+          "type": "null"
+        },
+        "transport": {
+          "type": "null"
+        },
+        "sources": {
+          "$ref": "#/$defs/missing_sources"
+        },
+        "capture": {
+          "const": "unknown"
+        },
+        "protocol": {
+          "$ref": "#/$defs/unknown"
+        },
+        "native": {
+          "$ref": "#/$defs/native"
+        }
+      }
+    },
+    "durable_attempt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ordinal",
+        "attempt_key_sha256",
+        "evidence",
+        "requested",
+        "transport",
+        "sources",
+        "capture",
+        "protocol",
+        "native"
+      ],
+      "properties": {
+        "ordinal": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "attempt_key_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "evidence": {
+          "const": "durable_attempt"
+        },
+        "requested": {
+          "$ref": "#/$defs/requested"
+        },
+        "transport": {
+          "$ref": "#/$defs/transport"
+        },
+        "sources": {
+          "$ref": "#/$defs/durable_sources"
+        },
+        "capture": {
+          "enum": [
+            "unknown",
+            "incomplete",
+            "output_limit",
+            "output_limit_incomplete"
+          ]
+        },
+        "protocol": {
+          "$ref": "#/$defs/unknown"
+        },
+        "native": {
+          "$ref": "#/$defs/native"
+        }
+      },
+      "oneOf": [
+        {
+          "properties": {
+            "capture": {
+              "enum": [
+                "unknown",
+                "output_limit"
+              ]
+            },
+            "sources": {
+              "properties": {
+                "output_incomplete_event_sha256": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "capture": {
+              "enum": [
+                "incomplete",
+                "output_limit_incomplete"
+              ]
+            },
+            "sources": {
+              "properties": {
+                "output_incomplete_event_sha256": {
+                  "$ref": "#/$defs/digest"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "attempt": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/missing_attempt"
+        },
+        {
+          "$ref": "#/$defs/durable_attempt"
+        }
+      ]
+    },
+    "v3": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "snapshot_sha256",
+        "identity",
+        "horizon",
+        "known",
+        "unknown",
+        "completeness",
+        "attempts",
+        "timings"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 3
+        },
+        "snapshot_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "identity": {
+          "$ref": "#/$defs/identity"
+        },
+        "horizon": {
+          "$ref": "#/$defs/horizon"
+        },
+        "known": {
+          "$ref": "#/$defs/known"
+        },
+        "unknown": {
+          "$ref": "#/$defs/unknowns"
+        },
+        "completeness": {
+          "$ref": "#/$defs/completeness"
+        },
+        "attempts": {
+          "type": "array",
+          "maxItems": 5,
+          "items": {
+            "$ref": "#/$defs/attempt"
+          }
+        },
+        "timings": {
+          "type": "array",
+          "maxItems": 5,
+          "items": {
+            "$ref": "#/$defs/timing"
+          }
+        }
+      }
+    },
+    "timing_measurement": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "duration_ms"
+          ],
+          "properties": {
+            "status": {
+              "const": "known"
+            },
+            "duration_ms": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 18446744073709551615
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "reason"
+          ],
+          "properties": {
+            "status": {
+              "const": "unknown"
+            },
+            "reason": {
+              "enum": [
+                "missing_record",
+                "clock_regression",
+                "duration_overflow"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "timing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ordinal",
+        "attempt_key_sha256",
+        "timing_event_sha256",
+        "scope",
+        "clock",
+        "start_boundary",
+        "end_boundary",
+        "precision",
+        "measurement"
+      ],
+      "properties": {
+        "ordinal": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "attempt_key_sha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "timing_event_sha256": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/digest"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "scope": {
+          "const": "supervisor_capture"
+        },
+        "clock": {
+          "const": "monotonic_same_invocation"
+        },
+        "start_boundary": {
+          "const": "before_dispatch_validation"
+        },
+        "end_boundary": {
+          "const": "after_reap_and_both_output_drains"
+        },
+        "precision": {
+          "const": "milliseconds_truncated"
+        },
+        "measurement": {
+          "$ref": "#/$defs/timing_measurement"
+        }
+      }
+    }
+  }
+}

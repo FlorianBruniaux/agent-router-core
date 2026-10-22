@@ -1,0 +1,24 @@
+[package]
+name = "router-policy"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+router-adapter-api = { path = "../router-adapter-api" }
+router-asset-contracts = { path = "../router-asset-contracts" }
+router-workflow = { path = "../router-workflow" }
+hex.workspace = true
+router-catalog = { path = "../router-catalog" }
+router-catalog-store = { path = "../router-catalog-store" }
+router-retrieval = { path = "../router-retrieval" }
+router-types = { path = "../router-types" }
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+ed25519-dalek = "=2.2.0"
+tempfile.workspace = true

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "observed_at_unix_seconds": 101,
+  "binding": {
+    "task_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "run_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "receipt_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "policy_hash": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+    "catalog_hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "snapshot_hash": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "producer_version": "synthetic-contract-v1",
+    "provenance_sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+  },
+  "context": {
+    "task_kind": "explore", "risk": "low", "model": "fixture-model",
+    "effort": "medium", "harness": "fixture-host", "transport": "subprocess-jsonl",
+    "agent": null, "skills": [], "plan": "single-pass", "propensity_micros": null
+  },
+  "origin": "automated",
+  "transport": "passed", "validation": "unknown", "objective": "unknown",
+  "verification_evidence_sha256": null, "human": null, "failure": null,
+  "measurements": { "cost_microusd": null, "latency_ms": 100, "tokens": null, "attempts": 1, "escalations": 0 },
+  "comment_sha256": null
+}

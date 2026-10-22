@@ -1,0 +1,24 @@
+title = "Agent Router source and harness scan"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Compiled artifacts and private transaction backups are not release inputs"
+paths = ['''(^|/)target/''', '''(^|/)\.harness-state/''']
+
+[[allowlists]]
+description = "Exact synthetic JWT and key used by the redaction test of docs/bench/runs/2026-09-30-egress-spike/harness/v2 and v3 selftest.py"
+regexes = ['''^eyJhbGciOiJIUzI1NiJ9\.eyJzdWIiOiJzcGlrZSJ9\.c2lnbmF0dXJlLXZhbHVl$''', '''^sk-proj-AbCdEf0123456789XyZ$''']
+
+[[allowlists]]
+description = "Exact synthetic SHA-256 run identity in the frozen observation-v1 fixture"
+regexes = ['''^cc8893e352b531eebc40cac5fce167ee908ce4f7df8d31094969e9d341ae1b6a$''']
+
+[[allowlists]]
+description = "Exact synthetic SHA-256 digests of run, attempt-1 and attempt-2 in the attempt-correlation-v1 fixture"
+regexes = [
+    '''^acba25512100f80b56fc3ccd14c65be55d94800cda77585c5f41a887e398f9be$''',
+    '''^3dafcfaa6218343276ff42263fe100bab5e2b0475a8d98b96abc88c57bfd9992$''',
+    '''^66708974e5efa736dfb98996c3e198c012e29dc210e1b4f47cd5d093bdd7561d$''',
+]

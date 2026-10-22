@@ -1,0 +1,2007 @@
+{
+  "cases": [
+    {
+      "candidate_file": "replays/candidate-001.json",
+      "case_id": "candidate-001",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "2b98ba492da10c8ff423230be9b7c931e6716a0f6bd0b110728b9c7278ba8875",
+      "objective": "Add a bounded parser for the versioned route request.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The highest policy prior remains eligible for a bounded read-only implementation proposal."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-002.json",
+      "case_id": "candidate-002",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "736ced29c2f9292997642969d741e813edf7b952f2eb6008b92c22e34ae53df5",
+      "objective": "Reject malformed request fields with stable typed errors.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The highest policy prior remains eligible for a bounded read-only implementation proposal."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-003.json",
+      "case_id": "candidate-003",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "d30ef962d80cf517bf10802d80d04d48282ead94f5f2663874f45022e54bbdda",
+      "objective": "Implement request validation without accepting unknown variants.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The highest policy prior remains eligible for a bounded read-only implementation proposal."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-004.json",
+      "case_id": "candidate-004",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "936bdc564dcbf9b68a4e98356119dd968b8189067947a02579e8b9fb9cdae00d",
+      "objective": "Parse the route contract and enforce its documented byte limit.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The highest policy prior remains eligible for a bounded read-only implementation proposal."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-005.json",
+      "case_id": "candidate-005",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "a1c8b1d95169c826a5a50bb0f49802a334a7b133e27fe8c8f6a1dd75f81e665c",
+      "objective": "Extend the request parser while preserving existing JSON behavior.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The highest policy prior remains eligible for a bounded read-only implementation proposal."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-006.json",
+      "case_id": "candidate-006",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "938b665cacea2d9ebb9ce0aa3677604a70770adcedd199fb50c545b66bd69790",
+      "objective": "Inspect which Codex capabilities remain unknown.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "UNKNOWN network evidence excludes the network-dependent primary; a read-only alternative remains eligible."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-007.json",
+      "case_id": "candidate-007",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "ac78b002f30a49c84cb6cc87fe42e7a7352fe518059f4c3c6655e4306868b942",
+      "objective": "Report host support without turning missing evidence into availability.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "UNKNOWN network evidence excludes the network-dependent primary; a read-only alternative remains eligible."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-008.json",
+      "case_id": "candidate-008",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "0f729c527512254713451ad36b9878256bfa0b4035171a109d42b2bc1d23dc62",
+      "objective": "Explain why a model cache cannot grant workspace permissions.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "UNKNOWN network evidence excludes the network-dependent primary; a read-only alternative remains eligible."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-009.json",
+      "case_id": "candidate-009",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "ba4df88b3eb393d7104e727195942c170236229d7bba608b4ef1ec9ac0493528",
+      "objective": "Identify stale host evidence before a route is selected.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "UNKNOWN network evidence excludes the network-dependent primary; a read-only alternative remains eligible."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-010.json",
+      "case_id": "candidate-010",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "1ac88e76958be41d4de0d550049d187c7abad7d75e2167ffcf26a8b68c105630",
+      "objective": "Read host metadata and preserve unsupported versus unknown capabilities.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "UNKNOWN network evidence excludes the network-dependent primary; a read-only alternative remains eligible."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-011.json",
+      "case_id": "candidate-011",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "aebbfda985d9593ad07056cdf6ed5ad882260d70c626ef4307588b24aa52665b",
+      "objective": "Generate a catalog whose assets retain observation provenance.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The selected model's canonical catalog content and observed snapshot are both bound to the receipt."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-012.json",
+      "case_id": "candidate-012",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "e3904fa26caa31028f39940b68cca53f17b5fd137f8d50385232cb9895012a14",
+      "objective": "Bind the generated catalog to complete policy and snapshot hashes.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The selected model's canonical catalog content and observed snapshot are both bound to the receipt."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-013.json",
+      "case_id": "candidate-013",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "1368a93f7ca446d923e983468cff69ec571767af44f99329f04de04aaa830d32",
+      "objective": "Reject an alias that conflicts with a canonical model identifier.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The selected model's canonical catalog content and observed snapshot are both bound to the receipt."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-014.json",
+      "case_id": "candidate-014",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "3ca063865b8aca318ab3a5fe9242c86aa1c71fd38e3c3a119a41452b1b219e6d",
+      "objective": "Check that unsupported effort levels cannot enter a generated catalog.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The selected model's canonical catalog content and observed snapshot are both bound to the receipt."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-015.json",
+      "case_id": "candidate-015",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "97c66a65156c5636ae874f229c2dfd505711f8426eb5ecd2a2ca093c514cc136",
+      "objective": "Preserve the policy source of quality estimates during catalog generation.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The selected model's canonical catalog content and observed snapshot are both bound to the receipt."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-016.json",
+      "case_id": "candidate-016",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "bfddf7c7c6c2aca7cca19885c798c3d53b06bc3bb903b4906865277f31c1c18b",
+      "objective": "Find the Rust contract testing skill for a parser change.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The candidate using the explicitly declared trusted Rust skill is eligible; an untrusted helper is excluded. This is phase routing, not a BM25 recall measurement."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-017.json",
+      "case_id": "candidate-017",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "27df0a04dcfc6f63108bd5ba36977e6ecc3fc14f3c6e8f0241899974544925eb",
+      "objective": "Retrieve agents suitable for a read-only architecture review.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The candidate using the explicitly declared trusted Rust skill is eligible; an untrusted helper is excluded. This is phase routing, not a BM25 recall measurement."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-018.json",
+      "case_id": "candidate-018",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "f7e89d0967f4ac94daf41148ee5859b9d3adb0eabfca3a58a5710c340236670e",
+      "objective": "Search prompt metadata without loading every prompt body.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The candidate using the explicitly declared trusted Rust skill is eligible; an untrusted helper is excluded. This is phase routing, not a BM25 recall measurement."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-019.json",
+      "case_id": "candidate-019",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "d35b1abea3c02008760239025dccafa0999d189a186f906480c0465d31f3f961",
+      "objective": "Find the C++ skill and avoid selecting C# instructions.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The candidate using the explicitly declared trusted Rust skill is eligible; an untrusted helper is excluded. This is phase routing, not a BM25 recall measurement."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-020.json",
+      "case_id": "candidate-020",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "cd1395b09cb3262f60c90bc792f6321669719b3fdf73fcfb2059abefad31b5c4",
+      "objective": "Explain the matching fields behind the highest retrieval candidate.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The candidate using the explicitly declared trusted Rust skill is eligible; an untrusted helper is excluded. This is phase routing, not a BM25 recall measurement."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-021.json",
+      "case_id": "candidate-021",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "19f84871320a91ff810b751265ee6058575b34705f7e03fb9388575298d5fdc6",
+      "objective": "Abstain when two retrieval candidates have indistinguishable evidence.",
+      "proposal": {
+        "abstention": "ambiguous",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Equal eligible scores must abstain; identifier ordering is not evidence of a better selection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-022.json",
+      "case_id": "candidate-022",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "2b2348085931790731bc6dff6e7082b8030661e9f936c20e26be6bbd12d74a7f",
+      "objective": "Return no selection for an empty asset search.",
+      "proposal": {
+        "abstention": "ambiguous",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Equal eligible scores must abstain; identifier ordering is not evidence of a better selection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-023.json",
+      "case_id": "candidate-023",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "ce5c03903db8c56659009c6bba216e5936b78aa682720d6caee180f446cd0286",
+      "objective": "Show a weak-match abstention for unrelated task vocabulary.",
+      "proposal": {
+        "abstention": "ambiguous",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Equal eligible scores must abstain; identifier ordering is not evidence of a better selection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-024.json",
+      "case_id": "candidate-024",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "0b9455aba2851b64f483c6bc69a73c7ac5cec021755509ffa805f038fdc26ff1",
+      "objective": "Keep an untrusted skill from improving route utility.",
+      "proposal": {
+        "abstention": "ambiguous",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Equal eligible scores must abstain; identifier ordering is not evidence of a better selection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-025.json",
+      "case_id": "candidate-025",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "f75a2c805f3375d1f20c19a1e7653c3ff9266a995ccfa766f5023aa470988b23",
+      "objective": "Apply an anti-trigger before ranking a retrieved skill.",
+      "proposal": {
+        "abstention": "ambiguous",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Equal eligible scores must abstain; identifier ordering is not evidence of a better selection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-026.json",
+      "case_id": "candidate-026",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "9d8ebb050581754ae4f6bd02492ed07d82557e338675e9097fb51a516041e508",
+      "objective": "Route planning and execution separately within an explicit token budget.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Candidates requiring 100, 60 and 30 tokens are filtered against the explicitly declared budget. Select the highest eligible prior, or abstain when every estimate exceeds the bound."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-027.json",
+      "case_id": "candidate-027",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "6a44fc5d69e1ebf1add1063c6e75b46a17f4618db62e938df513d679e79db551",
+      "objective": "Reject a phase candidate whose declared cost exceeds the authorized limit.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "economy",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Candidates requiring 100, 60 and 30 tokens are filtered against the explicitly declared budget. Select the highest eligible prior, or abstain when every estimate exceeds the bound."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-028.json",
+      "case_id": "candidate-028",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "ba64c91d05ff9137e7b4a795fa19699bdbab087f9e197328cc700f0afa5d67ea",
+      "objective": "Select an execution model only after the host and policy constraints pass.",
+      "proposal": {
+        "abstention": "no_eligible_candidate",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Candidates requiring 100, 60 and 30 tokens are filtered against the explicitly declared budget. Select the highest eligible prior, or abstain when every estimate exceeds the bound."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-029.json",
+      "case_id": "candidate-029",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "4ad1f72d2e0a32280aaed212e7527eae572258083b7531caba8579e5360ff6d2",
+      "objective": "Preserve plan-phase provenance when the execution phase uses another model.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Candidates requiring 100, 60 and 30 tokens are filtered against the explicitly declared budget. Select the highest eligible prior, or abstain when every estimate exceeds the bound."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-030.json",
+      "case_id": "candidate-030",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "d1a44bfd4e4d88a63088c7ae6a28ea38124ee230098dda62ef2006855990acb7",
+      "objective": "Explain why a cheaper candidate still fails a permission constraint.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "economy",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Candidates requiring 100, 60 and 30 tokens are filtered against the explicitly declared budget. Select the highest eligible prior, or abstain when every estimate exceeds the bound."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-031.json",
+      "case_id": "candidate-031",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "4633113f31177a510266ca1073857ee4b8dc61d625c528321ab3b12a3dcc900b",
+      "objective": "Choose a fallback from the same eligible phase candidate pool.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Explicit unavailable candidates are excluded from the same frozen pool; select the next eligible candidate or abstain when all are unavailable."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-032.json",
+      "case_id": "candidate-032",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "3508c4903757e834ce27f52d4c08bbb2de34a588fee6dadac061c0d9b9d5d03a",
+      "objective": "Abstain when every declared phase candidate is unavailable.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "economy",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Explicit unavailable candidates are excluded from the same frozen pool; select the next eligible candidate or abstain when all are unavailable."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-033.json",
+      "case_id": "candidate-033",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "8b71dda44b061dc14b3a780b00641ad4b334c178d1b33ef5e2988687ce619e0c",
+      "objective": "Do not expand permissions while retrying an unavailable candidate.",
+      "proposal": {
+        "abstention": "all_unavailable",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Explicit unavailable candidates are excluded from the same frozen pool; select the next eligible candidate or abstain when all are unavailable."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-034.json",
+      "case_id": "candidate-034",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "58b2cfe690df9377aa706253ab956ab1bd9b591757078318490c242b09f38aa7",
+      "objective": "Record the precise unavailable candidate that triggered fallback.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Explicit unavailable candidates are excluded from the same frozen pool; select the next eligible candidate or abstain when all are unavailable."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-035.json",
+      "case_id": "candidate-035",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "83338f0524b93b363d9686dad45cbd6c92637574dc9551bf6746fb3c8f870d0d",
+      "objective": "Ensure fallback does not substitute unregistered tools.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Explicit unavailable candidates are excluded from the same frozen pool; select the next eligible candidate or abstain when all are unavailable."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-036.json",
+      "case_id": "candidate-036",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "46bf132073e0ebc9119592f803c8326e0f38ff3b6956b5fc98dddfff9163c9d7",
+      "objective": "Build a plan-execute-verify DAG with an explicit integration step.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Plan-phase routing is separated from execution and verification; this fixture does not itself prove the entire DAG runtime."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-037.json",
+      "case_id": "candidate-037",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "b8e4c3d4929a19e107c6a3493842992f3e5f1a2391790f0c03474d37b3a9a812",
+      "objective": "Prevent two parallel writers from owning overlapping source files.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Plan-phase routing is separated from execution and verification; this fixture does not itself prove the entire DAG runtime."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-038.json",
+      "case_id": "candidate-038",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "55df24f983b0dd869f8ef012dad8a2ef5ea157681a0e4b41c87b8bd5a95afb3b",
+      "objective": "Split bounded work into nodes with outputs and acceptance criteria.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Plan-phase routing is separated from execution and verification; this fixture does not itself prove the entire DAG runtime."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-039.json",
+      "case_id": "candidate-039",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "badb3708f7e26c120a7ef588c0a69af5a60dc017bce1a590367e34273613d2ac",
+      "objective": "Reject a workflow dependency cycle before execution.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Plan-phase routing is separated from execution and verification; this fixture does not itself prove the entire DAG runtime."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-040.json",
+      "case_id": "candidate-040",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "f632f5451e0fe91ca69395696578956cabfdade7a382865eb002d17eeb87174e",
+      "objective": "Preserve a downstream independent verifier for each write node.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Plan-phase routing is separated from execution and verification; this fixture does not itself prove the entire DAG runtime."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-041.json",
+      "case_id": "candidate-041",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "a94b49f08d6d3264e0c62ed58530a6ee31c498212e8d7aa47e6b5a545317935f",
+      "objective": "Review permission escalation at the host adapter boundary.",
+      "proposal": {
+        "abstention": "no_eligible_candidate",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "UNKNOWN model-inference permission excludes every candidate, including during a high-risk review."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-042.json",
+      "case_id": "candidate-042",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "1ba6abaa22dfd40a1e18929bcd4494a36b904eb547dfb21ffd5cd37620344894",
+      "objective": "Reject workspace mutation when the task authorizes only reading.",
+      "proposal": {
+        "abstention": "no_eligible_candidate",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "UNKNOWN model-inference permission excludes every candidate, including during a high-risk review."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-043.json",
+      "case_id": "candidate-043",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "819f304b272c0f874dffaa09a158aedc599cc56eed17f3fe86e09d3b3f325ec3",
+      "objective": "Keep project policy restrictions monotone across task overrides.",
+      "proposal": {
+        "abstention": "no_eligible_candidate",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "UNKNOWN model-inference permission excludes every candidate, including during a high-risk review."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-044.json",
+      "case_id": "candidate-044",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "d7dbf88f949970557809e249ba5bf88c5d960c91d6bdd32e10f60cbd4482f650",
+      "objective": "Check that an executable skill cannot grant itself network access.",
+      "proposal": {
+        "abstention": "no_eligible_candidate",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "UNKNOWN model-inference permission excludes every candidate, including during a high-risk review."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-045.json",
+      "case_id": "candidate-045",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "9f43ae761310f471f81ed46f8c61f6917b442f17b696f5e11376a0be3d53a091",
+      "objective": "Prove that an unknown delegation permission remains ineligible.",
+      "proposal": {
+        "abstention": "no_eligible_candidate",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "UNKNOWN model-inference permission excludes every candidate, including during a high-risk review."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-046.json",
+      "case_id": "candidate-046",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "0b83a5a12524c96ad33a9f6060619ba305b0c719b740859da7eb384c856e7314",
+      "objective": "Render a versioned prompt using declared typed variables.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "An eligible planning candidate is selected without loading prompt bodies; typed prompt rendering has separate contract tests."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-047.json",
+      "case_id": "candidate-047",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "d822483cd21b6dbcff91aa14392cb7953ea9987a68d90c3cd866c98859500f69",
+      "objective": "Reject a prompt template with an undeclared substitution.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "An eligible planning candidate is selected without loading prompt bodies; typed prompt rendering has separate contract tests."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-048.json",
+      "case_id": "candidate-048",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "9ad29973fa3691c807a865b069e72ec3cf3521c4c046aeaa77ca1781eb629e24",
+      "objective": "Verify that a relative-path variable cannot escape the workspace.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "An eligible planning candidate is selected without loading prompt bodies; typed prompt rendering has separate contract tests."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-049.json",
+      "case_id": "candidate-049",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "1a4e62f829bbaa331330dd45cbb98aded197e536de7ed944c36944d93d88ccef",
+      "objective": "Bind prompt content and compatibility rules to their hash.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "An eligible planning candidate is selected without loading prompt bodies; typed prompt rendering has separate contract tests."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-050.json",
+      "case_id": "candidate-050",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "aa6964a18a866368cd4d36f44739588ff835eb74b037e7fa2166c9795c18b37a",
+      "objective": "Do not recursively expand substitution syntax inside user-provided text.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "An eligible planning candidate is selected without loading prompt bodies; typed prompt rendering has separate contract tests."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-051.json",
+      "case_id": "candidate-051",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "532c615ea721edd16b00f9ec0366fab454d4c384f2eb6eb0c3a6c3267b018764",
+      "objective": "Replay a frozen route context and compare its complete receipt.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Complete request, catalog, snapshot and policy identities are frozen in the replay; byte tampering is tested separately."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-052.json",
+      "case_id": "candidate-052",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "b033262adafae30192dd766a467b57e36b2417d0221790a7241141f0ddcc23c2",
+      "objective": "Detect a changed catalog with an unchanged textual version.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Complete request, catalog, snapshot and policy identities are frozen in the replay; byte tampering is tested separately."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-053.json",
+      "case_id": "candidate-053",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "fd5e8ab3f4da13f9244d3447ae84d905c23a970e1dd138ff681d76fc9d4c6b8a",
+      "objective": "Keep transport success separate from functional acceptance.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Complete request, catalog, snapshot and policy identities are frozen in the replay; byte tampering is tested separately."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-054.json",
+      "case_id": "candidate-054",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "374c9d9052c2486a22167c2fec0f994d40ac574dcb3a8e707eda1d80d5f339dd",
+      "objective": "Reject unknown token pricing rather than inventing a zero cost.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Complete request, catalog, snapshot and policy identities are frozen in the replay; byte tampering is tested separately."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-055.json",
+      "case_id": "candidate-055",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "43a996bd768f12e6c454552cf133e41f32feaa0ee68562724e15699600dbf120",
+      "objective": "Report a hard-constraint violation separately from average route quality.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Complete request, catalog, snapshot and policy identities are frozen in the replay; byte tampering is tested separately."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-056.json",
+      "case_id": "candidate-056",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "165162a32994ce23542d1525138b455b1974cfe7b8ae7231862e663e5ff67f53",
+      "objective": "Keep semantic routing disabled until held-out evidence shows a gain.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "An independent high-risk candidate can be proposed, but unvalidated corpus labels cannot enable any semantic promotion."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-057.json",
+      "case_id": "candidate-057",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "679502280e361436ee40177db4849350fd69ed2ea113536d2d6f83adfb2ee7ff",
+      "objective": "Require independent labels before promoting a semantic backend.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "An independent high-risk candidate can be proposed, but unvalidated corpus labels cannot enable any semantic promotion."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-058.json",
+      "case_id": "candidate-058",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "a5445680bfc1a118758679241b27f331e1eb77419dc7f3ea1a73982e09b699f4",
+      "objective": "Prevent reformulations from leaking across training and held-out splits.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "An independent high-risk candidate can be proposed, but unvalidated corpus labels cannot enable any semantic promotion."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-059.json",
+      "case_id": "candidate-059",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "d3e99dd55a819df7eec3ea23ce5a9253ee754cb594c74bf58cf808a4fccb839f",
+      "objective": "Freeze comparison metrics before running the promotion evaluation.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "An independent high-risk candidate can be proposed, but unvalidated corpus labels cannot enable any semantic promotion."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-060.json",
+      "case_id": "candidate-060",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "8c60bc860008ea8a084589d69f223fb6b6f3102c360600f5fdae8b693748f7d5",
+      "objective": "Block promotion when any hard-constraint violation appears.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "An independent high-risk candidate can be proposed, but unvalidated corpus labels cannot enable any semantic promotion."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-061.json",
+      "case_id": "candidate-061",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "aab0862f58b79b63518d30237e5e36e021f0f546cba75ed9f4e401ad2eefd06e",
+      "objective": "Refactor a Rust library error path without adding implicit panics.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Workspace write is explicitly permitted by task, restrictions, host evidence and permission map; the proposed candidate stays inside that scope."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-062.json",
+      "case_id": "candidate-062",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "365656d73f36da6ad172dc53113be6fb3b9cc0fe5c54a2e273a051001ddfae68",
+      "objective": "Replace an unchecked integer operation with an explicit overflow error.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Workspace write is explicitly permitted by task, restrictions, host evidence and permission map; the proposed candidate stays inside that scope."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-063.json",
+      "case_id": "candidate-063",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "c10632e88bb99a15f02167361c6e7ac43f162d93efc6fb31bc22dcdca4add90f",
+      "objective": "Preserve deterministic output when reordering internal map entries.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Workspace write is explicitly permitted by task, restrictions, host evidence and permission map; the proposed candidate stays inside that scope."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-064.json",
+      "case_id": "candidate-064",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "3250cd5ace4eeb30508f92f03148009ca07ba87f48b21f4aa7ad235453a5b31a",
+      "objective": "Keep provider response bodies out of application error messages.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Workspace write is explicitly permitted by task, restrictions, host evidence and permission map; the proposed candidate stays inside that scope."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-065.json",
+      "case_id": "candidate-065",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "eb9254967839e1b1802704c1e6130d14cf1c4ccb6de0e13f255297dca7fdbfb8",
+      "objective": "Add a regression for a failed contract before changing its implementation.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "primary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Workspace write is explicitly permitted by task, restrictions, host evidence and permission map; the proposed candidate stays inside that scope."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-066.json",
+      "case_id": "candidate-066",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "db8b21940b1b56e657c90eda877dfe579a3c0a50944973d4f5b4860cb238e888",
+      "objective": "Plan a storage schema migration with an independent verifier.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The previous execution model cannot independently verify itself; the next eligible model provides model-level independence."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-067.json",
+      "case_id": "candidate-067",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "a111845360941e672ffbe283fa3a91812191ea90e71edf6ee3e037a05e837d35",
+      "objective": "Require explicit acceptance criteria before applying a data migration.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The previous execution model cannot independently verify itself; the next eligible model provides model-level independence."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-068.json",
+      "case_id": "candidate-068",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "b12905d193a9d087ec267eb708bd8c27d4a43b5b0ffab1757f975edb7e741b73",
+      "objective": "Inspect migration failure recovery without running production writes.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The previous execution model cannot independently verify itself; the next eligible model provides model-level independence."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-069.json",
+      "case_id": "candidate-069",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "2364c12d3dfb1ee713d77b10c6ccc45bc27bbac603ffd847529f50934fad9969",
+      "objective": "Separate migration preparation from authorized integration.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The previous execution model cannot independently verify itself; the next eligible model provides model-level independence."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-070.json",
+      "case_id": "candidate-070",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "875000a9c38e44c5824aee2687fe363c5cb5436dd23028a1a0cc11ead3800647",
+      "objective": "Reject a high-risk migration plan that omits independent review.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The previous execution model cannot independently verify itself; the next eligible model provides model-level independence."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-071.json",
+      "case_id": "candidate-071",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "236eac337d1df0a6f6663fecc6152cc3283b22b52fea255d2bf3bd73b2a391c8",
+      "objective": "Diagnose an incident from sanitized evidence without mutation.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Critical incident review remains read-only; the write-capable candidate is forbidden and the independent read-only alternative remains eligible."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-072.json",
+      "case_id": "candidate-072",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "a85d5d589865f5695a70ad98dc86bf6e494ec22846f82e9d07782f92470e55bd",
+      "objective": "Build a read-only incident investigation plan with bounded scope.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Critical incident review remains read-only; the write-capable candidate is forbidden and the independent read-only alternative remains eligible."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-073.json",
+      "case_id": "candidate-073",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "eb488bed7ed68dbdab12dcd02e82c42e21ed7851c12759b6f2b1e9d5503c7fc5",
+      "objective": "Identify uncertainty in operational logs without exposing credentials.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Critical incident review remains read-only; the write-capable candidate is forbidden and the independent read-only alternative remains eligible."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-074.json",
+      "case_id": "candidate-074",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "9eea4a87d86ec6c9d0cde356d48ea8cc2d3d248884ef31690b53b8ea851804e9",
+      "objective": "Do not treat a successful command as proof of incident resolution.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Critical incident review remains read-only; the write-capable candidate is forbidden and the independent read-only alternative remains eligible."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-075.json",
+      "case_id": "candidate-075",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "de4e556b7adf4bc69aeff99b006dc60e6bc284e88476b102080a308d36109662",
+      "objective": "Require observable recovery criteria before declaring an incident closed.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "Critical incident review remains read-only; the write-capable candidate is forbidden and the independent read-only alternative remains eligible."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-076.json",
+      "case_id": "candidate-076",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "0c082d054173d57c9be69c1fd027c27ce2f9197458fea12acdf23b5359cec279",
+      "objective": "Verify a packaged binary against the recorded checksum.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The requested primary effort is absent from this host snapshot; a supported model/effort pair is selected."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-077.json",
+      "case_id": "candidate-077",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "7fee04d16c83627b6f6d4d1ee766fa154560da1186bd4d0dbbb23a6b5181cbd7",
+      "objective": "Check all supported target artifacts before declaring a release complete.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The requested primary effort is absent from this host snapshot; a supported model/effort pair is selected."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-078.json",
+      "case_id": "candidate-078",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "7c1f320ecfd47da96258593d26c6c7fb0b7d18a4ee23abc7f2429627a358b3ca",
+      "objective": "Preserve user changes while validating a release candidate.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The requested primary effort is absent from this host snapshot; a supported model/effort pair is selected."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-079.json",
+      "case_id": "candidate-079",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "6d9a680b679759b7b7b352bff4c0605fc9bb6ec3a03914428c5df781e7d3f322",
+      "objective": "Identify a failing required CI check and block the merge verdict.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The requested primary effort is absent from this host snapshot; a supported model/effort pair is selected."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-080.json",
+      "case_id": "candidate-080",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "e75172c8fd9009c7a2cd194bb9e0f746268bb112e69a212ab6a1ab2079db9712",
+      "objective": "Distinguish tested local behavior from unverified deployed behavior.",
+      "proposal": {
+        "abstention": null,
+        "candidate_id": "secondary",
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The requested primary effort is absent from this host snapshot; a supported model/effort pair is selected."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-081.json",
+      "case_id": "candidate-081",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "ab5e386d7676961ceeb51ae4055b1ca1e5d4cd70b6416e534a7437d1fe5f740b",
+      "objective": "Suggest a vegetarian dinner using lentils.",
+      "proposal": {
+        "abstention": "empty_pool",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The fixture explicitly supplies an empty engineering candidate pool for this out-of-domain request. Abstention follows that pool; this is not evidence of automatic domain detection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-082.json",
+      "case_id": "candidate-082",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "e00e07be13eb996404b68f482e861a11a583a81e5acbfc69c0ed6bb04266f794",
+      "objective": "Explain how to cook rice for four people.",
+      "proposal": {
+        "abstention": "empty_pool",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The fixture explicitly supplies an empty engineering candidate pool for this out-of-domain request. Abstention follows that pool; this is not evidence of automatic domain detection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-083.json",
+      "case_id": "candidate-083",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "6579371e661f271fe9a5da73069f7ad8c8173603b090efea6109e05e4b914d5e",
+      "objective": "Compare two ways to roast seasonal vegetables.",
+      "proposal": {
+        "abstention": "empty_pool",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The fixture explicitly supplies an empty engineering candidate pool for this out-of-domain request. Abstention follows that pool; this is not evidence of automatic domain detection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-084.json",
+      "case_id": "candidate-084",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "88b988e5cc3a62605df2dd0b60a1394c464feeb5f16441c0b8b5e68e811253fe",
+      "objective": "Give a shopping list for a simple weekend meal.",
+      "proposal": {
+        "abstention": "empty_pool",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The fixture explicitly supplies an empty engineering candidate pool for this out-of-domain request. Abstention follows that pool; this is not evidence of automatic domain detection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-085.json",
+      "case_id": "candidate-085",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "d5a8ad3fd93a0c620e4f6a9f6cc4b6fa865ef650f4a01f9d75db14a70cdcea6c",
+      "objective": "Describe how sourdough fermentation changes bread.",
+      "proposal": {
+        "abstention": "empty_pool",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The fixture explicitly supplies an empty engineering candidate pool for this out-of-domain request. Abstention follows that pool; this is not evidence of automatic domain detection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-086.json",
+      "case_id": "candidate-086",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "6d6cd6cc53a588211de80b80bd985b60cf9edefd2c2c146881b726f2044c4fa8",
+      "objective": "Recommend a quiet beach for a family holiday.",
+      "proposal": {
+        "abstention": "empty_pool",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The fixture explicitly supplies an empty engineering candidate pool for this out-of-domain request. Abstention follows that pool; this is not evidence of automatic domain detection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-087.json",
+      "case_id": "candidate-087",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "b9985ba051523365401a2fcd11a85267e3e859c966c3a29b79f2dd5d660353b0",
+      "objective": "Compare train routes for a sightseeing trip.",
+      "proposal": {
+        "abstention": "empty_pool",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The fixture explicitly supplies an empty engineering candidate pool for this out-of-domain request. Abstention follows that pool; this is not evidence of automatic domain detection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-088.json",
+      "case_id": "candidate-088",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "adf8b0e8c12bf109bcad1b37cef31fd959508fc862711f5501d2a90a45e04d0f",
+      "objective": "Plan a museum visit in a city I have not named.",
+      "proposal": {
+        "abstention": "empty_pool",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The fixture explicitly supplies an empty engineering candidate pool for this out-of-domain request. Abstention follows that pool; this is not evidence of automatic domain detection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-089.json",
+      "case_id": "candidate-089",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "a47e7930c3c879c1bf801a56b321b856b34f83e025645d15c738c9b5cafc0490",
+      "objective": "Suggest what to pack for a hiking holiday.",
+      "proposal": {
+        "abstention": "empty_pool",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The fixture explicitly supplies an empty engineering candidate pool for this out-of-domain request. Abstention follows that pool; this is not evidence of automatic domain detection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-090.json",
+      "case_id": "candidate-090",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "09e415e3eeaf574467ea684f849d9a7049ff07a7234fd785707cedbe1cde174d",
+      "objective": "Find a hotel with a swimming pool near the sea.",
+      "proposal": {
+        "abstention": "empty_pool",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The fixture explicitly supplies an empty engineering candidate pool for this out-of-domain request. Abstention follows that pool; this is not evidence of automatic domain detection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-091.json",
+      "case_id": "candidate-091",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "338e93529c503f5f4403c4fc9f097aede923dca768bda7a209eb48c9467382b9",
+      "objective": "Help write a birthday greeting to a friend.",
+      "proposal": {
+        "abstention": "empty_pool",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The fixture explicitly supplies an empty engineering candidate pool for this out-of-domain request. Abstention follows that pool; this is not evidence of automatic domain detection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-092.json",
+      "case_id": "candidate-092",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "9fd279f9ca1e133d1f8a05a7f9b13e5f01678bf5bbe0ba896833667cc69a6bad",
+      "objective": "Suggest a name for a fictional garden club.",
+      "proposal": {
+        "abstention": "empty_pool",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The fixture explicitly supplies an empty engineering candidate pool for this out-of-domain request. Abstention follows that pool; this is not evidence of automatic domain detection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-093.json",
+      "case_id": "candidate-093",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "164c153c8569c5ec465d8c42dadbb7f51fb27430e3655a5f7aaea7822aef4bc6",
+      "objective": "Translate a short greeting into Italian.",
+      "proposal": {
+        "abstention": "empty_pool",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The fixture explicitly supplies an empty engineering candidate pool for this out-of-domain request. Abstention follows that pool; this is not evidence of automatic domain detection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-094.json",
+      "case_id": "candidate-094",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "ac8bfbd3fa9db93c4f9b8c67f16dc01a885373d5e386d6cc43ca984ab185dc2f",
+      "objective": "Explain the rules of a casual card game.",
+      "proposal": {
+        "abstention": "empty_pool",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The fixture explicitly supplies an empty engineering candidate pool for this out-of-domain request. Abstention follows that pool; this is not evidence of automatic domain detection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-095.json",
+      "case_id": "candidate-095",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "05cff4a551c3a1eaa40498343b1538ecfef3f2ce90326d1daeb48619c11b5a95",
+      "objective": "Write a short poem about autumn leaves.",
+      "proposal": {
+        "abstention": "empty_pool",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The fixture explicitly supplies an empty engineering candidate pool for this out-of-domain request. Abstention follows that pool; this is not evidence of automatic domain detection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-096.json",
+      "case_id": "candidate-096",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "7dba62b3ba954d646417b1c58b28692a65e1182751300446e01ee06b31cee114",
+      "objective": "Tell me which stock will rise tomorrow.",
+      "proposal": {
+        "abstention": "empty_pool",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The fixture explicitly supplies an empty engineering candidate pool for this out-of-domain request. Abstention follows that pool; this is not evidence of automatic domain detection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-097.json",
+      "case_id": "candidate-097",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "2cb969d35a0f2d7ab980f8a1adfa339abefc29bd4382814c7f2b564e54444cf8",
+      "objective": "Choose a personal pension allocation without knowing my situation.",
+      "proposal": {
+        "abstention": "empty_pool",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The fixture explicitly supplies an empty engineering candidate pool for this out-of-domain request. Abstention follows that pool; this is not evidence of automatic domain detection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-098.json",
+      "case_id": "candidate-098",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "500ad4718c1ffe2b63ca8e8645dc7cd11ccd6a73b161033607c5b9cee10c6098",
+      "objective": "Estimate a property purchase budget from an unspecified income.",
+      "proposal": {
+        "abstention": "empty_pool",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The fixture explicitly supplies an empty engineering candidate pool for this out-of-domain request. Abstention follows that pool; this is not evidence of automatic domain detection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-099.json",
+      "case_id": "candidate-099",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "71a6dea28518c10d3af2a41aea89517c1f6cd6252bc3b96c86b68a09727e5d85",
+      "objective": "Explain whether an unnamed insurance policy covers a claim.",
+      "proposal": {
+        "abstention": "empty_pool",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The fixture explicitly supplies an empty engineering candidate pool for this out-of-domain request. Abstention follows that pool; this is not evidence of automatic domain detection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    },
+    {
+      "candidate_file": "replays/candidate-100.json",
+      "case_id": "candidate-100",
+      "evidence_sha256": null,
+      "human_validated": false,
+      "independent": false,
+      "input_hash": "5b87dd3393a29de023aa0a024ccb4eaec4b13d5ae314ab0c3c0d8b6bed85c8f5",
+      "objective": "Recommend a loan without its interest rate or repayment terms.",
+      "proposal": {
+        "abstention": "empty_pool",
+        "candidate_id": null,
+        "human_validated": false,
+        "policy_id": "baseline",
+        "rationale": "The fixture explicitly supplies an empty engineering candidate pool for this out-of-domain request. Abstention follows that pool; this is not evidence of automatic domain detection."
+      },
+      "review_notes": null,
+      "reviewed_expect_abstention": null,
+      "reviewed_expected_candidate_ids": null,
+      "reviewer_id": null
+    }
+  ],
+  "review_instructions": "Review source cases independently; proposal is an aid, not a label. Supply reviewer, evidence, decision and independence explicitly. Preserve input hashes.",
+  "schema_version": 1,
+  "status": "unreviewed_do_not_use_for_promotion"
+}

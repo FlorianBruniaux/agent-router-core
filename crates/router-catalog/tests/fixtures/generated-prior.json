@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "version": "fixture-policy-v1",
+  "models": [
+    {
+      "id": "fixture-model-v1",
+      "stages": ["plan", "execute", "verify"],
+      "efforts": ["medium", "high"],
+      "capabilities": ["tools"],
+      "quality_micros": 800000,
+      "cost_micros": 100000,
+      "latency_micros": 200000,
+      "source": "fixture-policy-prior"
+    }
+  ],
+  "skills": [
+    {
+      "id": "fixture-skill",
+      "description": "A synthetic fixture instruction.",
+      "task_kinds": ["implement"],
+      "required_capabilities": [],
+      "trust": "builtin"
+    }
+  ]
+}

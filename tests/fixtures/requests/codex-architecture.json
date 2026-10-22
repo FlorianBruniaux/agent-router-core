@@ -1,0 +1,26 @@
+{
+  "task": {
+    "objective": "Design a high-confidence multi-file architecture change",
+    "kind": "architecture",
+    "risk": "high",
+    "required_capabilities": ["tools", "subagents"],
+    "acceptance": ["plan and verification are independently reviewable"]
+  },
+  "host": {
+    "id": "codex-architecture-host",
+    "harness": "codex",
+    "supported_models": ["gpt-5.6-sol", "gpt-5.6-terra"],
+    "supported_efforts": {
+      "gpt-5.6-sol": ["high", "xhigh", "max"],
+      "gpt-5.6-terra": ["medium", "high", "xhigh"]
+    },
+    "capabilities": ["tools", "subagents"]
+  },
+  "skill_candidates": [
+    {
+      "skill": "critique-plan",
+      "source": "ai-agents-bm25-v1",
+      "score_micros": 930000
+    }
+  ]
+}

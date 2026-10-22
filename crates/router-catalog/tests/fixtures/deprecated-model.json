@@ -1,0 +1,18 @@
+{
+  "aliases": [],
+  "registry": {
+    "schema_version": 1,
+    "version": "fixture-v1",
+    "assets": [
+      {
+        "kind": "model",
+        "id": "fixture-model-v1",
+        "version": "v1",
+        "source": "fixture-registry",
+        "content_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+        "required_capabilities": [],
+        "deprecated_by": "fixture-model-v2"
+      }
+    ]
+  }
+}
