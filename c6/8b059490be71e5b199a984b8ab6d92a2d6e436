@@ -1,0 +1,1809 @@
+.gitignore
+  s_43b3d0625e7ac1::t_8eab01eca8fee9 1-5
+.gitleaks.toml
+  s_43b3d0625e7ac1::t_45e89bfc6b66e3 1-24
+Cargo.lock
+  s_43b3d0625e7ac1::t_d2fd0de2b1edd3 1-1754
+Cargo.toml
+  s_43b3d0625e7ac1::t_6a0c606a0d3048 1-22
+DISTRIBUTION.json
+  s_43b3d0625e7ac1::t_3b6edb9d42a21c 1-3801
+GETTING_STARTED.md
+  s_43b3d0625e7ac1::t_f7204529192f7e 1-46
+LICENSE-INVENTORY.json
+  s_43b3d0625e7ac1::t_9ed9bffcfae2e0 1-3607
+LICENSE.md
+  s_43b3d0625e7ac1::t_d52a3876e37c70 1-105
+NOTICE
+  s_43b3d0625e7ac1::t_3eee71b13359fd 1-5
+PUBLICATION.json
+  s_43b3d0625e7ac1::t_8cc6f4898865fa 1-29
+README.md
+  s_43b3d0625e7ac1::t_f1ccc564d9a03c 1-12
+SBOM.spdx.json
+  s_43b3d0625e7ac1::t_39c04cbfb0659c 1-3655
+THIRD_PARTY_NOTICES.md
+  s_43b3d0625e7ac1::t_14523f62cf0525 1-153
+assets/catalogs/codex-core-v1.json
+  s_43b3d0625e7ac1::t_d7f4dab4387f60 1-59
+assets/prompts/autonomous-handoff.md
+  s_43b3d0625e7ac1::t_73011ede56dd8b 1-82
+crates/adapter-claude/Cargo.toml
+  s_43b3d0625e7ac1::t_483b05b301e60d 1-14
+crates/adapter-claude/src/execution.rs
+  s_43b3d0625e7ac1::t_753825a657935b 1-143
+crates/adapter-claude/src/lib.rs
+  s_43b3d0625e7ac1::t_735a2802e679f5 1-7
+crates/adapter-claude/src/probe.rs
+  s_43b3d0625e7ac1::t_08dcf6106d4aa2 1-143
+crates/adapter-claude/tests/conformance.rs
+  s_43b3d0625e7ac1::t_9eefa1f17d6a0e 1-678
+crates/adapter-claude/tests/fixtures/claude-usage-documented-shape.jsonl
+  s_43b3d0625e7ac1::t_f7fdb7282760f9 1-3
+crates/adapter-claude/tests/fixtures/claude.jsonl
+  s_43b3d0625e7ac1::t_bf8406831e6bc0 1-3
+crates/adapter-claude/tests/fixtures/codex-usage-documented.jsonl
+  s_43b3d0625e7ac1::t_6c5af189d088e1 1-4
+crates/adapter-claude/tests/fixtures/codex.jsonl
+  s_43b3d0625e7ac1::t_8b89b6d193855e 1-4
+crates/adapter-claude/tests/native_failures.rs
+  s_43b3d0625e7ac1::t_e8ebcdb94091fd 1-85
+crates/adapter-claude/tests/usage.rs
+  s_43b3d0625e7ac1::t_1f22986a6a2a5a 1-332
+crates/adapter-codex/Cargo.toml
+  s_43b3d0625e7ac1::t_c0dfb6127db1a8 1-20
+crates/adapter-codex/src/execution.rs
+  s_43b3d0625e7ac1::t_15815cf3e2b19d 1-134
+crates/adapter-codex/src/lib.rs
+  s_43b3d0625e7ac1::t_7d9abb81c25c53 1-263
+crates/adapter-codex/tests/fixtures/models-cache.json
+  s_43b3d0625e7ac1::t_456fdf1ecdd0e2 1-17
+crates/adapter-codex/tests/probe.rs
+  s_43b3d0625e7ac1::t_c980db8744e54e 1-178
+crates/adapter-copilot/Cargo.toml
+  s_43b3d0625e7ac1::t_9e4e026fa499e7 1-15
+crates/adapter-copilot/src/lib.rs
+  s_43b3d0625e7ac1::t_726ec4cf473d03 1-246
+crates/adapter-copilot/src/stream.rs
+  s_43b3d0625e7ac1::t_573d25fe3bb943 1-207
+crates/adapter-copilot/tests/conformance.rs
+  s_43b3d0625e7ac1::t_dbd57b700dca10 1-515
+crates/adapter-copilot/tests/fixtures/source-derived/README.md
+  s_43b3d0625e7ac1::t_4d8d85b6050bae 1-6
+crates/adapter-copilot/tests/fixtures/source-derived/version.txt
+  s_43b3d0625e7ac1::t_afe674a99197e8 1-2
+crates/adapter-copilot/tests/native_failures.rs
+  s_43b3d0625e7ac1::t_a1e24be686d951 1-170
+crates/adapter-copilot/tests/stream.rs
+  s_43b3d0625e7ac1::t_0a4addf404d2e3 1-337
+crates/adapter-opencode/Cargo.toml
+  s_43b3d0625e7ac1::t_c1b41456644a01 1-12
+crates/adapter-opencode/src/lib.rs
+  s_43b3d0625e7ac1::t_5d72856103e387 1-225
+crates/adapter-opencode/src/stream.rs
+  s_43b3d0625e7ac1::t_3c74e4e84d804d 1-225
+crates/adapter-opencode/tests/fixtures/source-derived/README.md
+  s_43b3d0625e7ac1::t_eb7de1f2f7e296 1-5
+crates/adapter-opencode/tests/fixtures/source-derived/version.txt
+  s_43b3d0625e7ac1::t_230cafd20c6fdc 1
+crates/adapter-opencode/tests/stream.rs
+  s_43b3d0625e7ac1::t_fe482cb66ec9a4 1-308
+crates/agent-router-cli/Cargo.toml
+  s_43b3d0625e7ac1::t_d888bad8e3d36d 1-65
+crates/agent-router-cli/build.rs
+  s_43b3d0625e7ac1::t_09497b1988eaad 1-7
+crates/agent-router-cli/src/admission.rs
+  s_43b3d0625e7ac1::t_d7eba86a8b778e 1-155
+crates/agent-router-cli/src/approval_key.rs
+  s_43b3d0625e7ac1::t_ebe63eb1456f63 1-201
+crates/agent-router-cli/src/assets.rs
+  s_43b3d0625e7ac1::t_4c903fce666553 1-356
+crates/agent-router-cli/src/attestations.rs
+  s_43b3d0625e7ac1::t_3673d760ea385f 1-301
+crates/agent-router-cli/src/backend_activation.rs
+  s_43b3d0625e7ac1::t_4f8a0193806a3d 1-219
+crates/agent-router-cli/src/capability_proofs.rs
+  s_43b3d0625e7ac1::t_bbd208c8c592f6 1-602
+crates/agent-router-cli/src/catalogs.rs
+  s_43b3d0625e7ac1::t_b1d8a53bb3dc40 1-336
+crates/agent-router-cli/src/cli.rs
+  s_43b3d0625e7ac1::t_36eb3057348daa 1-10
+crates/agent-router-cli/src/command.rs
+  s_43b3d0625e7ac1::t_bc4d8b2c9fc0e9 1-1206
+crates/agent-router-cli/src/completions.rs
+  s_43b3d0625e7ac1::t_9bd9599399a80f 1-38
+crates/agent-router-cli/src/config_input.rs
+  s_43b3d0625e7ac1::t_58830f214a7bc5 1-291
+crates/agent-router-cli/src/contracts.rs
+  s_43b3d0625e7ac1::t_8a4e5a81d3ae5a 1-80
+crates/agent-router-cli/src/coordinator.rs
+  s_43b3d0625e7ac1::t_05e39fc4f44a31 1-1126
+crates/agent-router-cli/src/diagnostics.rs
+  s_43b3d0625e7ac1::t_7bf69294b461b6 1-131
+crates/agent-router-cli/src/escalation.rs
+  s_43b3d0625e7ac1::t_a2190c3ed5b366 1-449
+crates/agent-router-cli/src/evaluation.rs
+  s_43b3d0625e7ac1::t_5ec0c51b487d00 1-819
+crates/agent-router-cli/src/execution.rs
+  s_43b3d0625e7ac1::t_3a3785973e047a 1-2064
+crates/agent-router-cli/src/execution_backend.rs
+  s_43b3d0625e7ac1::t_bdb15eb690aaef 1-143
+crates/agent-router-cli/src/execution_feedback.rs
+  s_43b3d0625e7ac1::t_2a65d604c524af 1-1054
+crates/agent-router-cli/src/feedback.rs
+  s_43b3d0625e7ac1::t_e86c7e258bdf62 1-301
+crates/agent-router-cli/src/generation.rs
+  s_43b3d0625e7ac1::t_eda4f5fd9d82a0 1-511
+crates/agent-router-cli/src/generation_proof_tests.rs
+  s_43b3d0625e7ac1::t_ad9a78f28582b1 1-178
+crates/agent-router-cli/src/human.rs
+  s_43b3d0625e7ac1::t_4f7e82a3e3fabb 1-401
+crates/agent-router-cli/src/inspect.rs
+  s_43b3d0625e7ac1::t_183b5f84ee6372 1-256
+crates/agent-router-cli/src/main.rs
+  s_43b3d0625e7ac1::t_1604b6e97e3560 1-955
+crates/agent-router-cli/src/phases.rs
+  s_43b3d0625e7ac1::t_9cfe8ef35754a6 1-268
+crates/agent-router-cli/src/preparation.rs
+  s_43b3d0625e7ac1::t_ea9c29386d8b83 1-362
+crates/agent-router-cli/src/product.rs
+  s_43b3d0625e7ac1::t_62a692f1fe3436 1-354
+crates/agent-router-cli/src/render.rs
+  s_43b3d0625e7ac1::t_665d08dbcc1944 1-80
+crates/agent-router-cli/src/replay_export.rs
+  s_43b3d0625e7ac1::t_e5e5c0836c1fc2 1-313
+crates/agent-router-cli/src/run_observation.rs
+  s_43b3d0625e7ac1::t_8adecafff0901e 1-130
+crates/agent-router-cli/src/schema.rs
+  s_43b3d0625e7ac1::t_a1faadb3dc8203 1-50
+crates/agent-router-cli/src/schemas/error.schema.json
+  s_43b3d0625e7ac1::t_eccf7cdf0f4b08 1-21
+crates/agent-router-cli/src/schemas/feedback-report.schema.json
+  s_43b3d0625e7ac1::t_93f4d9e1d90591 1-1628
+crates/agent-router-cli/src/schemas/feedback-summary.schema.json
+  s_43b3d0625e7ac1::t_940b18684f0f80 1-910
+crates/agent-router-cli/src/schemas/route-decision.schema.json
+  s_43b3d0625e7ac1::t_e5c10ad503a10e 1-214
+crates/agent-router-cli/src/schemas/run-observation.schema.json
+  s_43b3d0625e7ac1::t_390ddd9b357cc1 1-792
+crates/agent-router-cli/src/schemas/version.schema.json
+  s_43b3d0625e7ac1::t_75f84b222091c7 1-65
+crates/agent-router-cli/src/serve.rs
+  s_43b3d0625e7ac1::t_46f2c367aeff2a 1-282
+crates/agent-router-cli/src/session_budget.rs
+  s_43b3d0625e7ac1::t_e9ee2b09e5f075 1-123
+crates/agent-router-cli/src/sidecar.rs
+  s_43b3d0625e7ac1::t_1a387ba566152c 1-161
+crates/agent-router-cli/src/task_guide.rs
+  s_43b3d0625e7ac1::t_4261e97c07e8ff 1-404
+crates/agent-router-cli/src/version_info.rs
+  s_43b3d0625e7ac1::t_f02ff85a8cbe19 1-86
+crates/agent-router-cli/tests/accepted_changes.rs
+  s_43b3d0625e7ac1::t_2ebe91eeffd4be 1-111
+crates/agent-router-cli/tests/admission.rs
+  s_43b3d0625e7ac1::t_8833b15ecf6ce4 1-276
+crates/agent-router-cli/tests/assets.rs
+  s_43b3d0625e7ac1::t_826307f3797986 1-387
+crates/agent-router-cli/tests/attempt_correlation.rs
+  s_43b3d0625e7ac1::t_4f9433c478d3fd 1-856
+crates/agent-router-cli/tests/backend_activation.rs
+  s_43b3d0625e7ac1::t_6ffc8b3409b2ed 1-393
+crates/agent-router-cli/tests/backend_execution.rs
+  s_43b3d0625e7ac1::t_8122a872df4011 1-827
+crates/agent-router-cli/tests/capability_attestations.rs
+  s_43b3d0625e7ac1::t_ec881ebbc17d56 1-565
+crates/agent-router-cli/tests/catalog_active_closed.rs
+  s_43b3d0625e7ac1::t_91110d71d19270 1-36
+crates/agent-router-cli/tests/cli.rs
+  s_43b3d0625e7ac1::t_47d973c3245d83 1-773
+crates/agent-router-cli/tests/completions.rs
+  s_43b3d0625e7ac1::t_19c1944a6e7f6b 1-117
+crates/agent-router-cli/tests/config_formats.rs
+  s_43b3d0625e7ac1::t_53ffd0ba964a54 1-562
+crates/agent-router-cli/tests/coordinator.rs
+  s_43b3d0625e7ac1::t_123e7959daced4 1-410
+crates/agent-router-cli/tests/escalation.rs
+  s_43b3d0625e7ac1::t_d5a6822206f172 1-1784
+crates/agent-router-cli/tests/evaluation_metrics.rs
+  s_43b3d0625e7ac1::t_897ee7c31a2946 1-156
+crates/agent-router-cli/tests/evaluation_tradeoffs.rs
+  s_43b3d0625e7ac1::t_75e79472b6d751 1-76
+crates/agent-router-cli/tests/execution.rs
+  s_43b3d0625e7ac1::t_bbcdf5d63a8e6d 1-1318
+crates/agent-router-cli/tests/feedback_summary.rs
+  s_43b3d0625e7ac1::t_43d83db3644b23 1-334
+crates/agent-router-cli/tests/generation.rs
+  s_43b3d0625e7ac1::t_5108a05f9ee2ac 1-690
+crates/agent-router-cli/tests/generation_capabilities.rs
+  s_43b3d0625e7ac1::t_03d90153e9367c 1-154
+crates/agent-router-cli/tests/golden/route-phase-plan-unknown.json
+  s_43b3d0625e7ac1::t_6ee3501b75a46d 1-96
+crates/agent-router-cli/tests/golden/route-phase-plan.json
+  s_43b3d0625e7ac1::t_b6f1adb93c09eb 1-96
+crates/agent-router-cli/tests/human.rs
+  s_43b3d0625e7ac1::t_98254ed46debf5 1-293
+crates/agent-router-cli/tests/inspect.rs
+  s_43b3d0625e7ac1::t_19be157d79c4d1 1-222
+crates/agent-router-cli/tests/local_api.rs
+  s_43b3d0625e7ac1::t_78547638bbbce8 1-311
+crates/agent-router-cli/tests/local_api_absent.rs
+  s_43b3d0625e7ac1::t_40959c1f4cb888 1-24
+crates/agent-router-cli/tests/native_execution.rs
+  s_43b3d0625e7ac1::t_05aa151dece2a2 1-312
+crates/agent-router-cli/tests/native_hosts.rs
+  s_43b3d0625e7ac1::t_ab91efe57081ca 1-400
+crates/agent-router-cli/tests/offline_evidence.rs
+  s_43b3d0625e7ac1::t_15faa5f166b926 1-151
+crates/agent-router-cli/tests/preparation_capability_catalog.rs
+  s_43b3d0625e7ac1::t_b0c530222a2c3f 1-177
+crates/agent-router-cli/tests/product.rs
+  s_43b3d0625e7ac1::t_eb91f70623a4e3 1-682
+crates/agent-router-cli/tests/proof_catalog_consumers.rs
+  s_43b3d0625e7ac1::t_9fa7e140e4ed94 1-214
+crates/agent-router-cli/tests/publication.rs
+  s_43b3d0625e7ac1::t_86529c81ebf7e0 1-239
+crates/agent-router-cli/tests/replay_export.rs
+  s_43b3d0625e7ac1::t_cd8cbcaf5f88ed 1-502
+crates/agent-router-cli/tests/retrieval_context.rs
+  s_43b3d0625e7ac1::t_23865949ada1ae 1-349
+crates/agent-router-cli/tests/runtime_doctor.rs
+  s_43b3d0625e7ac1::t_f256b36791a934 1-115
+crates/agent-router-cli/tests/schema.rs
+  s_43b3d0625e7ac1::t_d91be554220c42 1-1159
+crates/agent-router-cli/tests/session_budgets.rs
+  s_43b3d0625e7ac1::t_e88c833affff31 1-434
+crates/agent-router-cli/tests/sidecar.rs
+  s_43b3d0625e7ac1::t_23e7f6eb01cee7 1-247
+crates/agent-router-cli/tests/support/admission_fixture.rs
+  s_43b3d0625e7ac1::t_042ee7cd188bb4 1-68
+crates/agent-router-cli/tests/support/attestation_fixture.rs
+  s_43b3d0625e7ac1::t_2cecaffbcd4e15 1-426
+crates/agent-router-cli/tests/support/json_schema.rs
+  s_43b3d0625e7ac1::t_633a7158d38813 1-297
+crates/agent-router-cli/tests/support/native_fixture.rs
+  s_43b3d0625e7ac1::t_563205d45ff4ed 1-670
+crates/agent-router-cli/tests/support/unknown_observation.rs
+  s_43b3d0625e7ac1::t_c3d056982abf4c 1-41
+crates/agent-router-cli/tests/task_guide.rs
+  s_43b3d0625e7ac1::t_8a6f08f57e26c4 1-1059
+crates/agent-router-cli/tests/version_info.rs
+  s_43b3d0625e7ac1::t_afa8115fe6dc12 1-73
+crates/router-adapter-api/Cargo.toml
+  s_43b3d0625e7ac1::t_473459a446a030 1-15
+crates/router-adapter-api/src/attestations.rs
+  s_43b3d0625e7ac1::t_7c979e1c52c50f 1-330
+crates/router-adapter-api/src/execution.rs
+  s_43b3d0625e7ac1::t_e4aa76a764599d 1-1120
+crates/router-adapter-api/src/lib.rs
+  s_43b3d0625e7ac1::t_e6cf0a66d1cb87 1-755
+crates/router-adapter-api/src/proofs.rs
+  s_43b3d0625e7ac1::t_7d14a5ce01f1a3 1-1720
+crates/router-adapter-api/src/registry.rs
+  s_43b3d0625e7ac1::t_7eb93e4ed01310 1-361
+crates/router-adapter-api/tests/execution_input.rs
+  s_43b3d0625e7ac1::t_d0b84844117087 1-196
+crates/router-adapter-api/tests/fixtures/registry/duplicate-key.json
+  s_43b3d0625e7ac1::t_ab6375c806ad64 1-15
+crates/router-adapter-api/tests/native_failures.md
+  s_43b3d0625e7ac1::t_734db0f6d2aec9 1-45
+crates/router-adapter-api/tests/native_failures.rs
+  s_43b3d0625e7ac1::t_c5423f38fe8578 1-281
+crates/router-adapter-api/tests/registry.rs
+  s_43b3d0625e7ac1::t_218ddbcfbbb3d3 1-456
+crates/router-adapter-api/tests/snapshots.rs
+  s_43b3d0625e7ac1::t_39188548546e8e 1-316
+crates/router-adapter-api/tests/support/native_failures.rs
+  s_43b3d0625e7ac1::t_1522c0d615432e 1-44
+crates/router-advisory-cache/Cargo.toml
+  s_43b3d0625e7ac1::t_b7b25a1acbd847 1-27
+crates/router-advisory-cache/src/files.rs
+  s_43b3d0625e7ac1::t_3195c403df8e5a 1-314
+crates/router-advisory-cache/src/lib.rs
+  s_43b3d0625e7ac1::t_5c47f1fd6e9284 1-315
+crates/router-advisory-cache/tests/advisory_cache.rs
+  s_43b3d0625e7ac1::t_aa46279feb5aff 1-779
+crates/router-asset-contracts/Cargo.toml
+  s_43b3d0625e7ac1::t_6a52b748487e9d 1-16
+crates/router-asset-contracts/src/documents.rs
+  s_43b3d0625e7ac1::t_1813b81e666b40 1-421
+crates/router-asset-contracts/src/gate.rs
+  s_43b3d0625e7ac1::t_39aa348e905d09 1-475
+crates/router-asset-contracts/src/lib.rs
+  s_43b3d0625e7ac1::t_8465a2b66c7819 1-203
+crates/router-asset-contracts/src/modality.rs
+  s_43b3d0625e7ac1::t_a7b97777842b65 1-265
+crates/router-asset-contracts/src/review.rs
+  s_43b3d0625e7ac1::t_1f881b22c5f392 1-188
+crates/router-asset-contracts/tests/contracts.rs
+  s_43b3d0625e7ac1::t_9c2955fdbde6a3 1-1162
+crates/router-asset-contracts/tests/modality.rs
+  s_43b3d0625e7ac1::t_5078f71b8f8d7a 1-430
+crates/router-backend-policy/Cargo.toml
+  s_43b3d0625e7ac1::t_df1664fd5369bd 1-23
+crates/router-backend-policy/src/activation.rs
+  s_43b3d0625e7ac1::t_3eb94b68eaba18 1-227
+crates/router-backend-policy/src/crypto.rs
+  s_43b3d0625e7ac1::t_df8a0800abe10c 1-108
+crates/router-backend-policy/src/decision.rs
+  s_43b3d0625e7ac1::t_fc9588822729f2 1-241
+crates/router-backend-policy/src/lib.rs
+  s_43b3d0625e7ac1::t_219d0ca43ad58d 1-81
+crates/router-backend-policy/src/promotion.rs
+  s_43b3d0625e7ac1::t_05b329f6f556e1 1-474
+crates/router-backend-policy/src/types.rs
+  s_43b3d0625e7ac1::t_fdd214f2895993 1-185
+crates/router-backend-policy/tests/promotion.rs
+  s_43b3d0625e7ac1::t_1557b915d8257f 1-1070
+crates/router-backend-store/Cargo.toml
+  s_43b3d0625e7ac1::t_1ca5b94495ac41 1-28
+crates/router-backend-store/src/files.rs
+  s_43b3d0625e7ac1::t_4996dcb9c0f43d 1-327
+crates/router-backend-store/src/json.rs
+  s_43b3d0625e7ac1::t_96423cfe00c493 1-95
+crates/router-backend-store/src/lib.rs
+  s_43b3d0625e7ac1::t_b52a1f55ad0f20 1-748
+crates/router-backend-store/tests/store.rs
+  s_43b3d0625e7ac1::t_4f5293cc765b53 1-968
+crates/router-backend-store/tests/support/fixture.rs
+  s_43b3d0625e7ac1::t_586659bf44d8ef 1-450
+crates/router-catalog-store/Cargo.toml
+  s_43b3d0625e7ac1::t_6f2513a50654dc 1-23
+crates/router-catalog-store/src/files.rs
+  s_43b3d0625e7ac1::t_c4bfbfcec3b2ca 1-502
+crates/router-catalog-store/src/json.rs
+  s_43b3d0625e7ac1::t_b2be31d0cfc991 1-95
+crates/router-catalog-store/src/lib.rs
+  s_43b3d0625e7ac1::t_46b0706637828e 1-1220
+crates/router-catalog-store/src/publisher_policy.rs
+  s_43b3d0625e7ac1::t_5c7e5f9b52a12e 1-139
+crates/router-catalog-store/tests/publisher_policy.rs
+  s_43b3d0625e7ac1::t_aafc3ac9b861ce 1-81
+crates/router-catalog-store/tests/store.rs
+  s_43b3d0625e7ac1::t_fb24a129fc704e 1-796
+crates/router-catalog/Cargo.toml
+  s_43b3d0625e7ac1::t_e4f63f85a806c7 1-21
+crates/router-catalog/src/error.rs
+  s_43b3d0625e7ac1::t_17ceb5cf5d62f5 1-27
+crates/router-catalog/src/generated.rs
+  s_43b3d0625e7ac1::t_3dcf888160bc95 1-639
+crates/router-catalog/src/lib.rs
+  s_43b3d0625e7ac1::t_016aa977fa4730 1-96
+crates/router-catalog/src/signed.rs
+  s_43b3d0625e7ac1::t_3eb5da5ee4e4e0 1-1411
+crates/router-catalog/src/validate.rs
+  s_43b3d0625e7ac1::t_d091a4a0899fa7 1-390
+crates/router-catalog/tests/catalog_validation.rs
+  s_43b3d0625e7ac1::t_e14dc54fb0a212 1-444
+crates/router-catalog/tests/fixtures/capability-drift.json
+  s_43b3d0625e7ac1::t_e680ba409089fe 1-18
+crates/router-catalog/tests/fixtures/conflicting-aliases.json
+  s_43b3d0625e7ac1::t_225f5ef86185c1 1-7
+crates/router-catalog/tests/fixtures/deprecated-model.json
+  s_43b3d0625e7ac1::t_61d13f0677fb0d 1-18
+crates/router-catalog/tests/fixtures/generated-prior.json
+  s_43b3d0625e7ac1::t_1f923e35a91f81 1-25
+crates/router-catalog/tests/generated_catalogs.rs
+  s_43b3d0625e7ac1::t_fd4484b033892c 1-472
+crates/router-catalog/tests/signed_catalogs.rs
+  s_43b3d0625e7ac1::t_41d0647c9f44c6 1-1233
+crates/router-coordinator/Cargo.toml
+  s_43b3d0625e7ac1::t_6240f875de1091 1-32
+crates/router-coordinator/src/definition.rs
+  s_43b3d0625e7ac1::t_c10a14440642fe 1-123
+crates/router-coordinator/src/lib.rs
+  s_43b3d0625e7ac1::t_a519e3c682a9ae 1-874
+crates/router-coordinator/src/store.rs
+  s_43b3d0625e7ac1::t_25cc8af2925f1b 1-689
+crates/router-coordinator/tests/generated_decision.rs
+  s_43b3d0625e7ac1::t_ff7c70abea6321 1-279
+crates/router-coordinator/tests/sqlite_locks.rs
+  s_43b3d0625e7ac1::t_100c3f0691e349 1-199
+crates/router-coordinator/tests/workflow.rs
+  s_43b3d0625e7ac1::t_69b9b28c2ce849 1-1710
+crates/router-decision/Cargo.toml
+  s_43b3d0625e7ac1::t_4dd201c0fd62ee 1-23
+crates/router-decision/src/http.rs
+  s_43b3d0625e7ac1::t_3be2e6180c8402 1-208
+crates/router-decision/src/lib.rs
+  s_43b3d0625e7ac1::t_9f368111be357d 1-479
+crates/router-decision/src/sidecar.rs
+  s_43b3d0625e7ac1::t_5db96758f82db0 1-161
+crates/router-decision/src/standard_sidecar.rs
+  s_43b3d0625e7ac1::t_bdaf6553ae7caf 1-324
+crates/router-decision/tests/backends.rs
+  s_43b3d0625e7ac1::t_ec648877b5b885 1-359
+crates/router-decision/tests/standard_sidecar.rs
+  s_43b3d0625e7ac1::t_238f79565e8c93 1-315
+crates/router-decision/tests/support/http.rs
+  s_43b3d0625e7ac1::t_c9c400e4be4c3b 1-138
+crates/router-doctor/Cargo.toml
+  s_43b3d0625e7ac1::t_9f85986e17208b 1-24
+crates/router-doctor/src/audit.rs
+  s_43b3d0625e7ac1::t_9a73eee218b90c 1-517
+crates/router-doctor/src/database.rs
+  s_43b3d0625e7ac1::t_4da3aa968b41e3 1-93
+crates/router-doctor/src/deep.rs
+  s_43b3d0625e7ac1::t_d0edd383283934 1-456
+crates/router-doctor/src/diagnose.rs
+  s_43b3d0625e7ac1::t_e95247cadc070f 1-357
+crates/router-doctor/src/files.rs
+  s_43b3d0625e7ac1::t_63fe76430dd13c 1-269
+crates/router-doctor/src/lib.rs
+  s_43b3d0625e7ac1::t_2bba25069ab709 1-44
+crates/router-doctor/src/snapshot.rs
+  s_43b3d0625e7ac1::t_3fa45490d30626 1-159
+crates/router-doctor/tests/audit.rs
+  s_43b3d0625e7ac1::t_a76897ca71025c 1-578
+crates/router-doctor/tests/catalogs.rs
+  s_43b3d0625e7ac1::t_14fe72f7c19bbe 1-141
+crates/router-doctor/tests/database_locks.rs
+  s_43b3d0625e7ac1::t_5b7f50f94da33e 1-259
+crates/router-doctor/tests/deep.rs
+  s_43b3d0625e7ac1::t_2b05b53775453e 1-688
+crates/router-doctor/tests/diagnostics.rs
+  s_43b3d0625e7ac1::t_2556357f38dc82 1-260
+crates/router-doctor/tests/snapshot.rs
+  s_43b3d0625e7ac1::t_797c84e872ba47 1-308
+crates/router-doctor/tests/sqlite_bundle.rs
+  s_43b3d0625e7ac1::t_5d14c470ced4a4 1-53
+crates/router-eval/Cargo.toml
+  s_43b3d0625e7ac1::t_da6ed710ae6f41 1-20
+crates/router-eval/README.md
+  s_43b3d0625e7ac1::t_3792225fe24a0c 1-39
+crates/router-eval/examples/candidate_corpus.rs
+  s_43b3d0625e7ac1::t_0b056e8a32c7c0 1-484
+crates/router-eval/src/candidate_replay.rs
+  s_43b3d0625e7ac1::t_018bd6bee777ce 1-250
+crates/router-eval/src/corpus.rs
+  s_43b3d0625e7ac1::t_301284ef530684 1-69
+crates/router-eval/src/evaluator_qualification.rs
+  s_43b3d0625e7ac1::t_d29f75faa9d468 1-589
+crates/router-eval/src/lib.rs
+  s_43b3d0625e7ac1::t_072c66cbe07271 1-72
+crates/router-eval/src/metrics.rs
+  s_43b3d0625e7ac1::t_fa9fab87e29b28 1-374
+crates/router-eval/src/promotion.rs
+  s_43b3d0625e7ac1::t_147f6008ce8ace 1-478
+crates/router-eval/src/qualified_pricing.rs
+  s_43b3d0625e7ac1::t_9c918655d4721c 1-146
+crates/router-eval/src/replay.rs
+  s_43b3d0625e7ac1::t_321449d44a93ac 1-579
+crates/router-eval/src/tradeoffs.rs
+  s_43b3d0625e7ac1::t_1d71e06dddf0c9 1-526
+crates/router-eval/tests/candidate_replays.rs
+  s_43b3d0625e7ac1::t_d116a85f421915 1-220
+crates/router-eval/tests/evaluator_qualification.rs
+  s_43b3d0625e7ac1::t_c7ec18f9dbc809 1-521
+crates/router-eval/tests/metrics.rs
+  s_43b3d0625e7ac1::t_7220852d6777eb 1-752
+crates/router-eval/tests/qualified_pricing.rs
+  s_43b3d0625e7ac1::t_e517dd1beadbab 1-79
+crates/router-eval/tests/replay.rs
+  s_43b3d0625e7ac1::t_e1fcfbc1d99412 1-794
+crates/router-eval/tests/tradeoffs.rs
+  s_43b3d0625e7ac1::t_4c81c82bae6861 1-303
+crates/router-execution-decision/Cargo.toml
+  s_43b3d0625e7ac1::t_959c970283715d 1-23
+crates/router-execution-decision/README.md
+  s_43b3d0625e7ac1::t_1da7a84d17a74c 1-48
+crates/router-execution-decision/src/lib.rs
+  s_43b3d0625e7ac1::t_572098a2a8ef25 1-378
+crates/router-execution-decision/tests/authority.rs
+  s_43b3d0625e7ac1::t_38a701d007aac4 1-159
+crates/router-execution-decision/tests/decision.rs
+  s_43b3d0625e7ac1::t_5386b602e084f9 1-119
+crates/router-execution-decision/tests/support/assets.rs
+  s_43b3d0625e7ac1::t_b3eb757c84126b 1-98
+crates/router-execution-decision/tests/support/synthetic.rs
+  s_43b3d0625e7ac1::t_2b95b09218d3e2 1-516
+crates/router-feedback/Cargo.toml
+  s_43b3d0625e7ac1::t_d24fa2f001e027 1-24
+crates/router-feedback/src/accepted_changes.rs
+  s_43b3d0625e7ac1::t_bc0807f59e4ea2 1-703
+crates/router-feedback/src/attempt_correlation.rs
+  s_43b3d0625e7ac1::t_991254079851b3 1-323
+crates/router-feedback/src/beta.rs
+  s_43b3d0625e7ac1::t_b79c3521fc4dbe 1-175
+crates/router-feedback/src/facts.rs
+  s_43b3d0625e7ac1::t_eee28d1d6542de 1-202
+crates/router-feedback/src/learning.rs
+  s_43b3d0625e7ac1::t_472aa12be408ab 1-354
+crates/router-feedback/src/lib.rs
+  s_43b3d0625e7ac1::t_e9ba398fa65ddd 1-267
+crates/router-feedback/src/policy.rs
+  s_43b3d0625e7ac1::t_8115d04b4cbc61 1-809
+crates/router-feedback/src/report.rs
+  s_43b3d0625e7ac1::t_550784af396b5b 1-1041
+crates/router-feedback/src/sidecar_export.rs
+  s_43b3d0625e7ac1::t_8632511663f7a4 1-177
+crates/router-feedback/src/store.rs
+  s_43b3d0625e7ac1::t_712fd05e38e6a0 1-533
+crates/router-feedback/src/supplied_usage_pricing.rs
+  s_43b3d0625e7ac1::t_af22d0030ddea8 1-223
+crates/router-feedback/src/task_report.rs
+  s_43b3d0625e7ac1::t_2016b710b5450e 1-205
+crates/router-feedback/tests/accepted_changes.rs
+  s_43b3d0625e7ac1::t_33c125fdb2b8e4 1-395
+crates/router-feedback/tests/attempt_correlation.rs
+  s_43b3d0625e7ac1::t_c508dbd5186149 1-274
+crates/router-feedback/tests/common/mod.rs
+  s_43b3d0625e7ac1::t_a401bd2c8c1681 1-270
+crates/router-feedback/tests/facts.rs
+  s_43b3d0625e7ac1::t_e0d5ebff9999f9 1-417
+crates/router-feedback/tests/feedback.rs
+  s_43b3d0625e7ac1::t_145d259282cd0a 1-845
+crates/router-feedback/tests/report.rs
+  s_43b3d0625e7ac1::t_5cecca7615f623 1-1263
+crates/router-feedback/tests/route.rs
+  s_43b3d0625e7ac1::t_42efc8ea6ed184 1-215
+crates/router-feedback/tests/sidecar_export.rs
+  s_43b3d0625e7ac1::t_8847eed914864c 1-221
+crates/router-feedback/tests/supplied_usage_pricing.rs
+  s_43b3d0625e7ac1::t_df80d0a9cacf3c 1-404
+crates/router-feedback/tests/support/sidecar.rs
+  s_43b3d0625e7ac1::t_5abbba6f36ac62 1-69
+crates/router-import/Cargo.toml
+  s_43b3d0625e7ac1::t_ff787dcefe9b5d 1-24
+crates/router-import/src/frontmatter.rs
+  s_43b3d0625e7ac1::t_85cad2ca2a8798 1-155
+crates/router-import/src/lib.rs
+  s_43b3d0625e7ac1::t_8357d628be82ce 1-482
+crates/router-import/src/scan.rs
+  s_43b3d0625e7ac1::t_1af56d2840dd24 1-252
+crates/router-import/tests/import.rs
+  s_43b3d0625e7ac1::t_18052d62bce6e9 1-738
+crates/router-local-api/Cargo.toml
+  s_43b3d0625e7ac1::t_234d2e8a303c58 1-19
+crates/router-local-api/src/error.rs
+  s_43b3d0625e7ac1::t_3b59009d325e3d 1-25
+crates/router-local-api/src/http.rs
+  s_43b3d0625e7ac1::t_1d4505f877a71e 1-278
+crates/router-local-api/src/json.rs
+  s_43b3d0625e7ac1::t_b6a85d00b7a7ff 1-341
+crates/router-local-api/src/lib.rs
+  s_43b3d0625e7ac1::t_d9319633d5a79d 1-23
+crates/router-local-api/src/server.rs
+  s_43b3d0625e7ac1::t_f5550578eb7593 1-1153
+crates/router-local-api/src/state.rs
+  s_43b3d0625e7ac1::t_986197b2670193 1-341
+crates/router-local-api/tests/server.rs
+  s_43b3d0625e7ac1::t_772b25a5317613 1-373
+crates/router-policy/Cargo.toml
+  s_43b3d0625e7ac1::t_67d8b913f7c760 1-24
+crates/router-policy/examples/benchmark_phase.rs
+  s_43b3d0625e7ac1::t_338366a380aee5 1-101
+crates/router-policy/src/asset_phases.rs
+  s_43b3d0625e7ac1::t_f36a7522832c23 1-511
+crates/router-policy/src/constraint.rs
+  s_43b3d0625e7ac1::t_f4551b8138ca6d 1-276
+crates/router-policy/src/generator.rs
+  s_43b3d0625e7ac1::t_7e9aeb7b5be200 1-1249
+crates/router-policy/src/lib.rs
+  s_43b3d0625e7ac1::t_ce6b71de62e95b 1-36
+crates/router-policy/src/phases.rs
+  s_43b3d0625e7ac1::t_d20cabf37ca3fa 1-998
+crates/router-policy/src/preset.rs
+  s_43b3d0625e7ac1::t_5491cc25bc9ee4 1-260
+crates/router-policy/src/retrieval.rs
+  s_43b3d0625e7ac1::t_5af0f37850db3d 1-153
+crates/router-policy/src/review_separation.rs
+  s_43b3d0625e7ac1::t_7da715aeb2f443 1-152
+crates/router-policy/src/route.rs
+  s_43b3d0625e7ac1::t_55f299ab11d58d 1-265
+crates/router-policy/src/score.rs
+  s_43b3d0625e7ac1::t_f3d9a0b8e51884 1-464
+crates/router-policy/src/signed_phases.rs
+  s_43b3d0625e7ac1::t_eca3f7aa7f055a 1-493
+crates/router-policy/tests/asset_phases.rs
+  s_43b3d0625e7ac1::t_44ac12c1b64be8 1-423
+crates/router-policy/tests/constraints.rs
+  s_43b3d0625e7ac1::t_7713f709b971fe 1-327
+crates/router-policy/tests/fixture_matrix.rs
+  s_43b3d0625e7ac1::t_e02a134e2ceaf3 1-344
+crates/router-policy/tests/generator.rs
+  s_43b3d0625e7ac1::t_adb6829db331af 1-968
+crates/router-policy/tests/legacy_phase_bytes.rs
+  s_43b3d0625e7ac1::t_7f8bc8a5fed7bc 1-67
+crates/router-policy/tests/phases.rs
+  s_43b3d0625e7ac1::t_5dadd77bea46f8 1-784
+crates/router-policy/tests/retrieval.rs
+  s_43b3d0625e7ac1::t_2e5770d81c1a4d 1-130
+crates/router-policy/tests/review_separation.rs
+  s_43b3d0625e7ac1::t_cc49459769bfbd 1-626
+crates/router-policy/tests/routing.rs
+  s_43b3d0625e7ac1::t_486566ba52a00f 1-754
+crates/router-policy/tests/signed_phases.rs
+  s_43b3d0625e7ac1::t_8d4be1a364f14d 1-579
+crates/router-policy/tests/support/asset_fixture.rs
+  s_43b3d0625e7ac1::t_60d2c21b149058 1-117
+crates/router-policy/tests/support/signed_fixture.rs
+  s_43b3d0625e7ac1::t_9a68f276c6fc7d 1-317
+crates/router-prepare/Cargo.toml
+  s_43b3d0625e7ac1::t_fd465c3e738afe 1-28
+crates/router-prepare/src/lib.rs
+  s_43b3d0625e7ac1::t_0f8aa1246eef18 1-596
+crates/router-prepare/src/signed.rs
+  s_43b3d0625e7ac1::t_7aaaa80e4e95ec 1-359
+crates/router-prepare/tests/preparation.rs
+  s_43b3d0625e7ac1::t_81371f2c2513a3 1-957
+crates/router-prepare/tests/signed_preparation.rs
+  s_43b3d0625e7ac1::t_23bbfab2cce34b 1-256
+crates/router-prepare/tests/support/signed_assets.rs
+  s_43b3d0625e7ac1::t_94790bf5471909 1-108
+crates/router-prepare/tests/support/signed_clock.rs
+  s_43b3d0625e7ac1::t_3c5df4a322067e 1-102
+crates/router-prepare/tests/support/signed_preparation_fixture.rs
+  s_43b3d0625e7ac1::t_f7d2bd34ae3f62 1-275
+crates/router-retrieval/Cargo.toml
+  s_43b3d0625e7ac1::t_a575303fb4a57f 1-25
+crates/router-retrieval/README.md
+  s_43b3d0625e7ac1::t_1e858a5731e314 1-124
+crates/router-retrieval/examples/benchmark.rs
+  s_43b3d0625e7ac1::t_c628b1439d1154 1-67
+crates/router-retrieval/src/body.rs
+  s_43b3d0625e7ac1::t_a1e9c991cfbe58 1-132
+crates/router-retrieval/src/context.rs
+  s_43b3d0625e7ac1::t_b5a2db4a00e9bc 1-813
+crates/router-retrieval/src/fusion.rs
+  s_43b3d0625e7ac1::t_96af67ff45536f 1-118
+crates/router-retrieval/src/index.rs
+  s_43b3d0625e7ac1::t_0a5ddedac8292b 1-910
+crates/router-retrieval/src/lib.rs
+  s_43b3d0625e7ac1::t_3fedb60655f3e0 1-84
+crates/router-retrieval/src/tokenize.rs
+  s_43b3d0625e7ac1::t_19f4af11d9070a 1-58
+crates/router-retrieval/src/types.rs
+  s_43b3d0625e7ac1::t_a907d8b3292732 1-247
+crates/router-retrieval/src/vectors.rs
+  s_43b3d0625e7ac1::t_0bcb35412b727f 1-155
+crates/router-retrieval/tests/catalog_binding.rs
+  s_43b3d0625e7ac1::t_765d17b021b425 1-274
+crates/router-retrieval/tests/contextual.rs
+  s_43b3d0625e7ac1::t_3a48c35365b3ec 1-619
+crates/router-retrieval/tests/fixtures/corpus.json
+  s_43b3d0625e7ac1::t_2064114ecb603b 1-22
+crates/router-retrieval/tests/incremental_fusion.rs
+  s_43b3d0625e7ac1::t_3d210631a8d323 1-298
+crates/router-retrieval/tests/retrieval.rs
+  s_43b3d0625e7ac1::t_35a4f53a632d80 1-598
+crates/router-retrieval/tests/vectors.rs
+  s_43b3d0625e7ac1::t_543d9162874d28 1-307
+crates/router-runtime/Cargo.toml
+  s_43b3d0625e7ac1::t_5bf8a006d92e9c 1-36
+crates/router-runtime/examples/campaign/packets.json
+  s_43b3d0625e7ac1::t_1e6cfe60fbe291 1-406
+crates/router-runtime/examples/campaign/public_score.rs
+  s_43b3d0625e7ac1::t_040c2e08c5d094 1-329
+crates/router-runtime/examples/campaign/recipe.rs
+  s_43b3d0625e7ac1::t_400077640cefac 1-86
+crates/router-runtime/examples/campaign/t02-v2/acceptance.json
+  s_43b3d0625e7ac1::t_0342992e1ea744 1-85
+crates/router-runtime/examples/campaign/t02-v2/cases.rs
+  s_43b3d0625e7ac1::t_db495e76a340df 1-84
+crates/router-runtime/examples/campaign/t02-v2/verify.py
+  s_43b3d0625e7ac1::t_a5fe16ff7b1db4 1-221
+crates/router-runtime/examples/campaign/t02_v2.rs
+  s_43b3d0625e7ac1::t_ff91d9cf9481a7 1-207
+crates/router-runtime/examples/finite-campaign.rs
+  s_43b3d0625e7ac1::t_8019977e255fb2 1-1019
+crates/router-runtime/examples/finite_client_qualification.rs
+  s_43b3d0625e7ac1::t_747efa923f8fa2 1-198
+crates/router-runtime/examples/finite_client_supervision.rs
+  s_43b3d0625e7ac1::t_a4282e864a3ad4 1-873
+crates/router-runtime/examples/owned_supervision.rs
+  s_43b3d0625e7ac1::t_719bdd266942ab 1-241
+crates/router-runtime/src/admission/budget.rs
+  s_43b3d0625e7ac1::t_f816c37145452b 1-342
+crates/router-runtime/src/admission/budget_store.rs
+  s_43b3d0625e7ac1::t_174968fdd72021 1-504
+crates/router-runtime/src/admission/budget_tests.rs
+  s_43b3d0625e7ac1::t_020c3a28952d8a 1-632
+crates/router-runtime/src/admission/files.rs
+  s_43b3d0625e7ac1::t_638ea4037dad54 1-162
+crates/router-runtime/src/admission/mod.rs
+  s_43b3d0625e7ac1::t_3c21dd46980bd4 1-161
+crates/router-runtime/src/admission/registry.rs
+  s_43b3d0625e7ac1::t_84b4d9b8e68816 1-455
+crates/router-runtime/src/admission/runtime.rs
+  s_43b3d0625e7ac1::t_1583a5e5d2262d 1-559
+crates/router-runtime/src/admission/tests.rs
+  s_43b3d0625e7ac1::t_2a5f0f837b7bfc 1-434
+crates/router-runtime/src/artifact_storage.rs
+  s_43b3d0625e7ac1::t_803d2d4e747734 1-134
+crates/router-runtime/src/artifacts.rs
+  s_43b3d0625e7ac1::t_fd5e03e5c37e02 1-369
+crates/router-runtime/src/bin/finite-codex-client.rs
+  s_43b3d0625e7ac1::t_7d98973359f13e 1-415
+crates/router-runtime/src/bin/finite-codex-client/replacement.rs
+  s_43b3d0625e7ac1::t_1acde6c11529b0 1-512
+crates/router-runtime/src/bin/finite-codex-client/tools_probe.rs
+  s_43b3d0625e7ac1::t_975dfaad032022 1-205
+crates/router-runtime/src/bubblewrap.rs
+  s_43b3d0625e7ac1::t_441198afba5d2a 1-499
+crates/router-runtime/src/capability_proofs.rs
+  s_43b3d0625e7ac1::t_da0538646c2899 1-933
+crates/router-runtime/src/diagnostics.rs
+  s_43b3d0625e7ac1::t_aaf7c1bdca94fb 1-476
+crates/router-runtime/src/diagnostics/files.rs
+  s_43b3d0625e7ac1::t_2c9ced5e3c8d41 1-193
+crates/router-runtime/src/error.rs
+  s_43b3d0625e7ac1::t_fb9028bfd92e91 1-54
+crates/router-runtime/src/escalation.rs
+  s_43b3d0625e7ac1::t_43333afee9bd0e 1-669
+crates/router-runtime/src/finite_client.rs
+  s_43b3d0625e7ac1::t_f45ed50161ec62 1-1279
+crates/router-runtime/src/finite_client/campaign_discovery.rs
+  s_43b3d0625e7ac1::t_8a931c7d8bb2ce 1-352
+crates/router-runtime/src/finite_client/coupling_linux_tests.rs
+  s_43b3d0625e7ac1::t_3b9618bd36c774 1-217
+crates/router-runtime/src/finite_client/coupling_tests.rs
+  s_43b3d0625e7ac1::t_08a39ef8b449a5 1-101
+crates/router-runtime/src/finite_client/isolated_network.rs
+  s_43b3d0625e7ac1::t_d4c7b882ce9464 1-241
+crates/router-runtime/src/finite_client/linux_backend.rs
+  s_43b3d0625e7ac1::t_d1a1e4e9cf05e8 1-893
+crates/router-runtime/src/finite_client/linux_e2e.rs
+  s_43b3d0625e7ac1::t_eaff1983ad47a9 1-1708
+crates/router-runtime/src/finite_client/linux_qualification.rs
+  s_43b3d0625e7ac1::t_47ebf7cbf429e2 1-469
+crates/router-runtime/src/finite_client/namespace_state.rs
+  s_43b3d0625e7ac1::t_08137354f85333 1-83
+crates/router-runtime/src/finite_client/native_tools_tests.rs
+  s_43b3d0625e7ac1::t_cea23cbd07ab81 1-412
+crates/router-runtime/src/finite_client/ownership_tests.rs
+  s_43b3d0625e7ac1::t_f49cf6808602e1 1-457
+crates/router-runtime/src/finite_client/runtime_binding.rs
+  s_43b3d0625e7ac1::t_ced81d09c493ff 1-300
+crates/router-runtime/src/finite_client/subscription_controller.rs
+  s_43b3d0625e7ac1::t_b38ba9c679032d 1-657
+crates/router-runtime/src/finite_client/subscription_controller_tests.rs
+  s_43b3d0625e7ac1::t_2280b567b7b242 1-327
+crates/router-runtime/src/finite_client/subscription_preparation.rs
+  s_43b3d0625e7ac1::t_7a3c2b8206f9ff 1-89
+crates/router-runtime/src/finite_client/tools_probe_view.rs
+  s_43b3d0625e7ac1::t_3afb2bc52d555a 1-158
+crates/router-runtime/src/finite_client/tools_state.rs
+  s_43b3d0625e7ac1::t_98f2d377c4d931 1-471
+crates/router-runtime/src/finite_client/verification.rs
+  s_43b3d0625e7ac1::t_ff776de30cd8c0 1-267
+crates/router-runtime/src/finite_client/write_workspace.rs
+  s_43b3d0625e7ac1::t_6b0d76f836e24b 1-733
+crates/router-runtime/src/finite_tools.rs
+  s_43b3d0625e7ac1::t_1390890ec70377 1-312
+crates/router-runtime/src/finite_tools/exec.rs
+  s_43b3d0625e7ac1::t_5ee2a23af4b39d 1-301
+crates/router-runtime/src/finite_tools/linux_tests.rs
+  s_43b3d0625e7ac1::t_4783c8ae967648 1-433
+crates/router-runtime/src/finite_tools/mcp_stdio.rs
+  s_43b3d0625e7ac1::t_08ec41c3d8dadd 1-605
+crates/router-runtime/src/finite_tools/owner.rs
+  s_43b3d0625e7ac1::t_9782cd80172845 1-270
+crates/router-runtime/src/finite_tools/policy.rs
+  s_43b3d0625e7ac1::t_d4e9158cdee090 1-1369
+crates/router-runtime/src/finite_tools/session.rs
+  s_43b3d0625e7ac1::t_796b0690a6558a 1-309
+crates/router-runtime/src/finite_tools/transport.rs
+  s_43b3d0625e7ac1::t_9198e05b6c0209 1-129
+crates/router-runtime/src/generated.rs
+  s_43b3d0625e7ac1::t_c053caf46912e7 1-61
+crates/router-runtime/src/host_state.rs
+  s_43b3d0625e7ac1::t_33a212fcfcb22a 1-1066
+crates/router-runtime/src/integration.rs
+  s_43b3d0625e7ac1::t_29a338751100aa 1-865
+crates/router-runtime/src/leases.rs
+  s_43b3d0625e7ac1::t_c8254940060b03 1-458
+crates/router-runtime/src/lib.rs
+  s_43b3d0625e7ac1::t_139f4ae7e9045a 1-2358
+crates/router-runtime/src/native_version.rs
+  s_43b3d0625e7ac1::t_40102ec4eba0f2 1-345
+crates/router-runtime/src/network_authority.rs
+  s_43b3d0625e7ac1::t_e3137510bfd88e 1-73
+crates/router-runtime/src/observation.rs
+  s_43b3d0625e7ac1::t_936e7f3df240e6 1-167
+crates/router-runtime/src/outputs.rs
+  s_43b3d0625e7ac1::t_47a55da2bb15c7 1-346
+crates/router-runtime/src/private_program.rs
+  s_43b3d0625e7ac1::t_c82304db73baf2 1-185
+crates/router-runtime/src/process.rs
+  s_43b3d0625e7ac1::t_2d3c76a20c63bb 1-453
+crates/router-runtime/src/resources.rs
+  s_43b3d0625e7ac1::t_e45f7b1bdd3cc5 1-202
+crates/router-runtime/src/sandbox.rs
+  s_43b3d0625e7ac1::t_ee731328c72d28 1-707
+crates/router-runtime/src/stale.rs
+  s_43b3d0625e7ac1::t_c7b11eaf495ddc 1-131
+crates/router-runtime/src/store.rs
+  s_43b3d0625e7ac1::t_b8ac6945822c0d 1-3588
+crates/router-runtime/src/store/admission.rs
+  s_43b3d0625e7ac1::t_b8648406d3baf3 1-564
+crates/router-runtime/src/store/escalation.rs
+  s_43b3d0625e7ac1::t_34d325a1542624 1-184
+crates/router-runtime/src/store/observation.rs
+  s_43b3d0625e7ac1::t_adacdc72996128 1-489
+crates/router-runtime/src/store/preparation.rs
+  s_43b3d0625e7ac1::t_9ed22cb012712c 1-1017
+crates/router-runtime/src/timing.rs
+  s_43b3d0625e7ac1::t_c04785e0097ce3 1-123
+crates/router-runtime/src/workflow.rs
+  s_43b3d0625e7ac1::t_1d46ffa27b138a 1-126
+crates/router-runtime/src/workspace.rs
+  s_43b3d0625e7ac1::t_fe1da656b98d30 1-661
+crates/router-runtime/tests/diagnostics.rs
+  s_43b3d0625e7ac1::t_52d1aec79888bc 1-528
+crates/router-runtime/tests/doctor_snapshot.rs
+  s_43b3d0625e7ac1::t_3d3a93b2021d49 1-42
+crates/router-runtime/tests/escalation.rs
+  s_43b3d0625e7ac1::t_4f45251576e874 1-946
+crates/router-runtime/tests/finite_client.rs
+  s_43b3d0625e7ac1::t_34c27660bdcd13 1-1368
+crates/router-runtime/tests/generated.rs
+  s_43b3d0625e7ac1::t_cdc4ece85f67d7 1-757
+crates/router-runtime/tests/host_state.rs
+  s_43b3d0625e7ac1::t_a68966f4d5b13f 1-151
+crates/router-runtime/tests/native_failures.rs
+  s_43b3d0625e7ac1::t_294fd57e23daee 1-488
+crates/router-runtime/tests/native_version.rs
+  s_43b3d0625e7ac1::t_72083cca8593ff 1-674
+crates/router-runtime/tests/observation.rs
+  s_43b3d0625e7ac1::t_0518675b99ba8c 1-542
+crates/router-runtime/tests/observation_v2_adversarial.rs
+  s_43b3d0625e7ac1::t_4244e683bddb42 1-801
+crates/router-runtime/tests/retry_preview.rs
+  s_43b3d0625e7ac1::t_9642afc3d83843 1-319
+crates/router-runtime/tests/runtime.rs
+  s_43b3d0625e7ac1::t_742d51ef6a3962 1-4658
+crates/router-runtime/tests/runtime/finite_client_binding.rs
+  s_43b3d0625e7ac1::t_a125ab61d19bb3 1-602
+crates/router-runtime/tests/signed_catalog.rs
+  s_43b3d0625e7ac1::t_1b2c58009c61cb 1-214
+crates/router-runtime/tests/sqlite_locks.rs
+  s_43b3d0625e7ac1::t_79d42c814b3f81 1-199
+crates/router-sandbox-helper/Cargo.toml
+  s_43b3d0625e7ac1::t_c4658f31f52771 1-12
+crates/router-sandbox-helper/src/main.rs
+  s_43b3d0625e7ac1::t_4cfc5bd9f17546 1-137
+crates/router-sandbox-helper/src/watchdog.rs
+  s_43b3d0625e7ac1::t_46bfa072690cc6 1-231
+crates/router-sandbox-helper/tests/lifetime.rs
+  s_43b3d0625e7ac1::t_03a8c107201a93 1-265
+crates/router-sandbox-helper/tests/limits.rs
+  s_43b3d0625e7ac1::t_4e487a9c89fcdd 1-171
+crates/router-types/Cargo.toml
+  s_43b3d0625e7ac1::t_b231a6da45ccaf 1-13
+crates/router-types/src/admission.rs
+  s_43b3d0625e7ac1::t_6a18c533d95d91 1-72
+crates/router-types/src/asset.rs
+  s_43b3d0625e7ac1::t_c734a1dcb318f8 1-178
+crates/router-types/src/asset_contracts.rs
+  s_43b3d0625e7ac1::t_a79e9b12481b79 1-260
+crates/router-types/src/backend.rs
+  s_43b3d0625e7ac1::t_204bee3e6bd358 1-55
+crates/router-types/src/coordinator.rs
+  s_43b3d0625e7ac1::t_bd347ec92e36a5 1-144
+crates/router-types/src/decision.rs
+  s_43b3d0625e7ac1::t_023c68b86738cf 1-110
+crates/router-types/src/doctor.rs
+  s_43b3d0625e7ac1::t_621b2e65e59608 1-542
+crates/router-types/src/escalation.rs
+  s_43b3d0625e7ac1::t_2f051a6ba4b2e0 1-105
+crates/router-types/src/execution.rs
+  s_43b3d0625e7ac1::t_e2536fce8770ba 1-333
+crates/router-types/src/execution_decision.rs
+  s_43b3d0625e7ac1::t_adea199934d419 1-26
+crates/router-types/src/feedback.rs
+  s_43b3d0625e7ac1::t_579fb1a555efae 1-291
+crates/router-types/src/finite_client.rs
+  s_43b3d0625e7ac1::t_01e3dcd6b60205 1-29
+crates/router-types/src/lib.rs
+  s_43b3d0625e7ac1::t_85a95b38868df6 1-63
+crates/router-types/src/phases.rs
+  s_43b3d0625e7ac1::t_d68cb1212cf433 1-233
+crates/router-types/src/plan_generation.rs
+  s_43b3d0625e7ac1::t_faa58ecea5d712 1-283
+crates/router-types/src/risk.rs
+  s_43b3d0625e7ac1::t_f3436d080345cf 1-75
+crates/router-types/src/runtime.rs
+  s_43b3d0625e7ac1::t_9b64110cd84fae 1-266
+crates/router-types/src/session_budget.rs
+  s_43b3d0625e7ac1::t_cb9194bc57f2bf 1-75
+crates/router-types/src/sidecar.rs
+  s_43b3d0625e7ac1::t_6ba63098df14db 1-118
+crates/router-types/src/task.rs
+  s_43b3d0625e7ac1::t_29cd6385d0a4a5 1-53
+crates/router-types/src/workflow.rs
+  s_43b3d0625e7ac1::t_c858617c2a6cc8 1-216
+crates/router-types/tests/contracts.rs
+  s_43b3d0625e7ac1::t_d255f68561af22 1-189
+crates/router-validation/Cargo.toml
+  s_43b3d0625e7ac1::t_298e01edb56f82 1-13
+crates/router-validation/src/lib.rs
+  s_43b3d0625e7ac1::t_3a66c2965d1494 1-567
+crates/router-validation/tests/validation.rs
+  s_43b3d0625e7ac1::t_33fc104ff14fef 1-544
+crates/router-workflow/Cargo.toml
+  s_43b3d0625e7ac1::t_8f35c7625be4d0 1-14
+crates/router-workflow/src/execution.rs
+  s_43b3d0625e7ac1::t_fb4c92b5dbc497 1-87
+crates/router-workflow/src/lib.rs
+  s_43b3d0625e7ac1::t_b463c91ef693f1 1-51
+crates/router-workflow/src/normalize.rs
+  s_43b3d0625e7ac1::t_29263493b86078 1-456
+crates/router-workflow/src/plan.rs
+  s_43b3d0625e7ac1::t_d1cc53a152e472 1-637
+crates/router-workflow/src/policy.rs
+  s_43b3d0625e7ac1::t_2cb6ef512ac6a4 1-141
+crates/router-workflow/src/prompt.rs
+  s_43b3d0625e7ac1::t_4854361b41941f 1-143
+crates/router-workflow/src/proposal.rs
+  s_43b3d0625e7ac1::t_92bcb2d16708a0 1-227
+crates/router-workflow/tests/contracts.rs
+  s_43b3d0625e7ac1::t_02bb4108c2d3c5 1-473
+crates/router-workflow/tests/handoff.rs
+  s_43b3d0625e7ac1::t_c5e41404bc67c8 1-140
+crates/router-workflow/tests/proposal.rs
+  s_43b3d0625e7ac1::t_eff26d2b211ec3 1-380
+crates/router-workflow/tests/risk_classification.rs
+  s_43b3d0625e7ac1::t_ab3f1434d73581 1-338
+docs/bench/linux-finite-dispatch-2026-10-16/inputs/t02/controller/control-output.json
+  s_43b3d0625e7ac1::t_9a97d31483adc3 1-3
+docs/bench/linux-finite-tools-guard-2026-10-16/feedback.py
+  s_43b3d0625e7ac1::t_efc7b48b43aa8c 1-45
+docs/bench/native-useful-score-2026-10-21/acceptance.json
+  s_43b3d0625e7ac1::t_bdc61a258785cb 1-61
+docs/bench/native-useful-score-2026-10-21/change.patch
+  s_43b3d0625e7ac1::t_5c056a2369566f 1-15
+docs/bench/native-useful-score-2026-10-21/required-cases.rs
+  s_43b3d0625e7ac1::t_872701b6100364 1-13
+docs/bench/native-useful-score-2026-10-21/submission/lib.rs
+  s_43b3d0625e7ac1::t_c0f7c879ebd17b 1-6
+docs/bench/native-useful-score-2026-10-21/verify.py
+  s_43b3d0625e7ac1::t_fc31cfca6f8f82 1-142
+fixtures/examples/README.md
+  s_43b3d0625e7ac1::t_c3129b0743ea72 1-22
+fixtures/examples/phase-catalog.json
+  s_43b3d0625e7ac1::t_aa678de4b7ac19 1-53
+fixtures/examples/phase-policy.json
+  s_43b3d0625e7ac1::t_55d633f129b322 1-11
+fixtures/examples/phase-request.json
+  s_43b3d0625e7ac1::t_b68e0d5a1897c4 1-107
+fixtures/examples/phase-snapshot.json
+  s_43b3d0625e7ac1::t_00a2e02fb7ad9f 1-71
+integrations/claude-code/adapter.json
+  s_43b3d0625e7ac1::t_4b5557100061f9 1-14
+integrations/codex/adapter.json
+  s_43b3d0625e7ac1::t_f8ad657fd27d22 1-14
+licenses/dependencies/addr2line-0.25.1/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_9bf4392cdb8d8a 1-201
+licenses/dependencies/addr2line-0.25.1/LICENSE-MIT
+  s_43b3d0625e7ac1::t_25f5ad1b07e737 1-25
+licenses/dependencies/adler2-2.0.1/LICENSE-0BSD
+  s_43b3d0625e7ac1::t_ccf977db66ae89 1-12
+licenses/dependencies/adler2-2.0.1/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_1da1394297c41f 1-201
+licenses/dependencies/adler2-2.0.1/LICENSE-MIT
+  s_43b3d0625e7ac1::t_f3df50f4cfaf7b 1-23
+licenses/dependencies/aho-corasick-1.1.5/COPYING
+  s_43b3d0625e7ac1::t_ef9c03146fc313 1-3
+licenses/dependencies/aho-corasick-1.1.5/LICENSE-MIT
+  s_43b3d0625e7ac1::t_dd1320c92220be 1-21
+licenses/dependencies/anstream-1.0.0/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_8641e4999b717e 1-202
+licenses/dependencies/anstream-1.0.0/LICENSE-MIT
+  s_43b3d0625e7ac1::t_8692521554b898 1-19
+licenses/dependencies/anstyle-1.0.14/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_9024cac4ff7609 1-202
+licenses/dependencies/anstyle-1.0.14/LICENSE-MIT
+  s_43b3d0625e7ac1::t_9345cce02efe81 1-19
+licenses/dependencies/anstyle-parse-1.0.0/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_395bc3aa4bf987 1-202
+licenses/dependencies/anstyle-parse-1.0.0/LICENSE-MIT
+  s_43b3d0625e7ac1::t_67d09a376c96e5 1-19
+licenses/dependencies/anstyle-query-1.1.5/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_15796c54875481 1-202
+licenses/dependencies/anstyle-query-1.1.5/LICENSE-MIT
+  s_43b3d0625e7ac1::t_c31b4137f91dac 1-19
+licenses/dependencies/anstyle-wincon-3.0.11/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_ca25c37ff6e080 1-202
+licenses/dependencies/anstyle-wincon-3.0.11/LICENSE-MIT
+  s_43b3d0625e7ac1::t_3ebd77cf60fb76 1-19
+licenses/dependencies/arraydeque-0.5.1/LICENSE
+  s_43b3d0625e7ac1::t_23899cb6a9c788 1-21
+licenses/dependencies/assert_cmd-2.2.2/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_8163ee9ab20890 1-202
+licenses/dependencies/assert_cmd-2.2.2/LICENSE-MIT
+  s_43b3d0625e7ac1::t_f1cde3f7be4b69 1-19
+licenses/dependencies/autocfg-1.5.1/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_4f80af8d0f316b 1-201
+licenses/dependencies/autocfg-1.5.1/LICENSE-MIT
+  s_43b3d0625e7ac1::t_fd83a88339af1b 1-25
+licenses/dependencies/backtrace-0.3.76/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_db2b24be605be0 1-201
+licenses/dependencies/backtrace-0.3.76/LICENSE-MIT
+  s_43b3d0625e7ac1::t_92a749dce143d6 1-25
+licenses/dependencies/base64ct-1.8.3/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_50ba5aa169a456 1-201
+licenses/dependencies/base64ct-1.8.3/LICENSE-MIT
+  s_43b3d0625e7ac1::t_a4c4a8cb91e45f 1-26
+licenses/dependencies/bitflags-2.13.1/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_42020ce9a2b63b 1-201
+licenses/dependencies/bitflags-2.13.1/LICENSE-MIT
+  s_43b3d0625e7ac1::t_ccf970f2aba0a4 1-25
+licenses/dependencies/block-buffer-0.10.4/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_2c713b4d197211 1-201
+licenses/dependencies/block-buffer-0.10.4/LICENSE-MIT
+  s_43b3d0625e7ac1::t_5f224f54a1cef2 1-25
+licenses/dependencies/bstr-1.12.3/COPYING
+  s_43b3d0625e7ac1::t_9b5b3a132ce7d2 1-8
+licenses/dependencies/bstr-1.12.3/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_066dc2164ea444 1-201
+licenses/dependencies/bstr-1.12.3/LICENSE-MIT
+  s_43b3d0625e7ac1::t_d266f8618a8215 1-21
+licenses/dependencies/bumpalo-3.20.3/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_48005fbcabe1fb 1-201
+licenses/dependencies/bumpalo-3.20.3/LICENSE-MIT
+  s_43b3d0625e7ac1::t_ee559f9c760e2c 1-25
+licenses/dependencies/bytes-1.12.1/LICENSE
+  s_43b3d0625e7ac1::t_17201270ef5bf8 1-25
+licenses/dependencies/cc-1.4.4/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_8184da20eee2d7 1-201
+licenses/dependencies/cc-1.4.4/LICENSE-MIT
+  s_43b3d0625e7ac1::t_87ec5ec9cd0d66 1-25
+licenses/dependencies/cfg-if-1.0.4/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_6ce259868c669a 1-201
+licenses/dependencies/cfg-if-1.0.4/LICENSE-MIT
+  s_43b3d0625e7ac1::t_3366ea1fcdc13f 1-25
+licenses/dependencies/cfg_aliases-0.2.2/LICENSE
+  s_43b3d0625e7ac1::t_b8aeeebb7fd4f4 1-9
+licenses/dependencies/cfg_aliases-0.2.2/NOTICES.md
+  s_43b3d0625e7ac1::t_c5f9655914eb2b 1-26
+licenses/dependencies/clap-4.6.6/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_c654a8c5acdde0 1-202
+licenses/dependencies/clap-4.6.6/LICENSE-MIT
+  s_43b3d0625e7ac1::t_3657db3c926b17 1-19
+licenses/dependencies/clap_builder-4.6.6/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_8fa5be7fd4b45e 1-202
+licenses/dependencies/clap_builder-4.6.6/LICENSE-MIT
+  s_43b3d0625e7ac1::t_31f14a589b8a05 1-19
+licenses/dependencies/clap_complete-4.6.9/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_195ae20ea2d7a9 1-202
+licenses/dependencies/clap_complete-4.6.9/LICENSE-MIT
+  s_43b3d0625e7ac1::t_2d2bc0f3c6e662 1-19
+licenses/dependencies/clap_derive-4.6.4/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_0fb0e0442a9631 1-202
+licenses/dependencies/clap_derive-4.6.4/LICENSE-MIT
+  s_43b3d0625e7ac1::t_18b2ffb790d0af 1-19
+licenses/dependencies/clap_lex-1.1.0/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_cf2500aaa6b1fb 1-202
+licenses/dependencies/clap_lex-1.1.0/LICENSE-MIT
+  s_43b3d0625e7ac1::t_c6976aaef1756a 1-19
+licenses/dependencies/colorchoice-1.0.5/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_34ffc6295ca08f 1-202
+licenses/dependencies/colorchoice-1.0.5/LICENSE-MIT
+  s_43b3d0625e7ac1::t_f21b5e721a5e8a 1-19
+licenses/dependencies/const-oid-0.9.6/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_6a75cc326a3077 1-201
+licenses/dependencies/const-oid-0.9.6/LICENSE-MIT
+  s_43b3d0625e7ac1::t_000f7f1947bf09 1-25
+licenses/dependencies/cpufeatures-0.2.17/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_8c11b9c6fbc477 1-201
+licenses/dependencies/cpufeatures-0.2.17/LICENSE-MIT
+  s_43b3d0625e7ac1::t_c04ca7d9595159 1-25
+licenses/dependencies/crypto-common-0.1.7/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_5959a84fc01023 1-201
+licenses/dependencies/crypto-common-0.1.7/LICENSE-MIT
+  s_43b3d0625e7ac1::t_fac720c728d2cf 1-25
+licenses/dependencies/curve25519-dalek-4.1.3/LICENSE
+  s_43b3d0625e7ac1::t_5d2ae6cfe91be8 1-65
+licenses/dependencies/curve25519-dalek-derive-0.1.1/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_9238b7d62e112d 1-201
+licenses/dependencies/curve25519-dalek-derive-0.1.1/LICENSE-MIT
+  s_43b3d0625e7ac1::t_50058717f3ba59 1-23
+licenses/dependencies/der-0.7.10/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_f7f005f07e1825 1-201
+licenses/dependencies/der-0.7.10/LICENSE-MIT
+  s_43b3d0625e7ac1::t_09c80cec1a51e9 1-25
+licenses/dependencies/digest-0.10.7/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_51cd7e2c8d97ec 1-201
+licenses/dependencies/digest-0.10.7/LICENSE-MIT
+  s_43b3d0625e7ac1::t_6b863196fc79fb 1-25
+licenses/dependencies/ed25519-2.2.3/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_bb4e3fea931396 1-201
+licenses/dependencies/ed25519-2.2.3/LICENSE-MIT
+  s_43b3d0625e7ac1::t_74c15c60f80dd0 1-25
+licenses/dependencies/ed25519-dalek-2.2.0/LICENSE
+  s_43b3d0625e7ac1::t_8e227a1a64a2e7 1-28
+licenses/dependencies/equivalent-1.0.2/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_d70ce9d7df80d7 1-201
+licenses/dependencies/equivalent-1.0.2/LICENSE-MIT
+  s_43b3d0625e7ac1::t_215deda0b90192 1-25
+licenses/dependencies/errno-0.3.14/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_bd193ca610a8dd 1-201
+licenses/dependencies/errno-0.3.14/LICENSE-MIT
+  s_43b3d0625e7ac1::t_6d0b8c8002cde7 1-25
+licenses/dependencies/fallible-iterator-0.3.0/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_5c3760f4cd37f8 1-202
+licenses/dependencies/fallible-iterator-0.3.0/LICENSE-MIT
+  s_43b3d0625e7ac1::t_ba89bb5736b452 1-19
+licenses/dependencies/fallible-streaming-iterator-0.1.9/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_5d9657d7a9bcff 1-202
+licenses/dependencies/fallible-streaming-iterator-0.1.9/LICENSE-MIT
+  s_43b3d0625e7ac1::t_965cb33a2df1c3 1-19
+licenses/dependencies/fastrand-2.5.0/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_7a0e292a7f52f1 1-201
+licenses/dependencies/fastrand-2.5.0/LICENSE-MIT
+  s_43b3d0625e7ac1::t_b5fd281a8b5759 1-23
+licenses/dependencies/fiat-crypto-0.2.9/AUTHORS
+  s_43b3d0625e7ac1::t_aa12e9190316b6 1-17
+licenses/dependencies/fiat-crypto-0.2.9/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_b7355d7eda3d44 1-15
+licenses/dependencies/fiat-crypto-0.2.9/LICENSE-BSD-1
+  s_43b3d0625e7ac1::t_4c529003a67e36 1-23
+licenses/dependencies/fiat-crypto-0.2.9/LICENSE-MIT
+  s_43b3d0625e7ac1::t_5dd21c71b5c0b0 1-21
+licenses/dependencies/find-msvc-tools-0.1.11/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_51fda76bee2aa9 1-201
+licenses/dependencies/find-msvc-tools-0.1.11/LICENSE-MIT
+  s_43b3d0625e7ac1::t_2c514cd555da9a 1-25
+licenses/dependencies/float-cmp-0.10.0/LICENSE
+  s_43b3d0625e7ac1::t_6cf6fe5ef72fb4 1-19
+licenses/dependencies/foldhash-0.2.0/LICENSE
+  s_43b3d0625e7ac1::t_6d01b3ca75f581 1-19
+licenses/dependencies/generic-array-0.14.7/LICENSE
+  s_43b3d0625e7ac1::t_97e23965b0c06d 1-21
+licenses/dependencies/getrandom-0.2.17/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_e610216dbdafd5 1-201
+licenses/dependencies/getrandom-0.2.17/LICENSE-MIT
+  s_43b3d0625e7ac1::t_18c666a8cc8a2c 1-26
+licenses/dependencies/getrandom-0.4.3/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_1f06b88c313881 1-201
+licenses/dependencies/getrandom-0.4.3/LICENSE-MIT
+  s_43b3d0625e7ac1::t_bfc64257f1067c 1-26
+licenses/dependencies/gimli-0.32.3/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_f9384ef240f5c1 1-201
+licenses/dependencies/gimli-0.32.3/LICENSE-MIT
+  s_43b3d0625e7ac1::t_f17539b0063482 1-25
+licenses/dependencies/hashbrown-0.16.1/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_e1ddb202259fd2 1-201
+licenses/dependencies/hashbrown-0.16.1/LICENSE-MIT
+  s_43b3d0625e7ac1::t_8b08dd113a47a0 1-25
+licenses/dependencies/hashbrown-0.17.1/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_fa612320f04313 1-201
+licenses/dependencies/hashbrown-0.17.1/LICENSE-MIT
+  s_43b3d0625e7ac1::t_bf1b6cba7242cc 1-25
+licenses/dependencies/hashlink-0.11.1/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_9161d6e8bc3208 1-201
+licenses/dependencies/hashlink-0.11.1/LICENSE-MIT
+  s_43b3d0625e7ac1::t_f142d3a4321770 1-26
+licenses/dependencies/hashlink-0.12.2/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_2cefc40a3ec842 1-201
+licenses/dependencies/hashlink-0.12.2/LICENSE-MIT
+  s_43b3d0625e7ac1::t_5c742b7dcdee4f 1-26
+licenses/dependencies/heck-0.5.0/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_27d4fe626f3a14 1-201
+licenses/dependencies/heck-0.5.0/LICENSE-MIT
+  s_43b3d0625e7ac1::t_676728857e3ef5 1-25
+licenses/dependencies/hex-0.4.3/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_a4c913374435be 1-202
+licenses/dependencies/hex-0.4.3/LICENSE-MIT
+  s_43b3d0625e7ac1::t_52fd3a1c70062d 1-20
+licenses/dependencies/hmac-0.12.1/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_669d8e76fb87b5 1-201
+licenses/dependencies/hmac-0.12.1/LICENSE-MIT
+  s_43b3d0625e7ac1::t_582ea093a7b335 1-25
+licenses/dependencies/indexmap-2.14.2/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_78ea84570fc2cb 1-201
+licenses/dependencies/indexmap-2.14.2/LICENSE-MIT
+  s_43b3d0625e7ac1::t_7b3478b0473f48 1-25
+licenses/dependencies/is_terminal_polyfill-1.70.2/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_4c439efe164d7d 1-202
+licenses/dependencies/is_terminal_polyfill-1.70.2/LICENSE-MIT
+  s_43b3d0625e7ac1::t_ce894c034c6306 1-19
+licenses/dependencies/itoa-1.0.18/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_79a52d0a178481 1-176
+licenses/dependencies/itoa-1.0.18/LICENSE-MIT
+  s_43b3d0625e7ac1::t_a0f46c56bcf1d1 1-23
+licenses/dependencies/js-sys-0.3.103/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_f85715a47b3a0c 1-201
+licenses/dependencies/js-sys-0.3.103/LICENSE-MIT
+  s_43b3d0625e7ac1::t_6dba84b485ea4e 1-25
+licenses/dependencies/libc-0.2.189/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_1bd7b5834e7424 1-176
+licenses/dependencies/libc-0.2.189/LICENSE-MIT
+  s_43b3d0625e7ac1::t_3c5b366c31f931 1-25
+licenses/dependencies/libsqlite3-sys-0.37.0/LICENSE
+  s_43b3d0625e7ac1::t_3ad0e670dd720e 1-19
+licenses/dependencies/libsqlite3-sys-0.37.0/sqlcipher/LICENSE
+  s_43b3d0625e7ac1::t_e22fa1db8604b2 1-24
+licenses/dependencies/linux-raw-sys-0.12.1/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_84e9f6e2eca74b 1-201
+licenses/dependencies/linux-raw-sys-0.12.1/LICENSE-Apache-2.0_WITH_LLVM-exception
+  s_43b3d0625e7ac1::t_d80dff249d1ddd 1-220
+licenses/dependencies/linux-raw-sys-0.12.1/LICENSE-MIT
+  s_43b3d0625e7ac1::t_2526adff5f40e1 1-23
+licenses/dependencies/memchr-2.8.3/COPYING
+  s_43b3d0625e7ac1::t_ba71805c85189b 1-3
+licenses/dependencies/memchr-2.8.3/LICENSE-MIT
+  s_43b3d0625e7ac1::t_bcc1e6c0e69c85 1-21
+licenses/dependencies/miniz_oxide-0.8.9/LICENSE
+  s_43b3d0625e7ac1::t_af451301c41029 1-25
+licenses/dependencies/miniz_oxide-0.8.9/LICENSE-APACHE.md
+  s_43b3d0625e7ac1::t_dc008dd1f4f4a2 1-177
+licenses/dependencies/miniz_oxide-0.8.9/LICENSE-MIT.md
+  s_43b3d0625e7ac1::t_c7db20de66f49c 1-24
+licenses/dependencies/miniz_oxide-0.8.9/LICENSE-ZLIB.md
+  s_43b3d0625e7ac1::t_9638b68f4d15d7 1-14
+licenses/dependencies/mio-1.2.2/LICENSE
+  s_43b3d0625e7ac1::t_a5e2bb03159619 1-19
+licenses/dependencies/nix-0.29.0/LICENSE
+  s_43b3d0625e7ac1::t_e88fc767e25931 1-21
+licenses/dependencies/normalize-line-endings-0.3.0/LICENSE
+  s_43b3d0625e7ac1::t_870f55c3b0f09c 1-201
+licenses/dependencies/num-traits-0.2.19/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_9b3fb0abe77d98 1-201
+licenses/dependencies/num-traits-0.2.19/LICENSE-MIT
+  s_43b3d0625e7ac1::t_d222e9bdb02cfa 1-25
+licenses/dependencies/object-0.37.3/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_003bfd181ba1a6 1-201
+licenses/dependencies/object-0.37.3/LICENSE-MIT
+  s_43b3d0625e7ac1::t_3a86e460917081 1-25
+licenses/dependencies/once_cell-1.21.4/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_5f5ce37612386e 1-201
+licenses/dependencies/once_cell-1.21.4/LICENSE-MIT
+  s_43b3d0625e7ac1::t_b54c7357b69909 1-23
+licenses/dependencies/once_cell_polyfill-1.70.2/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_7a3cf5401fa6b2 1-202
+licenses/dependencies/once_cell_polyfill-1.70.2/LICENSE-MIT
+  s_43b3d0625e7ac1::t_ac5709df9381e6 1-19
+licenses/dependencies/pin-project-lite-0.2.17/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_dee0b785facdcb 1-177
+licenses/dependencies/pin-project-lite-0.2.17/LICENSE-MIT
+  s_43b3d0625e7ac1::t_bda3537340faa3 1-23
+licenses/dependencies/pkcs8-0.10.2/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_22eaaf8faa675a 1-201
+licenses/dependencies/pkcs8-0.10.2/LICENSE-MIT
+  s_43b3d0625e7ac1::t_7b146492d3d498 1-25
+licenses/dependencies/pkg-config-0.3.34/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_f452ba13329a25 1-201
+licenses/dependencies/pkg-config-0.3.34/LICENSE-MIT
+  s_43b3d0625e7ac1::t_aadd054ea64046 1-25
+licenses/dependencies/predicates-3.1.4/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_d0050b43623faa 1-202
+licenses/dependencies/predicates-3.1.4/LICENSE-MIT
+  s_43b3d0625e7ac1::t_0626e4258cdd64 1-19
+licenses/dependencies/predicates-core-1.0.10/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_3fde5e228f6ad5 1-202
+licenses/dependencies/predicates-core-1.0.10/LICENSE-MIT
+  s_43b3d0625e7ac1::t_2c8d310caf7f3f 1-19
+licenses/dependencies/predicates-tree-1.0.13/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_29e9b3c3800a6d 1-202
+licenses/dependencies/predicates-tree-1.0.13/LICENSE-MIT
+  s_43b3d0625e7ac1::t_630aa71813ac8b 1-19
+licenses/dependencies/proc-macro2-1.0.107/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_c4749b698564c4 1-176
+licenses/dependencies/proc-macro2-1.0.107/LICENSE-MIT
+  s_43b3d0625e7ac1::t_5f6255263bd8cf 1-23
+licenses/dependencies/quote-1.0.47/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_c20e1b6696e9ac 1-176
+licenses/dependencies/quote-1.0.47/LICENSE-MIT
+  s_43b3d0625e7ac1::t_03b8c60d0c6416 1-23
+licenses/dependencies/r-efi-6.0.0/AUTHORS
+  s_43b3d0625e7ac1::t_f33a7b1270dd1b 1-75
+licenses/dependencies/rand_core-0.6.4/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_5d48acf62cb81e 1-187
+licenses/dependencies/rand_core-0.6.4/LICENSE-MIT
+  s_43b3d0625e7ac1::t_154e4cc002f2f1 1-26
+licenses/dependencies/regex-1.13.1/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_8cf32009b5da61 1-201
+licenses/dependencies/regex-1.13.1/LICENSE-MIT
+  s_43b3d0625e7ac1::t_f819706d2ccc2d 1-25
+licenses/dependencies/regex-automata-0.4.18/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_6543c0d25f3bb1 1-201
+licenses/dependencies/regex-automata-0.4.18/LICENSE-MIT
+  s_43b3d0625e7ac1::t_09ba84d3300178 1-25
+licenses/dependencies/regex-syntax-0.8.11/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_20eccf89e8ff99 1-201
+licenses/dependencies/regex-syntax-0.8.11/LICENSE-MIT
+  s_43b3d0625e7ac1::t_a4ceeb6c9122fc 1-25
+licenses/dependencies/regex-syntax-0.8.11/src/unicode_tables/LICENSE-UNICODE
+  s_43b3d0625e7ac1::t_eae956bc285797 1-57
+licenses/dependencies/rusqlite-0.39.0/LICENSE
+  s_43b3d0625e7ac1::t_38656005a18837 1-19
+licenses/dependencies/rustc-demangle-0.1.27/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_77e6e35af8222d 1-201
+licenses/dependencies/rustc-demangle-0.1.27/LICENSE-MIT
+  s_43b3d0625e7ac1::t_1de7dcbfeb9fdf 1-25
+licenses/dependencies/rustc_version-0.4.1/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_750ccbf4c3b8d8 1-201
+licenses/dependencies/rustc_version-0.4.1/LICENSE-MIT
+  s_43b3d0625e7ac1::t_693b898c7c9b67 1-25
+licenses/dependencies/rustix-1.1.4/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_8cfbbb936bc45d 1-201
+licenses/dependencies/rustix-1.1.4/LICENSE-Apache-2.0_WITH_LLVM-exception
+  s_43b3d0625e7ac1::t_3cfddc420ce9bc 1-220
+licenses/dependencies/rustix-1.1.4/LICENSE-MIT
+  s_43b3d0625e7ac1::t_5866e3c12c31a3 1-23
+licenses/dependencies/rustversion-1.0.23/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_d890420c956600 1-176
+licenses/dependencies/rustversion-1.0.23/LICENSE-MIT
+  s_43b3d0625e7ac1::t_2cfdcc698c771b 1-23
+licenses/dependencies/semver-1.0.28/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_2cb0b8f958be18 1-176
+licenses/dependencies/semver-1.0.28/LICENSE-MIT
+  s_43b3d0625e7ac1::t_730b27b28fb7c2 1-23
+licenses/dependencies/serde-1.0.229/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_65d46814fcf969 1-176
+licenses/dependencies/serde-1.0.229/LICENSE-MIT
+  s_43b3d0625e7ac1::t_b7e61fa2c6dd64 1-23
+licenses/dependencies/serde_core-1.0.229/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_b77a16e0e1b916 1-176
+licenses/dependencies/serde_core-1.0.229/LICENSE-MIT
+  s_43b3d0625e7ac1::t_c9974a5473e1e9 1-23
+licenses/dependencies/serde_derive-1.0.229/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_316d6ec31316d9 1-176
+licenses/dependencies/serde_derive-1.0.229/LICENSE-MIT
+  s_43b3d0625e7ac1::t_649ce78b61dfeb 1-23
+licenses/dependencies/serde_json-1.0.151/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_b91e538f54c2b8 1-176
+licenses/dependencies/serde_json-1.0.151/LICENSE-MIT
+  s_43b3d0625e7ac1::t_3eeac135ac9f7d 1-23
+licenses/dependencies/serde_spanned-0.6.9/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_bdf6786a630150 1-202
+licenses/dependencies/serde_spanned-0.6.9/LICENSE-MIT
+  s_43b3d0625e7ac1::t_12436e80994e0c 1-19
+licenses/dependencies/sha2-0.10.9/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_936564aa529b6d 1-201
+licenses/dependencies/sha2-0.10.9/LICENSE-MIT
+  s_43b3d0625e7ac1::t_a1e7de6e807a40 1-27
+licenses/dependencies/shlex-2.0.1/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_63eefc33b14425 1-13
+licenses/dependencies/shlex-2.0.1/LICENSE-MIT
+  s_43b3d0625e7ac1::t_a475d1a4b85cee 1-21
+licenses/dependencies/signal-hook-registry-1.4.8/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_5c950ac35d56b0 1-201
+licenses/dependencies/signal-hook-registry-1.4.8/LICENSE-MIT
+  s_43b3d0625e7ac1::t_fd7ff8f7466003 1-25
+licenses/dependencies/signature-2.2.0/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_a5e08309fee964 1-201
+licenses/dependencies/signature-2.2.0/LICENSE-MIT
+  s_43b3d0625e7ac1::t_acb818c2246d12 1-25
+licenses/dependencies/smallvec-1.15.2/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_86c7d9edb068fd 1-201
+licenses/dependencies/smallvec-1.15.2/LICENSE-MIT
+  s_43b3d0625e7ac1::t_81f2f2d19571dd 1-25
+licenses/dependencies/spki-0.7.3/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_352ee4a385efa4 1-201
+licenses/dependencies/spki-0.7.3/LICENSE-MIT
+  s_43b3d0625e7ac1::t_56153717f83941 1-25
+licenses/dependencies/sqlite-wasm-rs-0.5.5/LICENSE
+  s_43b3d0625e7ac1::t_730c5e8595d50d 1-21
+licenses/dependencies/strsim-0.11.1/LICENSE
+  s_43b3d0625e7ac1::t_a7c360c315d03f 1-23
+licenses/dependencies/subtle-2.6.1/LICENSE
+  s_43b3d0625e7ac1::t_205bd55dc5b1ea 1-29
+licenses/dependencies/syn-2.0.119/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_acbad923e9c00c 1-176
+licenses/dependencies/syn-2.0.119/LICENSE-MIT
+  s_43b3d0625e7ac1::t_5ed09b17e636f6 1-23
+licenses/dependencies/syn-3.0.4/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_4f1b2a9e0ffe77 1-176
+licenses/dependencies/syn-3.0.4/LICENSE-MIT
+  s_43b3d0625e7ac1::t_c09a59f96c986a 1-23
+licenses/dependencies/tempfile-3.27.0/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_5a8147d818bcfe 1-201
+licenses/dependencies/tempfile-3.27.0/LICENSE-MIT
+  s_43b3d0625e7ac1::t_fe0922fff18384 1-25
+licenses/dependencies/termtree-0.5.1/LICENSE-MIT
+  s_43b3d0625e7ac1::t_ce3cf0b1f6a932 1-19
+licenses/dependencies/thiserror-2.0.20/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_0ec3230c1a9bee 1-176
+licenses/dependencies/thiserror-2.0.20/LICENSE-MIT
+  s_43b3d0625e7ac1::t_560a47c709928a 1-23
+licenses/dependencies/thiserror-impl-2.0.20/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_33b1524ee16512 1-176
+licenses/dependencies/thiserror-impl-2.0.20/LICENSE-MIT
+  s_43b3d0625e7ac1::t_8504af35b980b3 1-23
+licenses/dependencies/tokio-1.45.1/LICENSE
+  s_43b3d0625e7ac1::t_c81e1f6c10ca55 1-21
+licenses/dependencies/tokio-macros-2.5.0/LICENSE
+  s_43b3d0625e7ac1::t_a6d165c14c7a8d 1-22
+licenses/dependencies/toml-0.8.23/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_4a1d12d77e006a 1-202
+licenses/dependencies/toml-0.8.23/LICENSE-MIT
+  s_43b3d0625e7ac1::t_7b1b1cc20f0ba1 1-19
+licenses/dependencies/toml_datetime-0.6.11/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_65f2d43551866d 1-202
+licenses/dependencies/toml_datetime-0.6.11/LICENSE-MIT
+  s_43b3d0625e7ac1::t_55346f508cca26 1-19
+licenses/dependencies/toml_edit-0.22.27/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_c85c3899b54303 1-202
+licenses/dependencies/toml_edit-0.22.27/LICENSE-MIT
+  s_43b3d0625e7ac1::t_17f2372317e49d 1-19
+licenses/dependencies/typenum-1.20.1/LICENSE
+  s_43b3d0625e7ac1::t_a6c2555249ac10 1
+licenses/dependencies/typenum-1.20.1/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_358442add1364d 1-201
+licenses/dependencies/typenum-1.20.1/LICENSE-MIT
+  s_43b3d0625e7ac1::t_76c7a76fa26837 1-21
+licenses/dependencies/unicode-ident-1.0.24/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_9302f0bdf2609a 1-176
+licenses/dependencies/unicode-ident-1.0.24/LICENSE-MIT
+  s_43b3d0625e7ac1::t_08b8d1654e1e07 1-23
+licenses/dependencies/unicode-ident-1.0.24/LICENSE-UNICODE
+  s_43b3d0625e7ac1::t_95447edb44bdf5 1-39
+licenses/dependencies/utf8parse-0.2.2/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_74322bc0883bfb 1-176
+licenses/dependencies/utf8parse-0.2.2/LICENSE-MIT
+  s_43b3d0625e7ac1::t_a9dc05a0e95099 1-25
+licenses/dependencies/vcpkg-0.2.15/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_58f35c1710ea92 1-202
+licenses/dependencies/vcpkg-0.2.15/LICENSE-MIT
+  s_43b3d0625e7ac1::t_4abdc01c9862a5 1-26
+licenses/dependencies/version_check-0.9.5/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_4dcd7f415a9c26 1-201
+licenses/dependencies/version_check-0.9.5/LICENSE-MIT
+  s_43b3d0625e7ac1::t_e2e4bfc7e9ec3a 1-19
+licenses/dependencies/wait-timeout-0.2.1/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_ecfcf29d95ccb9 1-201
+licenses/dependencies/wait-timeout-0.2.1/LICENSE-MIT
+  s_43b3d0625e7ac1::t_79f9fbaa7739b3 1-25
+licenses/dependencies/wasi-0.11.1+wasi-snapshot-preview1/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_21ceb84b6480b3 1-201
+licenses/dependencies/wasi-0.11.1+wasi-snapshot-preview1/LICENSE-Apache-2.0_WITH_LLVM-exception
+  s_43b3d0625e7ac1::t_c041bc0d5017b1 1-220
+licenses/dependencies/wasi-0.11.1+wasi-snapshot-preview1/LICENSE-MIT
+  s_43b3d0625e7ac1::t_eabb3b160ce0d9 1-23
+licenses/dependencies/wasm-bindgen-0.2.126/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_440c2a6a6defa3 1-201
+licenses/dependencies/wasm-bindgen-0.2.126/LICENSE-MIT
+  s_43b3d0625e7ac1::t_e79e52e618e200 1-25
+licenses/dependencies/wasm-bindgen-macro-0.2.126/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_d9d53d2a525a5f 1-201
+licenses/dependencies/wasm-bindgen-macro-0.2.126/LICENSE-MIT
+  s_43b3d0625e7ac1::t_eb2f2510ca9794 1-25
+licenses/dependencies/wasm-bindgen-macro-support-0.2.126/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_034662e863fc81 1-201
+licenses/dependencies/wasm-bindgen-macro-support-0.2.126/LICENSE-MIT
+  s_43b3d0625e7ac1::t_cdcc96af043691 1-25
+licenses/dependencies/wasm-bindgen-shared-0.2.126/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_51f147f1eae1a4 1-201
+licenses/dependencies/wasm-bindgen-shared-0.2.126/LICENSE-MIT
+  s_43b3d0625e7ac1::t_50b1058fa3b7ee 1-25
+licenses/dependencies/windows-link-0.2.1/license-apache-2.0
+  s_43b3d0625e7ac1::t_698b4340b05e22 1-201
+licenses/dependencies/windows-link-0.2.1/license-mit
+  s_43b3d0625e7ac1::t_0d8fc8edea4b39 1-21
+licenses/dependencies/windows-sys-0.52.0/license-apache-2.0
+  s_43b3d0625e7ac1::t_57241b0ed338e3 1-201
+licenses/dependencies/windows-sys-0.52.0/license-mit
+  s_43b3d0625e7ac1::t_7ca8356afba7bf 1-21
+licenses/dependencies/windows-sys-0.61.2/license-apache-2.0
+  s_43b3d0625e7ac1::t_b663addf182a5e 1-201
+licenses/dependencies/windows-sys-0.61.2/license-mit
+  s_43b3d0625e7ac1::t_55a652b60ef3a8 1-21
+licenses/dependencies/windows-targets-0.52.6/license-apache-2.0
+  s_43b3d0625e7ac1::t_98b6cf244b7967 1-201
+licenses/dependencies/windows-targets-0.52.6/license-mit
+  s_43b3d0625e7ac1::t_36ef035959fe65 1-21
+licenses/dependencies/windows_aarch64_gnullvm-0.52.6/license-apache-2.0
+  s_43b3d0625e7ac1::t_68087ce09adf57 1-201
+licenses/dependencies/windows_aarch64_gnullvm-0.52.6/license-mit
+  s_43b3d0625e7ac1::t_731743026df5ce 1-21
+licenses/dependencies/windows_aarch64_msvc-0.52.6/license-apache-2.0
+  s_43b3d0625e7ac1::t_c4cd2584ddfc4c 1-201
+licenses/dependencies/windows_aarch64_msvc-0.52.6/license-mit
+  s_43b3d0625e7ac1::t_487a7c5f547d51 1-21
+licenses/dependencies/windows_i686_gnu-0.52.6/license-apache-2.0
+  s_43b3d0625e7ac1::t_ee0d5e7990f5f7 1-201
+licenses/dependencies/windows_i686_gnu-0.52.6/license-mit
+  s_43b3d0625e7ac1::t_8101fd8daaae11 1-21
+licenses/dependencies/windows_i686_gnullvm-0.52.6/license-apache-2.0
+  s_43b3d0625e7ac1::t_691b24935736cd 1-201
+licenses/dependencies/windows_i686_gnullvm-0.52.6/license-mit
+  s_43b3d0625e7ac1::t_076e4d5801950b 1-21
+licenses/dependencies/windows_i686_msvc-0.52.6/license-apache-2.0
+  s_43b3d0625e7ac1::t_870daee99b4048 1-201
+licenses/dependencies/windows_i686_msvc-0.52.6/license-mit
+  s_43b3d0625e7ac1::t_f68567873b5931 1-21
+licenses/dependencies/windows_x86_64_gnu-0.52.6/license-apache-2.0
+  s_43b3d0625e7ac1::t_9e01b9b8dc5a1f 1-201
+licenses/dependencies/windows_x86_64_gnu-0.52.6/license-mit
+  s_43b3d0625e7ac1::t_9e11b122189eba 1-21
+licenses/dependencies/windows_x86_64_gnullvm-0.52.6/license-apache-2.0
+  s_43b3d0625e7ac1::t_80a07d0d2a8800 1-201
+licenses/dependencies/windows_x86_64_gnullvm-0.52.6/license-mit
+  s_43b3d0625e7ac1::t_a7ae89a2071eab 1-21
+licenses/dependencies/windows_x86_64_msvc-0.52.6/license-apache-2.0
+  s_43b3d0625e7ac1::t_5a6da2f3e248b1 1-201
+licenses/dependencies/windows_x86_64_msvc-0.52.6/license-mit
+  s_43b3d0625e7ac1::t_65a61f31fd7f75 1-21
+licenses/dependencies/winnow-0.7.15/LICENSE-MIT
+  s_43b3d0625e7ac1::t_a944fa91deeaa9 1-18
+licenses/dependencies/yaml-rust2-0.13.0/Apache-LICENSE
+  s_43b3d0625e7ac1::t_592af0867ea87c 1-192
+licenses/dependencies/yaml-rust2-0.13.0/MIT-LICENSE
+  s_43b3d0625e7ac1::t_b085d15024b3e4 1-22
+licenses/dependencies/zeroize-1.9.0/LICENSE-APACHE
+  s_43b3d0625e7ac1::t_49575bd35e20c9 1-202
+licenses/dependencies/zeroize-1.9.0/LICENSE-MIT
+  s_43b3d0625e7ac1::t_5b6cecc7dc30b0 1-25
+licenses/dependencies/zmij-1.0.23/LICENSE-MIT
+  s_43b3d0625e7ac1::t_5015c96d0e2fc8 1-23
+licenses/third-party/difflib-0.4.0/LICENSE
+  s_43b3d0625e7ac1::t_4b1b2bcc4e9861 1-21
+licenses/third-party/rsqlite-vfs-0.1.1/LICENSE
+  s_43b3d0625e7ac1::t_dc6b5c73a97702 1-21
+rust-toolchain.toml
+  s_43b3d0625e7ac1::t_7899cd18a3995d 1-4
+tests/fixtures/catalogs/duplicate-model.json
+  s_43b3d0625e7ac1::t_fe6c86d361477d 1-27
+tests/fixtures/catalogs/invalid-alias.json
+  s_43b3d0625e7ac1::t_a1bbdb97b664e9 1-17
+tests/fixtures/decisions/codex-implementation.json
+  s_43b3d0625e7ac1::t_21ef829bf3a7c7 1-183
+tests/fixtures/evaluation/README.md
+  s_43b3d0625e7ac1::t_55864daa7a45fc 1-31
+tests/fixtures/evaluation/accepted-changes-v1.json
+  s_43b3d0625e7ac1::t_6f971d5a500a16 1-303
+tests/fixtures/evaluation/attempt-correlation-v1.json
+  s_43b3d0625e7ac1::t_fef1d96dd54b19 1-72
+tests/fixtures/evaluation/candidate-corpus-v1.json
+  s_43b3d0625e7ac1::t_8aeaf9041023ac 1-1506
+tests/fixtures/evaluation/evaluator-qualification/rare-case-permutation.json
+  s_43b3d0625e7ac1::t_487ed59d897aa6 1-133
+tests/fixtures/evaluation/human-review-worksheet-v1.json
+  s_43b3d0625e7ac1::t_7656d525c22133 1-2007
+tests/fixtures/evaluation/replay-manifest-v1.json
+  s_43b3d0625e7ac1::t_cce56dcd30aeb7 1-2007
+tests/fixtures/evaluation/replays/candidate-001.json
+  s_43b3d0625e7ac1::t_cacca9556520ba 1
+tests/fixtures/evaluation/replays/candidate-002.json
+  s_43b3d0625e7ac1::t_268af661001f4b 1
+tests/fixtures/evaluation/replays/candidate-003.json
+  s_43b3d0625e7ac1::t_9b9af95e219671 1
+tests/fixtures/evaluation/replays/candidate-004.json
+  s_43b3d0625e7ac1::t_9f785b708ba311 1
+tests/fixtures/evaluation/replays/candidate-005.json
+  s_43b3d0625e7ac1::t_639b5ec1beecba 1
+tests/fixtures/evaluation/replays/candidate-006.json
+  s_43b3d0625e7ac1::t_2a7abc811f69d3 1
+tests/fixtures/evaluation/replays/candidate-007.json
+  s_43b3d0625e7ac1::t_ac6accc72654a7 1
+tests/fixtures/evaluation/replays/candidate-008.json
+  s_43b3d0625e7ac1::t_cec5274c8f7cdc 1
+tests/fixtures/evaluation/replays/candidate-009.json
+  s_43b3d0625e7ac1::t_6d2928b0a386a6 1
+tests/fixtures/evaluation/replays/candidate-010.json
+  s_43b3d0625e7ac1::t_01b18167b3d2dd 1
+tests/fixtures/evaluation/replays/candidate-011.json
+  s_43b3d0625e7ac1::t_068418393d7778 1
+tests/fixtures/evaluation/replays/candidate-012.json
+  s_43b3d0625e7ac1::t_a9c7f3c61e82c6 1
+tests/fixtures/evaluation/replays/candidate-013.json
+  s_43b3d0625e7ac1::t_a276ba5db228e6 1
+tests/fixtures/evaluation/replays/candidate-014.json
+  s_43b3d0625e7ac1::t_cb47ddc89b3385 1
+tests/fixtures/evaluation/replays/candidate-015.json
+  s_43b3d0625e7ac1::t_a231eed55e698a 1
+tests/fixtures/evaluation/replays/candidate-016.json
+  s_43b3d0625e7ac1::t_609a484ddb6485 1
+tests/fixtures/evaluation/replays/candidate-017.json
+  s_43b3d0625e7ac1::t_278d4642807de1 1
+tests/fixtures/evaluation/replays/candidate-018.json
+  s_43b3d0625e7ac1::t_44e5eba10fb2c6 1
+tests/fixtures/evaluation/replays/candidate-019.json
+  s_43b3d0625e7ac1::t_512f635bd71afd 1
+tests/fixtures/evaluation/replays/candidate-020.json
+  s_43b3d0625e7ac1::t_64ee89a0ab9bdf 1
+tests/fixtures/evaluation/replays/candidate-021.json
+  s_43b3d0625e7ac1::t_aa13981026d6e1 1
+tests/fixtures/evaluation/replays/candidate-022.json
+  s_43b3d0625e7ac1::t_7f4269c48956bd 1
+tests/fixtures/evaluation/replays/candidate-023.json
+  s_43b3d0625e7ac1::t_f0b659e77ed178 1
+tests/fixtures/evaluation/replays/candidate-024.json
+  s_43b3d0625e7ac1::t_171d569e293a27 1
+tests/fixtures/evaluation/replays/candidate-025.json
+  s_43b3d0625e7ac1::t_868a76641374b8 1
+tests/fixtures/evaluation/replays/candidate-026.json
+  s_43b3d0625e7ac1::t_ef6458c69ebfd6 1
+tests/fixtures/evaluation/replays/candidate-027.json
+  s_43b3d0625e7ac1::t_b72080bf940b76 1
+tests/fixtures/evaluation/replays/candidate-028.json
+  s_43b3d0625e7ac1::t_bbafdfb8e69e76 1
+tests/fixtures/evaluation/replays/candidate-029.json
+  s_43b3d0625e7ac1::t_c363e3a671f85a 1
+tests/fixtures/evaluation/replays/candidate-030.json
+  s_43b3d0625e7ac1::t_caa5a206c5f563 1
+tests/fixtures/evaluation/replays/candidate-031.json
+  s_43b3d0625e7ac1::t_b5e79d4d5d5591 1
+tests/fixtures/evaluation/replays/candidate-032.json
+  s_43b3d0625e7ac1::t_4acd81f3e1a7f1 1
+tests/fixtures/evaluation/replays/candidate-033.json
+  s_43b3d0625e7ac1::t_88272667539afb 1
+tests/fixtures/evaluation/replays/candidate-034.json
+  s_43b3d0625e7ac1::t_6d2d83a7fc2223 1
+tests/fixtures/evaluation/replays/candidate-035.json
+  s_43b3d0625e7ac1::t_682decbcaf755d 1
+tests/fixtures/evaluation/replays/candidate-036.json
+  s_43b3d0625e7ac1::t_c82fc7de150bf2 1
+tests/fixtures/evaluation/replays/candidate-037.json
+  s_43b3d0625e7ac1::t_4faaf4aae72b5a 1
+tests/fixtures/evaluation/replays/candidate-038.json
+  s_43b3d0625e7ac1::t_48c1886dae1a0d 1
+tests/fixtures/evaluation/replays/candidate-039.json
+  s_43b3d0625e7ac1::t_0d13e5f701d3a0 1
+tests/fixtures/evaluation/replays/candidate-040.json
+  s_43b3d0625e7ac1::t_4e8205a099f661 1
+tests/fixtures/evaluation/replays/candidate-041.json
+  s_43b3d0625e7ac1::t_be2dd082c32087 1
+tests/fixtures/evaluation/replays/candidate-042.json
+  s_43b3d0625e7ac1::t_5283783ed4da76 1
+tests/fixtures/evaluation/replays/candidate-043.json
+  s_43b3d0625e7ac1::t_0ce3018344a68c 1
+tests/fixtures/evaluation/replays/candidate-044.json
+  s_43b3d0625e7ac1::t_4190dc54e6fea4 1
+tests/fixtures/evaluation/replays/candidate-045.json
+  s_43b3d0625e7ac1::t_4b90f69509795e 1
+tests/fixtures/evaluation/replays/candidate-046.json
+  s_43b3d0625e7ac1::t_af466845a27d19 1
+tests/fixtures/evaluation/replays/candidate-047.json
+  s_43b3d0625e7ac1::t_3f2bb3c58ed0a8 1
+tests/fixtures/evaluation/replays/candidate-048.json
+  s_43b3d0625e7ac1::t_a127c95240f8be 1
+tests/fixtures/evaluation/replays/candidate-049.json
+  s_43b3d0625e7ac1::t_08901753a2baa1 1
+tests/fixtures/evaluation/replays/candidate-050.json
+  s_43b3d0625e7ac1::t_dc0fb688e7db28 1
+tests/fixtures/evaluation/replays/candidate-051.json
+  s_43b3d0625e7ac1::t_c27cabda633875 1
+tests/fixtures/evaluation/replays/candidate-052.json
+  s_43b3d0625e7ac1::t_6fdbd0231222b8 1
+tests/fixtures/evaluation/replays/candidate-053.json
+  s_43b3d0625e7ac1::t_bb9063081614c2 1
+tests/fixtures/evaluation/replays/candidate-054.json
+  s_43b3d0625e7ac1::t_8e105927e93b8c 1
+tests/fixtures/evaluation/replays/candidate-055.json
+  s_43b3d0625e7ac1::t_028d716555ef7c 1
+tests/fixtures/evaluation/replays/candidate-056.json
+  s_43b3d0625e7ac1::t_2a977d6ccb4d76 1
+tests/fixtures/evaluation/replays/candidate-057.json
+  s_43b3d0625e7ac1::t_2d598b0aaf51d7 1
+tests/fixtures/evaluation/replays/candidate-058.json
+  s_43b3d0625e7ac1::t_e857c0bf5b23f9 1
+tests/fixtures/evaluation/replays/candidate-059.json
+  s_43b3d0625e7ac1::t_edfb697f7bec6a 1
+tests/fixtures/evaluation/replays/candidate-060.json
+  s_43b3d0625e7ac1::t_d3c1982e313964 1
+tests/fixtures/evaluation/replays/candidate-061.json
+  s_43b3d0625e7ac1::t_512fff6b469c33 1
+tests/fixtures/evaluation/replays/candidate-062.json
+  s_43b3d0625e7ac1::t_169dcccc7e73f7 1
+tests/fixtures/evaluation/replays/candidate-063.json
+  s_43b3d0625e7ac1::t_1ec2f5a769fe61 1
+tests/fixtures/evaluation/replays/candidate-064.json
+  s_43b3d0625e7ac1::t_392fb032b6a6aa 1
+tests/fixtures/evaluation/replays/candidate-065.json
+  s_43b3d0625e7ac1::t_84c9d955e9282d 1
+tests/fixtures/evaluation/replays/candidate-066.json
+  s_43b3d0625e7ac1::t_6da4120b592d7b 1
+tests/fixtures/evaluation/replays/candidate-067.json
+  s_43b3d0625e7ac1::t_19197f55627778 1
+tests/fixtures/evaluation/replays/candidate-068.json
+  s_43b3d0625e7ac1::t_b7b4959d1cd531 1
+tests/fixtures/evaluation/replays/candidate-069.json
+  s_43b3d0625e7ac1::t_4b220d662ef644 1
+tests/fixtures/evaluation/replays/candidate-070.json
+  s_43b3d0625e7ac1::t_799a2b9d1f51d9 1
+tests/fixtures/evaluation/replays/candidate-071.json
+  s_43b3d0625e7ac1::t_50117aa7665506 1
+tests/fixtures/evaluation/replays/candidate-072.json
+  s_43b3d0625e7ac1::t_b7d79cb984965c 1
+tests/fixtures/evaluation/replays/candidate-073.json
+  s_43b3d0625e7ac1::t_e670fe833b894b 1
+tests/fixtures/evaluation/replays/candidate-074.json
+  s_43b3d0625e7ac1::t_6c554b3028a2c8 1
+tests/fixtures/evaluation/replays/candidate-075.json
+  s_43b3d0625e7ac1::t_ba737e0f8a94da 1
+tests/fixtures/evaluation/replays/candidate-076.json
+  s_43b3d0625e7ac1::t_06dcc516be613c 1
+tests/fixtures/evaluation/replays/candidate-077.json
+  s_43b3d0625e7ac1::t_90abf621992da1 1
+tests/fixtures/evaluation/replays/candidate-078.json
+  s_43b3d0625e7ac1::t_580614d3e99f0c 1
+tests/fixtures/evaluation/replays/candidate-079.json
+  s_43b3d0625e7ac1::t_b5bfbafff3cb23 1
+tests/fixtures/evaluation/replays/candidate-080.json
+  s_43b3d0625e7ac1::t_0058e3f16b13dc 1
+tests/fixtures/evaluation/replays/candidate-081.json
+  s_43b3d0625e7ac1::t_2e57e93cf25bd0 1
+tests/fixtures/evaluation/replays/candidate-082.json
+  s_43b3d0625e7ac1::t_d42f071e807fb0 1
+tests/fixtures/evaluation/replays/candidate-083.json
+  s_43b3d0625e7ac1::t_6dd5ad8389dedd 1
+tests/fixtures/evaluation/replays/candidate-084.json
+  s_43b3d0625e7ac1::t_556b1acd2d517d 1
+tests/fixtures/evaluation/replays/candidate-085.json
+  s_43b3d0625e7ac1::t_fb933bb3a3324b 1
+tests/fixtures/evaluation/replays/candidate-086.json
+  s_43b3d0625e7ac1::t_4fd319f32cd173 1
+tests/fixtures/evaluation/replays/candidate-087.json
+  s_43b3d0625e7ac1::t_a57762b0ffc5e0 1
+tests/fixtures/evaluation/replays/candidate-088.json
+  s_43b3d0625e7ac1::t_0617fe1f85d224 1
+tests/fixtures/evaluation/replays/candidate-089.json
+  s_43b3d0625e7ac1::t_11b8b15daad40a 1
+tests/fixtures/evaluation/replays/candidate-090.json
+  s_43b3d0625e7ac1::t_2be260721e8b62 1
+tests/fixtures/evaluation/replays/candidate-091.json
+  s_43b3d0625e7ac1::t_747c6a0a8c9220 1
+tests/fixtures/evaluation/replays/candidate-092.json
+  s_43b3d0625e7ac1::t_e1f719ec531b5c 1
+tests/fixtures/evaluation/replays/candidate-093.json
+  s_43b3d0625e7ac1::t_a5da9c77ec4f81 1
+tests/fixtures/evaluation/replays/candidate-094.json
+  s_43b3d0625e7ac1::t_f1ed81384a81c1 1
+tests/fixtures/evaluation/replays/candidate-095.json
+  s_43b3d0625e7ac1::t_7ccd34a4adb2ff 1
+tests/fixtures/evaluation/replays/candidate-096.json
+  s_43b3d0625e7ac1::t_2eadf90ae244e4 1
+tests/fixtures/evaluation/replays/candidate-097.json
+  s_43b3d0625e7ac1::t_fdc99a92343571 1
+tests/fixtures/evaluation/replays/candidate-098.json
+  s_43b3d0625e7ac1::t_47df7325cd7899 1
+tests/fixtures/evaluation/replays/candidate-099.json
+  s_43b3d0625e7ac1::t_7a93adc04ac6f6 1
+tests/fixtures/evaluation/replays/candidate-100.json
+  s_43b3d0625e7ac1::t_86d00b9df76b80 1
+tests/fixtures/evaluation/supplied-usage-pricing/complete.json
+  s_43b3d0625e7ac1::t_99c03f7c77e000 1-419
+tests/fixtures/feedback/README.md
+  s_43b3d0625e7ac1::t_4a0258e671d64a 1-9
+tests/fixtures/feedback/automated-unknown-v1.json
+  s_43b3d0625e7ac1::t_d3114f92495ea8 1-24
+tests/fixtures/requests/bm25-candidates.json
+  s_43b3d0625e7ac1::t_c351d20e3c8952 1-11
+tests/fixtures/requests/claude-unknown-host.json
+  s_43b3d0625e7ac1::t_2c41378c797e24 1-22
+tests/fixtures/requests/codex-architecture.json
+  s_43b3d0625e7ac1::t_db660731d7427f 1-26
+tests/fixtures/requests/codex-exploration.json
+  s_43b3d0625e7ac1::t_1eab8bb08536cf 1-20
+tests/fixtures/requests/codex-implementation.json
+  s_43b3d0625e7ac1::t_cbc944a0fbc7e0 1-27
+tests/fixtures/requests/codex-migration.json
+  s_43b3d0625e7ac1::t_b44d495ada254b 1-30
+tests/fixtures/requests/codex-security.json
+  s_43b3d0625e7ac1::t_dcd6923e1db40d 1-27
+tests/fixtures/requests/empty-skill-candidates.json
+  s_43b3d0625e7ac1::t_e17b8eed013203 1-21
+tests/fixtures/requests/explicit-skill.json
+  s_43b3d0625e7ac1::t_5f1560fac6fe57 1-32
+tests/fixtures/requests/high-risk-unknown-capability.json
+  s_43b3d0625e7ac1::t_a93c7bd42ac96b 1-22
+tests/fixtures/requests/missing-tools.json
+  s_43b3d0625e7ac1::t_258243eccbd161 1-23
+tests/fixtures/requests/no-compatible-plan.json
+  s_43b3d0625e7ac1::t_7f34d5544aa86e 1-20
+tests/fixtures/requests/unsupported-effort.json
+  s_43b3d0625e7ac1::t_9f0df6c00a0e0f 1-19
+tests/support/capability_store.rs
+  s_43b3d0625e7ac1::t_85b3def4d06f89 1-167
+tests/support/capability_verifier.rs
+  s_43b3d0625e7ac1::t_c15998de36610e 1-63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "c68b059490be71e5b199a984b8ab6d92a2d6e436",
+  "prompts": {},
+  "sessions": {
+    "s_43b3d0625e7ac1": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a15a1b-5236-7d02-8b4b-a57765692018",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Florian BRUNIAUX <florian@bruniaux.com>"
+    }
+  }
+}
